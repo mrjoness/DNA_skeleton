@@ -163,79 +163,32 @@ https://www.overleaf.com/project/5e9e5110c524b8000192c548
 \newpage
 
 \section{\label{sec:intro}Introduction}
+Should be 4-5 paragraphs with similar structure to other papers in the field.
+-Funnel shaped to highlight general DNA technologies (oligomers and 
 
-DNA motivation
-\begin{enumerate}
-	\item Connection to Tokmakoff results
-	\item Some origami, sensor, other nanotech appications
-\end{enumerate}
-	
-SRV motivation
-\begin{enumerate}
-	\item First time studying a two body problem
-	\item Compare with other TICA-MSM approaches to DNA
-	\item Compare with Noe nucleotide paper
-\end{enumerate}
+\subsection{\label{sec:intro}DNA motivation}
+\subsubsection{\label{sec:intro}Main Question: how does sequence determine the kinetics of DNA oligonucleotides}
+
+\subsubsection{\label{sec:intro}What is known about the system and what remains an open question -- reference Tokmakoff frayed states here}
+
+\subsubsection{\label{sec:intro}Thermodynamics are well established and some MSM based (high resolution kinetic) models have been employed to study kinetics}
+
+\subsubsection{\label{sec:intro}Circle back to applications after discussing the open question that we are seeking to solve -- how does this expand on existing technolgies}
+
+\subsection{\label{sec:intro}SRV motivation}
+\subsubsection{\label{sec:intro}First time studying a two body problem}
+\subsubsection{\label{sec:intro}Compare with other TICA-MSM approaches to DNA}
+
 
 \section{\label{sec:methods}Methods}
 
-Simulation set up
+-don't confuse methods plots with results
+-not necessary to plot vamp-2 scores (or can include comaprisons in the SI)
+-follow basic outline of Trp-Cage methods in the order sim, srv, msm (a lot of the msm will be in results, but can go through basic assumptions and pytemma pipeline)
+ 
+\subsection{\label{sec:methods}Simulation set up}
+\subsubsection{\label{sec:methods}Tmelt selection etc}
 
-Featurization
-\begin{enumerate}
-	\item Vamp-2 score for permutable distances is slightly lower but should not contain degenerate information (SI data)
-	\item Inverse distances have higher vamp-2 score than regular distances (SI data)
-\end{enumerate}
-
-SRV validation
-\begin{enumerate}
-	\item Plot loss scores and self-consistency check for each sequence (fig 1 and 2)
-	\item Select number of slow modes (different for each) and lag time (same for each) based on this analysis.
-	\item Only use off diagonals and add sequence visuals along axes (fig 3)
-\end{enumerate}
-
-MSM construction
-\begin{enumerate}
-	\item hyperparameters include: number of microstates, lag (use same as SRV), number of macrostates (usually n+1) but we use n states for GC-core and GC-mid. I have not done a full optimization sweep over these parameters, but can explain the motivation for choosing these.
-    \item Can show comparison data with TICA -- timescales converge faster and state assignments tend to be more concrete (although this has varied) (fig 4)
-\end{enumerate}  
-
-\section{\label{sec:methods}Discussion}
-
-Brief description and diagrams for collective variables:
-\begin{enumerate}
-	\item Inverse average shifting distance
-	\item Fourth basepair distances
-\end{enumerate} 
-
-AT-all
-\begin{enumerate}
-	\item Dynamics dominated by slow shifting modes
-	\item sources to verify this would be the case
-	\item Minimal data from Tokmakoff on this, but can look at relative hybridization rates
-	\item SI Calculations to prove preferred thermo stability of 5’ shifted state
-\end{enumerate}  
-
-GC-end
-\begin{enumerate}
-	\item Similar dynamics to AT-all, but with overall lower stability and timescales
-	\item Difficult to make any claims because the thermodynamics of external mismatches with dangling ends have not been measured experimentally, and 3spn2 does not paramertize these mismatches explicitly
-	\item According to SantaLucia external mismatches and dangling ends tend to have weakly stabilizing effect, and there are 4-6 intact basepairs for these conformations
-	\item Might account for unknown signal in 2018 Tokmakoff paper with timescale between the fraying and dehybrization signal, but not sure... 
-\end{enumerate}  
-
-GC-core
-\begin{enumerate}
-	\item Frayed states requires the fourth base pair to be broken, most partially frayed states are not included in metastable clustering
-	\item 2nd slow mode correlates well with expected fraying behavior, can sample along this mode and generally find increasing frayed states (although the SRV coords are spiky)
-	\item 3rd mode is reflective of changes in orientation in dissociated behavior. This could be interesting for the SI, but this state does not inform the macrostate clustering
-\end{enumerate}  
-GC-mid
-\begin{enumerate}
-	\item Evidence of fraying correlations in higher order modes, but these are not consistent and their inclusion does not generate a metastable third mode
-	\item Treat this as a two-states model, where fraying is an expected feature of the hybridized state but not does not characterize a metastable state
-\end{enumerate}  
-    
 \begin{figure}[ht!]
 	\begin{center}
         \includegraphics[width=\textwidth]{Figs/skeleton/n_events.PNG}
@@ -243,7 +196,125 @@ GC-mid
         \label{fig:n_events}
 	\end{center}
 \end{figure}   
+
+\subsection{\label{sec:methods}SRV}
+\subsubsection{\label{sec:methods}Featurization}
+\begin{enumerate}
+	\item Vamp-2 score for permutable distances is slightly lower but should not contain degenerate information (SI data)
+	\item Inverse distances have higher vamp-2 score than regular distances (SI data)
+\end{enumerate}
+
+\subsubsection{\label{sec:methods}Select number of slow modes (different for each) and lag time (same for each) based on this analysis}
+
+\subsection{\label{methods}MSM construction}
+\begin{enumerate}
+	\item hyperparameters include: number of microstates, lag (use same as SRV), number of macrostates (usually n+1) but we use n states for GC-core and GC-mid. I have not done a full optimization sweep over these parameters, but can explain the motivation for choosing these.
+    \item Can show comparison data with TICA -- timescales converge faster and state assignments tend to be more concrete (although this has varied) (fig 4)
+\end{enumerate}  
+
+\section{\label{sec:Results}Results}
+- lead with same kind of diagram for each sequence, add additional figures when necessary for a given sequence
+
+\subsection{\label{sec:Results}AT-all}
+\subsubsection{\label{sec:Results}Explanation of state selection and slow modes}
+\subsubsection{\label{sec:Results}Brief description and diagrams for collective variables}
+\begin{enumerate}
+	\item Inverse average shifting distance
+	\item Fourth basepair distances
+\end{enumerate} 
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/skeleton/AT-all_vis.png}
+        \caption{AT-all transition diagram, implied timescales between SRV-MSM and TICA-MSM, free energy surface and metastable state assignment.}
+        \label{fig:sample_fray}
+	\end{center}
+\end{figure}
+
+\subsubsection{\label{sec:Results}Observations and key takeaways}
+\begin{enumerate}
+	\item Dynamics dominated by slow shifting modes
+	\item sources to verify this would be the case
+	\item Minimal data from Tokmakoff on this, but can look at relative hybridization rates
+	\item SI Calculations to prove preferred thermo stability of 5’ shifted state
+\end{enumerate}  
+
+\subsection{\label{sec:Results}GC-end}
+\begin{enumerate}
+	\item Similar dynamics to AT-all, but with overall lower stability and timescales
+	\item Difficult to make any claims because the thermodynamics of external mismatches with dangling ends have not been measured experimentally, and 3spn2 does not paramertize these mismatches explicitly
+	\item According to SantaLucia external mismatches and dangling ends tend to have weakly stabilizing effect, and there are 4-6 intact basepairs for these conformations
+	\item Might account for unknown signal in 2018 Tokmakoff paper with timescale between the fraying and dehybrization signal, but not sure... 
+\end{enumerate}  
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/skeleton/shifting_distribution.PNG}
+        \caption{Shows similarities between shifting modes and state memberships for AT-all and GC-ends}
+        \label{fig:shifting_distributions}
+	\end{center}
+\end{figure}
+
+\subsection{\label{sec:Results}GC-core}
+\begin{enumerate}
+	\item Frayed states requires the fourth base pair to be broken, most partially frayed states are not included in metastable clustering
+	\item 2nd slow mode correlates well with expected fraying behavior, can sample along this mode and generally find increasing frayed states (although the SRV coords are spiky)
+	\item 3rd mode is reflective of changes in orientation in dissociated behavior. This could be interesting for the SI, but this state does not inform the macrostate clustering
+\end{enumerate}
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/skeleton/tica_comparison_GC-core.PNG}
+        \caption{SRV vs. TICA MSMs and resulting clsuter memberships}
+        \label{fig:tica_comparison}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/skeleton/GC-core_vis.png}
+        \caption{GC-core transition diagram, implied timescales between SRV-MSM and TICA-MSM, free energy surface and metastable state assignment.}
+        \label{fig:sample_fray}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/skeleton/sample_fray.PNG}
+        \caption{Sample along 2nd GC-core SRV mode and show that these have increasing amounts of fraying}
+        \label{fig:sample_fray}
+	\end{center}
+\end{figure}
+
+\subsection{\label{sec:Results}GC-mid}
+\begin{enumerate}
+	\item Evidence of fraying correlations in higher order modes, but these are not consistent and their inclusion does not generate a metastable third mode
+	\item Treat this as a two-states model, where fraying is an expected feature of the hybridized state but not does not characterize a metastable state
+\end{enumerate}  
+
+\subsection{\label{sec:Results}Compare all results together}
+\subsubsection{\label{sec:Results}Figure showing Pearson correlations between leading modes on common basis}
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/skeleton/all_modes_correlations.PNG}
+        \caption{For Supplemental info: Correlations between all leading modes}
+        \label{fig:all_modes}
+	\end{center}
+\end{figure}
+
+\subsubsection{\label{sec:Results}Figure showing all sequences plotted on a common low dimensional space (probably the 2nd TICA mode and the 2nd GC-core mode)}
+
+\begin{enumerate}
+	\item Evidence of fraying correlations in higher order modes, but these are not consistent and their inclusion does not generate a metastable third mode
+	\item Treat this as a two-states model, where fraying is an expected feature of the hybridized state but not does not characterize a metastable state
+\end{enumerate}
     
+\section{\label{sec:conc}Conclusion}
+\subsection{\label{sec:Results}Looks a lot like the abstract}
+    
+    
+\section{\label{sec:SI}Potential SI figures}
 \begin{figure}[ht!]
 	\begin{center}
         \includegraphics[width=\textwidth]{Figs/skeleton/AT-all_validation.PNG}
@@ -260,58 +331,13 @@ GC-mid
 	\end{center}
 \end{figure}
 
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/all_modes_correlations.PNG}
-        \caption{For Supplemental info: Correlations between all leading modes}
-        \label{fig:all_modes}
-	\end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/tica_comparison_GC-core.PNG}
-        \caption{SRV vs. TICA MSMs and resulting clsuter memberships}
-        \label{fig:tica_comparison}
-	\end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/shifting_distribution.PNG}
-        \caption{Shows similarities between shifting modes and state memberships for AT-all and GC-ends}
-        \label{fig:shifting_distributions}
-	\end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/sample_fray.PNG}
-        \caption{Sample along 2nd GC-core SRV mode and show that these have increasing amounts of fraying}
-        \label{fig:sample_fray}
-	\end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/AT-all_vis.png}
-        \caption{AT-all transition diagram, implied timescales between SRV-MSM and TICA-MSM, free energy surface and metastable state assignment.}
-        \label{fig:sample_fray}
-	\end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/GC-core_vis.png}
-        \caption{GC-core transition diagram, implied timescales between SRV-MSM and TICA-MSM, free energy surface and metastable state assignment.}
-        \label{fig:sample_fray}
-	\end{center}
-\end{figure}
 
 \clearpage
 \newpage
 
-\bibliography{references}
+%\bibliography{references}
+Test cite: \citep{Zhang2018DeepMechanics}
+\bibliography{refs_mendeley}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The "tocentry" environment can be used to create an entry for the
