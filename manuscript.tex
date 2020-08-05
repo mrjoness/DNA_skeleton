@@ -163,7 +163,6 @@ https://www.overleaf.com/project/5e9e5110c524b8000192c548
 \newpage
 
 \section{\label{sec:intro}Introduction}
-Should be 4-5 paragraphs (funnel shaped) with similar structure to other papers in the field.
 
 Over the last couple decades, DNA has proved to be much more than a vessel for genetic information. From sensing, to computing, to directed self-assembly, the programmable and predictable nature of DNA has unlocked numerous unforeseen applications \citep{Seeman2017DNANanotechnology} (cite more). Recently, structural DNA nanotechnology has enabled self-assembly on micro to milli scales \citep{MhatreV.HoJi-AnnLee2012NIHAccess}, and dynamic DNA nanotechnology has been used to perform basic calculation \citep{Bui2018} and to probe single molecules via temporal DNA signatures \citep{Shah2019}. Both technologies rely on the hybridization reaction between complementary (or similar) DNA strands and leverage the flexibility of shorter DNA oligomers to participate in these reactions. Although many experimental and computational studies have been performed to investigate hybridization and dissociation, the sequence-dependent mechanisms of hybridization dynamics are not fully understood (cite). Moreover, it is unclear whether these processes occur in an "all-or-nothing" fashion or if some metastable states facilitate the transition. The stability of out of register or "slipped" base pairing in repetitive sequences has been well documented in previous computational studies \citep{Phys2014}, \citep{Xiao2019}) and are referred to as slip-strand DNA for longer seqeunces in vivo (cite, maybe too unrelated). Sandstead et al suggested the existence of frayed metastable states during duplex dissociation, where the stability of these states was dictated by oligonucleotide sequence \citep{Sanstead2016}. In this work, we study the same four sequences explored by Sandstead et al in an effort to uncover the sequence-dependent dynamics and their relation to  metastable structures mentioned above.
 
@@ -175,10 +174,10 @@ Our analysis reflects similar results to previous computational and experimental
 \section{\label{sec:methods}Methods}
 
 \subsection{\label{sec:methods}3spn2 Model}
-Quick summary of model, why we chose to use it, and interesting features.
+Not sure if this is necessary, but can include a quick summary of model, why we chose to use it, and interesting features.
 -Compatible with lammps
 -Enough resolution to deserve dynamical behavior, coarse enough to run equlibrium sims
--Previous hybridization experiments show agreement with experiments
+-Previous hybridization experiments show good agreement with experiments
 
 \subsection{\label{sec:methods}Simulation set up}
 
@@ -194,17 +193,18 @@ SRVs were first developed by Chen et al. as a means to directly learn slow eigen
 
 Using optimized hyperparameters and featurized trajectory data, we generated a hierarchical dynamic encoder (HDE) to transform 55 reciprocal pairwise distances into a low dimensional SRV feature set. In order to maintain consistency between sequences, we kept all SRV training hyperparameters the same with the exception of the number of outputed slow modes. We determined the number of slow mode via cross-validation on the VAMP-2 score to ensure that the coordinate did not over fit on statistical noise \citep{McGibbon2015VariationalKinetics}. In particular we looked for a diminishing increase in the vamp-2 score, inconsistency between cross validation scores -- suggesting that the model maybe learning different modes, and a widening gap between train and test scores -- suggesting that the model might be overfitting on statistical noise in the training data. We used a batch size of 50000 and ran each model for total of 30 training epochs. We used two hidden layers and set the size of each layer to 100. For cross-validation and comparison between different hyper-parameters, we used a 80/20 validation split training. SRV training required about 22 GPU-minutes across 1 GPU and 10 CPUs.
 
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/figs_0804/srv_crossval.png}
+        \caption{Cross val procedure to selection number of SRV coordinates (probably will be SI, but could include AT-all cross-val in the walkthrough section)}
+        \label{fig:srv_crossval}
+	\end{center}
+\end{figure}
+
 \subsubsection{\label{sec:methods}SRV-MSMs}
 
 MSMs are a powerful tool for interpreting large amounts of simulation data in a statistically robust and experimentally comparable way. The technique relies on the discretitization of kinetically similar conformations into microstates and finds the conditional probability between states within some lag time. The reliance on conditional probabilities allows for many independent simulations (longer than the lag time) to be collectively interpreted. To take full advantage of the MSM frameworks, however, the input basis should be as kinetically meaningful as possible \citep{Pande2010EverythingAsk}. This becomes crucial in our system given the large difference in timescales between leading modes. Because SRV eigenfunctions translate simulation features into their slowest kinetic representations, they are optimally suited as an MSM basis. To prove this, SRV-MSM VAMP-2 scores were shown to be consistently higher than MSMs constructed from TICA coorinates (TICA-MSMs) \citep{Sidky}. Furthermore, SRV-MSM implied timescales converge faster than TICA-MSM timescales, enabling a shorter lag time and therefore a higher resolution model. To build our SRV-MSM framework, we employed the Pyemma MSM pipeline and generated independent models for each sequence \citep{Scherer2015PyEMMAModels}. After passing in SRV coordinates, we perform k-means microstate clustering, Bayesian MSM construction, and PCCA+ macrostate assignments. The number of microstates were determined by VAMP-2 score, and the SRV-MSM lag time was selected based on implied timescales convergence.  The number of PCCA+ macrostates was determined based on the characteristic of each system and will be discussed more in depth in the results. 
 
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/microstate_optimization.png}
-        \caption{Finding optimal amount of microstates for SRV and TICA clustering. VAMP-2 scores are consistently higher when clustering in SRV space}
-        \label{fig:sample_fray}
-	\end{center}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -264,7 +264,7 @@ Next we examine the GC-end sequence, which add GC caps to the same repetitive AT
 
 For our analysis, we consider C:T and G:A base pairs in the GC-ends shifted states as non-interacting dangling ends. Although such internal mismatches of this kind may cause substantial conformational distortions such as kinking, terminal mismatches have been shown to be slightly stabilizing \citep{Santalucia2004TM}, \citep{DiMichele2014EffectHybridization}. In the context of the 3spn2 model, these ends are accounted for via intra-strand base stacking and inter-strand cross-stacking interactions \citep{Hinckley2013AnHybridization}. The only interaction between non-WC basepairs is parameterized by isotropic excluded volume potential, which is likely much more simplistic than the true mismatch bond and can therefore not represent the state with highest fidelity. Nevertheless, we find these bonds to be stabilizing enough to account for the relatively small population of conformation we observed in these shifted states (NN calculations). Interestingly, we found that 5' single shifted stability might be elevated by a substantial portion of conformations retaing one intact GC base pair. Visualizations reveal that the shifted oligos -- particularly in the 5' shifted state -- have a tendency to sacrifice some helical conformational entropy in a way that facilitates an out of register GC base pairs. To compare these single shifted 5' prime states with the corresponding AT-all state, we employ diffusion maps built on an equal sampling of 10000 conformations in both states. Diffusion maps generate a low dimensional embedding based on some metric for diffusive distance (we use intermolecular distances) and are well-suited to find subtle structural differences in temporally disconnected data \citep{Coifman2006DiffusionMaps}. The first diffusion mode clearly delineates between the GC-end and AT-all shifted conformations and correlates highly with the average distance between the 3' end and its shifted complementary pair. This reveals that the mismatch GC-pairs are never bound -- a consequence of the excluded volume interaction -- whereas the AT-all pairs are mostly bound with occasional fraying indicated by small AT-all overlap in the GC-end region. On y-axis we examine the second diffusion mode, which correlates highly with the average distance between 3' and 5' ends. Because the GC-end termini do not bind out of register, we find that they are readily able to form stabilizing contacts despite the shifted conformation of the duplex as a whole. These "shifted-loop" bonds are shown to be uniquely stable for GC-end conformations, and their existence in the simulations confirmed by molecular renderings of these regions. 
 
-It is unclear the extent to which these interactions are physical given the strain required to form these shifted loops (need to discuss toehold loop experiments with Brennan).  Single shifted 3' and double shifted 5' strands have much lower population of these shifted loops (need to perform calculations to see if these account for increased stabilization of single shifted 5' versus single shifted 3'). Not sure how much more I should reall go into here...
+It is unclear the extent to which these interactions are physical given the strain required to form these shifted loops (need to discuss toehold loop experiments with Brennan).  Single shifted 3' and double shifted 5' strands have much lower population of these shifted loops (need to perform calculations to see if these account for increased stabilization of single shifted 5' versus single shifted 3'). Not sure how much more much to go into here ...
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -319,12 +319,11 @@ To further investigate these dynamics, we built an SRV-MSM using these first thr
 	\end{center}
 \end{figure}
 
-When examining these same four sequences using T-jump spectroscopy, Sandstead et al. found that the GC-core had the highest deviation from two-state behavior during dissociation \citep{Sanstead2016}. As their analysis did not consider the previously mentioned shifted states, this intermediate state was defined by a high degree of fraying about the central core. While high amounts of 1-2 base pair fraying were observed for GC-mid and AT-all as well, lattice model predictions that GC-core was the only sequence to have multiple frayed pairs during the dissociation process. Further analysis speculated that AT-all termini fraying was an effectively barrierless process characterized by rapid inter-conversion between all accessible frayed states \citep{Sanstead2018DirectDehybridization}. We see the same rapid fraying in simulation data (which too fast to be attributed with an SRV mode), however we stipulate that this inter-conversion first relies on the formation of the the AT-bond nearest to the GC center. In visualizing trajectories, we observe that the frayed ends rotate away from each other and impede helix formation, further highlighting the importance of this 4th base pair formation.
-
-(free energy minimum at high temp but not low temp?).
+When examining these same four sequences using T-jump and 2D spectroscopy, Sandstead et al. found that the GC-core had the highest deviation from two-state behavior during dissociation \citep{Sanstead2016}. As their analysis did not consider the previously mentioned shifted states, this intermediate state was defined by a high degree of fraying about the central core. While 1-2 base pair fraying was commonly observed for GC-mid and AT-all as well, lattice model predictions showed that GC-core had substantially more frayed base pairs. Further analysis showed that AT termini fraying was an effectively barrierless process characterized by rapid inter-conversion between all accessible frayed states \citep{Sanstead2018DirectDehybridization}. We see the same rapid fraying in simulation data (which too fast to be attributed with an SRV mode), however we stipulate that this inter-conversion first relies on the formation of the the AT-bond nearest to the GC center. In visualizing trajectories, we observe that the frayed ends rotate away from each other and impede helix formation, further highlighting the importance of this 4th base pair formation.
 
 
-\citep{Sanstead2018DirectDehybridization} Our data support a picture in which the dimer ensemble can exist in a broad basin where the populated configurations are not separated by appreciable barriers, suggesting rapid interconver- sion can occur between all of the accessible frayed structures within the well. GC-end placement leads to all or nothing mechanism.
+%%%%%% intro notes %%%%%%%
+\citep{Sanstead2018DirectDehybridization} Good intro with many repesimportance of dynamics "rich dynamics even for short oligos"
 
 
 Refs for DNA fraying:
@@ -334,10 +333,15 @@ Refs for DNA fraying:
 
 6K.-Y. Wong and B. M. Pettitt, “The pathway of oligomeric DNA melting investigated by molecular dynamics simulations,” Biophys. J. 95, 5618– 5626 (2008).
 37A. Perez and M. Orozco, “Real-time atomistic description of DNA unfold- ing,” Angew. Chem. 49, 4805–4808 (2010).
-38M. F. Hagan, A. R. Dinner, D. Chandler, and A. K. Chakraborty, “Atomistic understanding of kinetic pathways for single base-pair binding and unbind- ing
+38M. F. Hagan, A. R. Dinner, D. Chandler, and A. K. Chakraborty, “Atomistic understanding of kinetic pathways for single base-pair binding and unbinding
 
-%%%%%% intro notes %%%%%%%
-\citep{Sanstead2018DirectDehybridization} Good intro with many repesimportance of dynamics "rich dynamics even for short oligos"
+\subsection{\label{sec:Results}GC-mid}
+\begin{enumerate}
+	\item Evidence of fraying correlations in higher order modes, but these are not consistent and their inclusion does not generate a metastable third mode
+	\item Treat this as a two-states model, where fraying is an expected feature of the hybridized state but not does not characterize a metastable state
+	\item Show 2nd slow mode correlations in SI plus some configuration snapshots
+	
+\end{enumerate}  
 
 
 %%%%%% Other MSM and timescales approaches  %%%%%%%%%%%
@@ -353,34 +357,25 @@ More accurate ways to adapt MFPT into a rate
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/tica_comparison_GC-core.PNG}
-        \caption{SRV vs. TICA MSMs and resulting clsuter memberships}
-        \label{fig:tica_comparison}
+        \includegraphics[width=\textwidth]{Figs/figs_0804/all_seq_tica_cvs.PNG}
+        \caption{All sequences plotted on combined TICA axes}
+        \label{fig:all_seq_tica_cvs}
 	\end{center}
 \end{figure}
 
-
-\subsection{\label{sec:Results}GC-mid}
-\begin{enumerate}
-	\item Evidence of fraying correlations in higher order modes, but these are not consistent and their inclusion does not generate a metastable third mode
-	\item Treat this as a two-states model, where fraying is an expected feature of the hybridized state but not does not characterize a metastable state
-	\item Show 2nd slow mode correlations in SI plus some configuration snapshots
-	
-	
-\end{enumerate}  
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{Figs/figs_0804/all_seq_physical_cvs.PNG}
+        \caption{All sequences and metastable macrostates plotted on frayed/shifted collective variable axes}
+        \label{fig:all_seq_physical_cvs}
+	\end{center}
+\end{figure}
 
 
 
 \subsection{\label{sec:Results}Compare all results together}
 \subsubsection{\label{sec:Results}Figure showing Pearson correlations between leading modes on common basis}
 
-\begin{figure}[ht!]
-	\begin{center}
-        \includegraphics[width=\textwidth]{Figs/skeleton/all_modes_correlations.PNG}
-        \caption{For Supplemental info: Correlations between all leading modes}
-        \label{fig:all_modes}
-	\end{center}
-\end{figure}
 
 \subsubsection{\label{sec:Results}Figure showing all sequences plotted on a common low dimensional space (probably the 2nd TICA mode and the 2nd GC-core mode)}
 
