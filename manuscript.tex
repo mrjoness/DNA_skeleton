@@ -20,7 +20,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{color}
-\usepackage{CJK}https://www.overleaf.com/project/5e820b28d741e00001b1ccac
+\usepackage{CJK}
 \usepackage{framed}
 \usepackage[hidelinks]{hyperref}
 \usepackage{algorithm}
@@ -162,6 +162,8 @@ https://www.overleaf.com/project/5e9e5110c524b8000192c548
 
 \newpage
 
+TEST CITE \cite{Phys2014}
+
 \section{\label{sec:intro}Introduction}
 
 Over the last couple decades, DNA has proved to be much more than a vessel for genetic information. From sensing, to computing, to directed self-assembly, the programmable and predictable nature of DNA has unlocked numerous unforeseen applications \citep{Seeman2017DNANanotechnology} (cite more). Recently, structural DNA nanotechnology has enabled self-assembly on micro to milli scales \citep{MhatreV.HoJi-AnnLee2012NIHAccess}, and dynamic DNA nanotechnology has been used to perform basic calculation \citep{Bui2018} and to probe single molecules via temporal DNA signatures \citep{Shah2019}. Both technologies rely on the hybridization reaction between complementary (or similar) DNA strands and leverage the flexibility of shorter DNA oligomers to participate in these reactions. Although many experimental and computational studies have been performed to investigate hybridization and dissociation, the sequence-dependent mechanisms of hybridization dynamics are not fully understood (cite). Moreover, it is unclear whether these processes occur in an "all-or-nothing" fashion or if some metastable states facilitate the transition. The stability of out of register or "slipped" base pairing in repetitive sequences has been well documented in previous computational studies \citep{Phys2014}, \citep{Xiao2019}) and are referred to as slip-strand DNA for longer seqeunces in vivo (cite, maybe too unrelated). Sandstead et al suggested the existence of frayed metastable states during duplex dissociation, where the stability of these states was dictated by oligonucleotide sequence \citep{Sanstead2016}. In this work, we study the same four sequences explored by Sandstead et al in an effort to uncover the sequence-dependent dynamics and their relation to  metastable structures mentioned above.
@@ -173,11 +175,13 @@ Our analysis reflects similar results to previous computational and experimental
 
 \section{\label{sec:methods}Methods}
 
+
 \subsection{\label{sec:methods}3spn2 Model}
 Not sure if this is necessary, but can include a quick summary of model, why we chose to use it, and interesting features.
 -Compatible with lammps
 -Enough resolution to deserve dynamical behavior, coarse enough to run equlibrium sims
 -Previous hybridization experiments show good agreement with experiments
+
 
 \subsection{\label{sec:methods}Simulation set up}
 

@@ -1,11 +1,4 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Methods}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Molecular feature selection}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{SRVs outperform TICA-MSMs under cross-validation}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{SRVs are robust to the choice of feature set}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Implied timescales of SRV-MSMs exhibit faster convergence than TICA-MSMs and VAMPnets}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Results and Discussion}{}% 7
-\BOOKMARK [1][-]{section.4}{Conclusions}{}% 8
-\BOOKMARK [1][-]{section*.11}{Acknowledgments}{}% 9
-\BOOKMARK [1][-]{section*.12}{References}{}% 10
-\BOOKMARK [1][-]{section*.13}{TOC Graphic}{}% 11
+\BOOKMARK [1][-]{section.3}{Discussion}{}% 3
+\BOOKMARK [1][-]{section*.10}{References}{}% 4
