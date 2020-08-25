@@ -4,46 +4,54 @@ The top-level auxiliary file: manuscript.aux
 The style file: achemso.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: acs-manuscript.bib
-Database file #2: references.bib
+Database file #2: refs_mendeley2.bib
+Warning--I didn't find a database entry for ""
+Name 1 in "Mhatre V. Ho, Ji-Ann Lee, and Kelsey C. Martin" has a comma at the end for entry MhatreV.HoJi-AnnLee2012NIHAccess
+while executing---line 1694 of file achemso.bst
 achemso 2017/05/18 v3.10i
-You've used 2 entries,
+Name 1 in "Mhatre V. Ho, Ji-Ann Lee, and Kelsey C. Martin" has a comma at the end for entry MhatreV.HoJi-AnnLee2012NIHAccess
+while executing---line 1700 of file achemso.bst
+Name 1 in "Mhatre V. Ho, Ji-Ann Lee, and Kelsey C. Martin" has a comma at the end for entry MhatreV.HoJi-AnnLee2012NIHAccess
+while executing---line 1700 of file achemso.bst
+You've used 51 entries,
             2536 wiz_defined-function locations,
-            755 strings with 6659 characters,
-and the built_in function-call counts, 498 in all, are:
-= -- 28
-> -- 28
-< -- 4
-+ -- 13
-- -- 11
-* -- 35
-:= -- 69
-add.period$ -- 2
-call.type$ -- 2
+            1122 strings with 19446 characters,
+and the built_in function-call counts, 18235 in all, are:
+= -- 1373
+> -- 1269
+< -- 22
++ -- 493
+- -- 442
+* -- 2012
+:= -- 2505
+add.period$ -- 100
+call.type$ -- 51
 change.case$ -- 4
 chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 35
-empty$ -- 29
-format.name$ -- 9
-if$ -- 85
+cite$ -- 52
+duplicate$ -- 1027
+empty$ -- 1087
+format.name$ -- 520
+if$ -- 3420
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 34
-num.names$ -- 3
-pop$ -- 5
+newline$ -- 328
+num.names$ -- 147
+pop$ -- 129
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2
+skip$ -- 49
 stack$ -- 0
-substring$ -- 6
-swap$ -- 30
-text.length$ -- 2
+substring$ -- 772
+swap$ -- 1177
+text.length$ -- 100
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 11
+type$ -- 354
 warning$ -- 0
-while$ -- 5
+while$ -- 164
 width$ -- 0
-write$ -- 39
+write$ -- 633
+(There were 3 error messages)
