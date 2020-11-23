@@ -18,7 +18,7 @@
 \SectionNumbersOn
 
 %include hyperlinks to figures
-\documentclass{article}
+%\documentclass{article}
 \usepackage{graphicx}
 \usepackage[%  
     colorlinks=false,
@@ -31,10 +31,10 @@
 \usepackage{color}
 \usepackage{CJK}
 \usepackage{framed}
-\usepackage[hidelinks]{hyperref}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
-\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}
+%\usepackage[hidelinks]{hyperref}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+%\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}
 
 \usepackage[scaled=0.85]{beramono}
 \usepackage[T1]{fontenc}
@@ -273,7 +273,7 @@ MSMs are a powerful tool for interpreting large amounts of simulation data in a 
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=400, scale=1]{Figs/figs_imp/AT-all_implied_timescales.png}
+        \includegraphics[width=0.9\textwidth]{Figs/figs_imp/AT-all_implied_timescales.png}
         \caption{SRV-MSM implied timescales converged faster than tICA-MSM implied across the five leading AT-all modes. Timescales are directly compared at the chose lag time of 1.2 ns}
         \label{fig:AT-all_dynamic}
 	\end{center}
