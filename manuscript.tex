@@ -265,23 +265,6 @@ MSMs are a powerful tool for interpreting large amounts of simulation data in a 
 
 %We initialized explicit ions such that 240 mM \ce{NaCl} and 18 mM \ce{MgCl2} were added to the box in addition to 18 Na counter ions to balance the charge from the 9 phosphate groups in each oligonucleotide backbone \citep{Hinckley2015}. We used a periodic box size of 7.774 nm and an effective oligo concentration of 7 mM. We used an Ewald summation to calculate long range Coulombic interaction between DNA and ions using a real space cutoff of 2 nm.
 
-% A Debye-Huckle screening potential was used to monitor account for ion concentration . 
-
-\begin{comment} 
-% SI equations
-In the equations below, we show how covariances are obtained from some featurization $\chi$ of a time series $x_t$ and its time-lagged pairs $x_{t+\tau}$. The VAMP-2 score can then be found for $\chi$ by applying the VAMP principle with cross-validation.
-
-\begin{align*}
- 	\mathscr{C}_{00}=&\Expect{\chi(x_t)\chi(x_t)^\intercal}_t\\
- 	\mathscr{C}_{01}=&\Expect{\chi(x_t)\chi(x_{t+\tau})^\intercal}_t\\
- 	\mathscr{C}_{11}=&\Expect{\chi(x_{t+\tau})\chi(x_{t+\tau})^\intercal}_{t+\tau}\\
-	\\
- 	VAMP2[\chi]=&\norm{\mathscr{C}_{00}^{-1/2}\mathscr{C}_{01}\mathscr{C}_{11}^{-1/2}}_F^2 +1
- 	%VAMP2^{val}[\chi]=&\norm{\mathscr{(C_{00}^{val})}^{-1/2}\mathscr{C}_{01}^{val}\mathscr({C}_{11}^{val})^{-1/2}}_F^2 + 1
-\end{align*}\label{CK1}
-
-\end{comment}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -621,6 +604,21 @@ To visualize macrostates, we project the data into the two leading tICA coordina
     \item MSM construction
     
 \end{enumerate}
+\end{comment}
+
+\begin{comment} 
+% SI equations
+In the equations below, we show how covariances are obtained from some featurization $\chi$ of a time series $x_t$ and its time-lagged pairs $x_{t+\tau}$. The VAMP-2 score can then be found for $\chi$ by applying the VAMP principle with cross-validation.
+
+\begin{align*}
+ 	\mathscr{C}_{00}=&\Expect{\chi(x_t)\chi(x_t)^\intercal}_t\\
+ 	\mathscr{C}_{01}=&\Expect{\chi(x_t)\chi(x_{t+\tau})^\intercal}_t\\
+ 	\mathscr{C}_{11}=&\Expect{\chi(x_{t+\tau})\chi(x_{t+\tau})^\intercal}_{t+\tau}\\
+	\\
+ 	VAMP2[\chi]=&\norm{\mathscr{C}_{00}^{-1/2}\mathscr{C}_{01}\mathscr{C}_{11}^{-1/2}}_F^2 +1
+ 	%VAMP2^{val}[\chi]=&\norm{\mathscr{(C_{00}^{val})}^{-1/2}\mathscr{C}_{01}^{val}\mathscr({C}_{11}^{val})^{-1/2}}_F^2 + 1
+\end{align*}\label{CK1}
+
 \end{comment}
 
 \begin{comment}
