@@ -384,7 +384,7 @@ To supplement GC-mix analysis, we looked at qualitative trends in our trajectory
 	\end{center}
 \end{figure}
 
-%%%%%%% start of "interesting phenomena" section   %%%%% 
+
 \subsection{Macrostate distributions inform state stability and kinetics}
 
 % add new diffusion map section introduction
@@ -430,23 +430,26 @@ The first diffusion mode clearly delineates between the GC-end and AT-all shifte
 
 We applied a similar diffusion map approach to investigate the structural composition of the F4 macrostate. We build diffusion maps using 10000 frames sampled from the macrostate (figure \ref{fig:GC-core_dmaps}). Again, we were able to identify a combination of physical coordinates that closely correlated to the first two non-trivial diffusion modes. We found that a larger distance between internal A:T pairs increased the PCCA+ probability of inclusion into macrostate. This distance also correlated closely with the second diffusion map mode. Interestingly, we observed that the first non-trivial mode -- the feature that describes the most structural diversity in the system -- corresponds to difference in "overlap" distance between adjacent A or T bases and the GC core. We defined overlap as the distance between a G/C and the A/T adjacent to its native complement. At the extremes of this coordinate, one strand maintains most of its helical character while the other twists out of place. Because WC bonds are obstructed by the oligomer, the other strand is likely to fray before contacts can reform, or, less frequently, the duplex undergoes full dissociation. Interchange between these substates illustrate how the the F4 can maintain a longer lifetime compared to other A:T terminal sequences. 
 
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=300, scale=1]{Fig9.pdf}
+        \caption{Sequence-dependent population distributions for trimmed hybridization events. $Psi_2$ represents the maximum structural variance across all sequence configurations and correlates strongly with hybridization progression. Populations are discretized in 200 bins and smoothed by averaging with the nearest 5 bins. Heat maps show the average intermolecular base distances in nm at increasing values of $Psi_2$, where the main diagonal shows native base pair distances.}
+        \label{fig:Fig9}
+	\end{center}
+\end{figure}
+
+\subsection{Differential fraying behavior determines direct hybridization pathways} 
+
+(I just completed most of this analysis on Friday. I think this shows a more direct comparison to the Tokmakoff kinetic model -- mainly all-or-nothing deviations caused by fraying are ordered GC-core > GC-mix > AT-all > GC-end. In addition we see a distinct state form for GC-core which serves to verify the F4 state and its kinetic relevance. Lastly it provides another means by which MSMs can inform analysis techniques for clearer comparison between sequences. I could repeat this procedure and analysis for direct dissociation as well if that is of interest)
+
+To more directly compare hybridization events across all sequences, we discarded transitions that passed through long-lived out-of-register states. To achieve higher resolutions, we reran simulations centered on direct D$\rightarrow$H (or D$\rightarrow$F4$\rightarrow$D for GC-core) transitions with a 10x higher save rate. We built diffusion maps on a set of 48 such "trimmed" events evenly sampled across sequences where each event consisted of 1000 frames. We found a distinct spectral gap after the first non-trivial diffusion map eigenvalue, indicating that the leading mode $\Psi_2$ contained most of the structural variance. Indeed, we found $\Psi_2$ had a 0.89 Pearson correlation with simulation time a -0.94 correlation with strand core distance with minimal variation by sequence. This shows that $\Psi_2$ is strongly correlated with the hybridization process for all sequences and represents a consistent collective variable for comparison between sequences. For each sequence, we compared population distributions along $\Psi_2$ and noted statistically meaningful differences in the range $ 0.001 <\Psi_2 < 0.0035$ (Figure \ref{fig:GC-core_dmaps}). In this region, some base pair contacts have formed but frayed structures dominate the distribution. As expected, GC-core shows a distinct peak in the frayed region, corresponding to the F4 macrostate identified by SRV-MSMs. GC-mix has a notably higher population than AT-all and GC-end but displays a more gradual progression toward the native hybridized state. This is consistent with a the downhill "nucleation-zippering" mechanism noted above.
+
 %This time, we set our distance metric to the same permutation-free coordinates we used to build the SRV-MSMs. 
 
-% note that similar analysis on AT-all and GC-end can be found in the SI (move both dynamics plots and descriptions there)
-
-% Additional notes on the temp-dependent secttion
-%Again, GC-core behavior deviates from simulations prediction with consistently lower than expected fast responses. We believe this could be due to slower contributions from internal A:T base pairs sequentially fraying. 
-
-% Experiments fast responses are difficult to discern at higher temperatures due to mixing with slow responses. This is especially true for GC-end because to the signals are closer to begin with.
 % add new info here, not sure if shifting discussion is necessary
 % take away message is that these are good proxies for the responses
 % although there is not perfect agreement, we show that these are very reasonable coordinates assing fast and slow response
 
-%In addition to fraying, we notice that the rate of shifting increases at higher temperature. Moreover, the thermodynamic stability of these shifted conformations increases relative to that of intact duplex. For T-jumps at higher initial and final temperatures, it is possible that some portion of the starting ensemble is in a shifted state and that the fast dynamics are increasingly influenced by alternative "looping" G:C bonding that we observed in our diffusion map analysis above. It is less likely that shifting mechanisms would have their own distinct signals, given that these occur at far lower frequency than fraying or full-dissociation, but we believe that further experimental work is necessary to investigate this phenomenon.
-
-%The temperature-dependent analysis can also inform out interpretation of the 3spn2 model. Previous work has shows that kinetic association rates were accelerated by about one to two orders of magnitude relative to experiment \citep{Hinckley2013AnHybridization}.  It is not surprising that different dynamics might be accelerated at different rates, especially considering that 3spn2 was not extensively parameterized on dynamical properties properties \citep{Hinckley2013AnHybridization}. 
-
-%We also did not find available data on other acceleration studies using explicit ions.
 
 \subsection{Limitations}
 
