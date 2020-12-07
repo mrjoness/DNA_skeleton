@@ -62,7 +62,6 @@
 
 \newcommand{\state}[1]{$\mathcal{S}_{#1}$}
 
-
 \newcommand*{\rood}[1]{#1}
 \newcommand*{\blauw}[1]{#1}
 \newcommand*{\groen}[1]{#1}
@@ -337,7 +336,7 @@ In addition to state probabilities and free energy approximations, the coarse-gr
 
 Taken together, our results indicate that AT-all hybridization and dissociation kinetics are substantially modulated by out-of-register pathways. A majority of hybridization events occur out-of-register, and, based on transition probabilities, 35\% of D $\rightarrow$ H pathways pass through some out-of-register state. While GC-end strands can access out-of-register states, only 11\% of native hybridization events pass through these states. These observations show that internal displacement mechanisms reported in previous simulation studies are capable of disrupting non-native pairing and correcting base pair mismatches without fully dissociating strands \citep{Romano2013DNADependence, Markegard2015, Maciejczyk2014DNAModel}. Experimentally, out-of-register states are suspected to occur, but are difficult to capture due to short lifetimes and subtle kinetic traces. To explicitly minimize out-of-register base pairing, similar AT repeat motif sequences have been padded by GCG clamps during experimental analysis \cite{Wyer2014KineticsAT-tracts}. Recent all-atom results identified similar out-of-register states as "deep kinetic traps" along the hybridization pathway for repetitive dGCGCGC hexamers \citep{Xiao2019}. Contrary to our kinetic results, however, "slithering" mechanisms along out-of-register tracts were not observed to be a dominant pathway, especially when compared to the high rates of slithering exhibited by the homogenous dGGGGGG strand. It is unclear whether these differences were a consequence of varied simulation conditions or whether GC repeat motifs are less susceptible to out-of-register transitions compared to AT motifs. This is possible given that stronger hydrogen binding in GC motifs may prevent fluctuation-driven rearrangement, however further computational and experimental studies are required to verify these differences.
 
-\subsection{Shifting experimental comparisons}
+\subsection{Out-of-register dynamics may strech T-jump IR re}
 % how to discuss this without first introducing the fast response?
 
 In examining spectroscopic T-jump signatures for these four sequences, we observed a significantly stretched fast response for AT-all, and a more subtle GC-end stretch relative to GC-core and GC-mix fast responses. For each sequence, the fast response is attributed to terminal base fraying, but stretching indicates a broader distribution of dynamics at this timescale. We expect that fraying would still occur in out-of-register conformations but at a different rate than intact fraying. Furthermore, internal displacement mechanisms facilitating direct out-of-register transitions may produced similar responses contributing to the ensemble. Given that it is experimentally challenging to distinguish between these contributions, we cannot confirm whether these responses originate from some population of out-of-register configurations prior the temperature jump, shifting mechanisms during the dissociation process, or some combination of the two. In the context of our SRV-MSMs, we see qualitative agreement between more complex transition network and a more stretched response. We interrogate these differences by examining high temperature simulations later in this manuscript. (Can discuss more details about fig \ref{fig:fast_stretching} here and potentially include this fig in the main text)?
@@ -653,8 +652,8 @@ Refs for DNA fraying:
 \clearpage
 \newpage
 
-%\bibliography{references}
-\bibliography{refs_mendeley2}
+\bibliography{references}
+%\bibliography{refs_mendeley2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The "tocentry" environment can be used to create an entry for the
