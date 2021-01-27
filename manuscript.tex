@@ -168,7 +168,7 @@
 
 \begin{abstract}
 
-Despite rapid advances in DNA nanotechnology and a robust understanding of the associated thermodynamics, the sequence-dependent mechanisms of DNA hybridization are not fully understood. In this work, we investigate these dynamics by performing equilibrium coarse-grained simulations of oligonucleotide sequences with varied G:C placement. We employ State-Free Reversible VAMPnets to directly learn the slowest dynamical modes of each sequence and optimize Markov State Model (MSM) construction. Furthermore, we perform elevated temperature simulations to recapitulate temperature-jump IR and FTIR data collected on the oligonucleotides. For repetitive sequences, we find a spectrum of slow dynamics associated with out-of-register base pairing and kinetically relevant transitions between these states. In contrast, G:C pairs near the center of the duplex induce more pronounced fraying dynamics through which hybridization and dissociation are facilitated. In both cases, these mechanisms deviate from an “all-or-nothing” hybridization model. Our computational predictions show agreement with experiments and provide new fundamental understanding of the sequence-dependent kinetics and mechanisms of DNA hybridization.
+Despite rapid advances in DNA nanotechnology and a robust understanding of the associated thermodynamics, the sequence-dependent mechanisms of DNA hybridization are not fully understood. In this work, we investigate these dynamics by performing equilibrium coarse-grained simulations of oligonucleotide sequences with varied G:C placement. We employ State-Free Reversible VAMPnets to directly learn the slowest dynamical modes of each sequence and optimize Markov State Model construction. Furthermore, we perform elevated temperature simulations to recapitulate temperature-jump IR and FTIR data collected on the oligonucleotides. For repetitive sequences, we find a spectrum of slow dynamics associated with out-of-register base pairing and kinetically relevant transitions between these states. In contrast, G:C pairs near the center of the duplex induce more pronounced fraying dynamics through which hybridization and dissociation are facilitated. In both cases, these mechanisms deviate from an “all-or-nothing” hybridization model. Our computational predictions show agreement with experiments and provide new fundamental understanding of the sequence-dependent kinetics and mechanisms of DNA hybridization.
 
 % revise "excellent accord" above?
 
@@ -332,8 +332,6 @@ Nearest neighbor (NN) models have been experimentally optimized to account for s
 % and inert tails tend to decrease stability as they increase in length, particularly at lower ionic strengths. It has been shown that 5' dangling ends with one inert tail have higher melting temperatures and are energetically favorable compared to 3' ends \citep{Senior1988InfluenceDuplexes, Dickman2012ThermodynamicDNAs}. These effects might be attributed to some combination of 5' tails preferentially stacking on the core duplex and 3' tails perturbing the duplex structure \citep{Doktycz1990ThermodynamicATGC}. 
 
 % This leads us to believe that 5' vs. 3' differences -- attributed to some combination of 5' tails preferentially stacking on the core duplex and 3' tails perturbing the duplex structure -- may out-weigh NN effects \citep{Doktycz1990ThermodynamicATGC}. 
-
-
 
 \subsection{Out-of-register dynamics facilitate hybridization and dissociation}
 %\subsubsection{Transition probabilities between states}
@@ -556,6 +554,8 @@ Despite the qualitative trends we observe between physical coordinates and leadi
 
 \subsection{Structural diversity in the F4 state informs fraying dynamics} 
 
+\begin{comment}
+
 \begin{figure}[ht!]
 	\begin{center}
         \includegraphics[width=450, scale=1]{Figs/figs_imp/GC-core_tracking_modes.png}
@@ -563,6 +563,8 @@ Despite the qualitative trends we observe between physical coordinates and leadi
         \label{fig:GC-core_dmaps}
 	\end{center}
 \end{figure}
+
+\end{comment}
 
 % shift to include this in the overall diffusion map section
 %\subsubsection{Diffusion maps show ensemble of frayed states}
