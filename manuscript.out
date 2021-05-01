@@ -1,28 +1,19 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Methods}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Simulation set up}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Featurization}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{SRVs}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{SRV-MSMs}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Results}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{SRV-MSMs provide better resolution than tICA-MSMs}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Interpreting PCCA+ Macrostates}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.3}{Shifted state stability}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.4}{Shifting dynamics}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.5}{Shifting experimental comparisons}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.6}{GC-core metastability}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.7}{GC-mix displays more canonical hybridization and dissociation}{section.3}% 14
-\BOOKMARK [2][-]{subsection.3.8}{Diffusion maps show structural diversity within PCCA+ macrostates}{section.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.8.1}{5s1 state analysis}{subsection.3.8}% 16
-\BOOKMARK [3][-]{subsubsection.3.8.2}{F4 state analysis}{subsection.3.8}% 17
-\BOOKMARK [2][-]{subsection.3.9}{SRV correlations to physical coordinates}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.10}{Temperature-dependent timescale comparisons}{section.3}% 19
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 20
-\BOOKMARK [2][-]{subsection.4.1}{Limitations}{section.4}% 21
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Not sure whether to discuss explicit comparisons}{subsection.4.1}% 22
-\BOOKMARK [1][-]{section.5}{SI Methods notes}{}% 23
-\BOOKMARK [2][-]{subsection.5.1}{VAMP-2 Scoring}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.2}{SRV training}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.3}{SRV-MSM walkthrough and analysis}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.4}{SI figs}{section.5}% 27
-\BOOKMARK [1][-]{section*.18}{References}{}% 28
+\BOOKMARK [2][-]{subsection.2.1}{Computational Methods}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Molecular dynamics simulations}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Markov state model construction}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Experimental Methods}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Sample Preparation}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{T-Jump IR Spectroscopy}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Determination of Fast and Slow Dissociation Rates}{subsection.2.2}% 9
+\BOOKMARK [1][-]{section.3}{Results}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Sequence-dependent coarse-grained kinetics recapitulate T-jump IR measurements}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{SRV-MSMs for each sequence}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{Comparison of MSM thermodynamic predictions with NN model}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.4}{Out-of-register states facilitate hybridization and dissociation dynamics \(AT-all, GC-end\)}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.5}{Central GC placement induces long-lived frayed states \(GC-core\)}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.6}{Disruption of repetitive AT tracts promotes two-state ``all-or-nothing'' kinetics \(GC-mix\)}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.7}{T-jump IR responses are correlated with the complexity of the dynamical landscape}{section.3}% 17
+\BOOKMARK [1][-]{section.4}{Conclusions}{}% 18
+\BOOKMARK [1][-]{section*.7}{References}{}% 19

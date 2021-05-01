@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  23 NOV 2020 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  30 APR 2021 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,7 +557,7 @@ File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 4374.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
 Package hyperref Info: Hyper figures OFF on input line 4498.
 Package hyperref Info: Link nesting OFF on input line 4503.
 Package hyperref Info: Hyper index ON on input line 4506.
@@ -575,7 +575,7 @@ Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
 Package hyperref Info: backreferencing OFF on input line 6373.
-Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring ON on input line 6376.
 Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
@@ -656,13 +656,71 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
-Package: todonotes 2012/07/25
+(/usr/local/texlive/2017/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+
+Excluding comment 'comment')
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box47
+\UL@hyphenbox=\box48
+\UL@skip=\skip77
+\UL@hook=\toks31
+\UL@height=\dimen176
+\UL@pe=\count292
+\UL@pixel=\dimen177
+\ULC@box=\box49
+Package: ulem 2012/05/18
+\ULdepth=\dimen178
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
+\@float@every@algorithm=\toks32
+\c@algorithm=\count293
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count294
+\sf@farskip=\skip78
+\sf@captopadj=\dimen179
+\sf@capskip=\skip79
+\sf@nearskip=\skip80
+\c@subfigure=\count295
+\c@subfigure@save=\count296
+\c@lofdepth=\count297
+\c@subtable=\count298
+\c@subtable@save=\count299
+\c@lotdepth=\count300
+\sf@top=\skip81
+\sf@bottom=\skip82
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count301
+\c@ALG@rem=\count302
+\c@ALG@nested=\count303
+\ALG@tlm=\skip83
+\ALG@thistlm=\skip84
+\c@ALG@Lnr=\count304
+\c@ALG@blocknr=\count305
+\c@ALG@storecount=\count306
+\c@ALG@tmpcounter=\count307
+\ALG@tmplength=\skip85
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -686,14 +744,14 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen176
-\pgfutil@tempdimb=\dimen177
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen180
+\pgfutil@tempdimb=\dimen181
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box47
+\pgfutil@abb=\box50
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -706,30 +764,30 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks36
 ))
-\pgf@x=\dimen178
-\pgf@y=\dimen179
-\pgf@xa=\dimen180
-\pgf@ya=\dimen181
-\pgf@xb=\dimen182
-\pgf@yb=\dimen183
-\pgf@xc=\dimen184
-\pgf@yc=\dimen185
-\w@pgf@writea=\write4
+\pgf@x=\dimen182
+\pgf@y=\dimen183
+\pgf@xa=\dimen184
+\pgf@ya=\dimen185
+\pgf@xb=\dimen186
+\pgf@yb=\dimen187
+\pgf@xc=\dimen188
+\pgf@yc=\dimen189
+\w@pgf@writea=\write5
 \r@pgf@reada=\read1
-\c@pgf@counta=\count292
-\c@pgf@countb=\count293
-\c@pgf@countc=\count294
-\c@pgf@countd=\count295
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
+\c@pgf@counta=\count308
+\c@pgf@countb=\count309
+\c@pgf@countc=\count310
+\c@pgf@countd=\count311
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -747,8 +805,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count296
-\pgfsyssoftpath@bigbuffer@items=\count297
+\pgfsyssoftpath@smallbuffer@items=\count312
+\pgfsyssoftpath@bigbuffer@items=\count313
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -760,12 +818,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen186
-\pgfmath@count=\count298
-\pgfmath@box=\box48
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@dimen=\dimen190
+\pgfmath@count=\count314
+\pgfmath@box=\box51
+\pgfmath@toks=\toks40
+\pgfmath@stack@operand=\toks41
+\pgfmath@stack@operation=\toks42
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -786,57 +844,57 @@ code.tex)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count299
+\c@pgfmathroundto@lastzeros=\count315
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen187
-\pgf@picmaxx=\dimen188
-\pgf@picminy=\dimen189
-\pgf@picmaxy=\dimen190
-\pgf@pathminx=\dimen191
-\pgf@pathmaxx=\dimen192
-\pgf@pathminy=\dimen193
-\pgf@pathmaxy=\dimen194
-\pgf@xx=\dimen195
-\pgf@xy=\dimen196
-\pgf@yx=\dimen197
-\pgf@yy=\dimen198
-\pgf@zx=\dimen199
-\pgf@zy=\dimen256
+\pgf@picminx=\dimen191
+\pgf@picmaxx=\dimen192
+\pgf@picminy=\dimen193
+\pgf@picmaxy=\dimen194
+\pgf@pathminx=\dimen195
+\pgf@pathmaxx=\dimen196
+\pgf@pathminy=\dimen197
+\pgf@pathmaxy=\dimen198
+\pgf@xx=\dimen199
+\pgf@xy=\dimen256
+\pgf@yx=\dimen257
+\pgf@yy=\dimen258
+\pgf@zx=\dimen259
+\pgf@zy=\dimen260
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen257
-\pgf@path@lasty=\dimen258
+\pgf@path@lastx=\dimen261
+\pgf@path@lasty=\dimen262
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen259
-\pgf@shorten@start@additional=\dimen260
+\pgf@shorten@end@additional=\dimen263
+\pgf@shorten@start@additional=\dimen264
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box49
-\pgf@hbox=\box50
-\pgf@layerbox@main=\box51
-\pgf@picture@serial@count=\count300
+\pgfpic=\box52
+\pgf@hbox=\box53
+\pgf@layerbox@main=\box54
+\pgf@picture@serial@count=\count316
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen261
+\pgflinewidth=\dimen265
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen262
-\pgf@pt@y=\dimen263
-\pgf@pt@temp=\dimen264
+\pgf@pt@x=\dimen266
+\pgf@pt@y=\dimen267
+\pgf@pt@temp=\dimen268
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -853,13 +911,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen265
+\pgfarrowsep=\dimen269
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen266
-\pgf@sys@shading@range@num=\count301
+\pgf@max=\dimen270
+\pgf@sys@shading@range@num=\count317
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -868,7 +926,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box52
+\pgfexternal@startupbox=\box55
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -885,7 +943,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box53
+\pgfnodeparttextbox=\box56
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -894,8 +952,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen267
-\pgf@nodesepend=\dimen268
+\pgf@nodesepstart=\dimen271
+\pgf@nodesepend=\dimen272
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -910,10 +968,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen269
-\pgffor@skip=\dimen270
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+\pgffor@iter=\dimen273
+\pgffor@skip=\dimen274
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -922,32 +980,32 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count302
-\pgfplotmarksize=\dimen271
+\pgf@plot@mark@count=\count318
+\pgfplotmarksize=\dimen275
 )
-\tikz@lastx=\dimen272
-\tikz@lasty=\dimen273
-\tikz@lastxsaved=\dimen274
-\tikz@lastysaved=\dimen275
-\tikzleveldistance=\dimen276
-\tikzsiblingdistance=\dimen277
-\tikz@figbox=\box54
-\tikz@figbox@bg=\box55
-\tikz@tempbox=\box56
-\tikz@tempbox@bg=\box57
-\tikztreelevel=\count303
-\tikznumberofchildren=\count304
-\tikznumberofcurrentchild=\count305
-\tikz@fig@count=\count306
+\tikz@lastx=\dimen276
+\tikz@lasty=\dimen277
+\tikz@lastxsaved=\dimen278
+\tikz@lastysaved=\dimen279
+\tikzleveldistance=\dimen280
+\tikzsiblingdistance=\dimen281
+\tikz@figbox=\box57
+\tikz@figbox@bg=\box58
+\tikz@tempbox=\box59
+\tikz@tempbox@bg=\box60
+\tikztreelevel=\count319
+\tikznumberofchildren=\count320
+\tikznumberofcurrentchild=\count321
+\tikz@fig@count=\count322
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count307
-\pgfmatrixcurrentcolumn=\count308
-\pgf@matrix@numberofcolumns=\count309
+\pgfmatrixcurrentrow=\count323
+\pgfmatrixcurrentcolumn=\count324
+\pgf@matrix@numberofcolumns=\count325
 )
-\tikz@expandcount=\count310
+\tikz@expandcount=\count326
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -957,177 +1015,88 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count311
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write5
-
-Excluding comment 'comment')
-(/usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box58
-\UL@hyphenbox=\box59
-\UL@skip=\skip77
-\UL@hook=\toks43
-\UL@height=\dimen278
-\UL@pe=\count312
-\UL@pixel=\dimen279
-\ULC@box=\box60
-Package: ulem 2012/05/18
-\ULdepth=\dimen280
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-\@float@every@algorithm=\toks44
-\c@algorithm=\count313
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count314
-\sf@farskip=\skip78
-\sf@captopadj=\dimen281
-\sf@capskip=\skip79
-\sf@nearskip=\skip80
-\c@subfigure=\count315
-\c@subfigure@save=\count316
-\c@lofdepth=\count317
-\c@subtable=\count318
-\c@subtable@save=\count319
-\c@lotdepth=\count320
-\sf@top=\skip81
-\sf@bottom=\skip82
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
-Package: algpseudocode 
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
-Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
-
-Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count321
-\c@ALG@rem=\count322
-\c@ALG@nested=\count323
-\ALG@tlm=\skip83
-\ALG@thistlm=\skip84
-\c@ALG@Lnr=\count324
-\c@ALG@blocknr=\count325
-\c@ALG@storecount=\count326
-\c@ALG@tmpcounter=\count327
-\ALG@tmplength=\skip85
-)
-Document Style - pseudocode environments for use with the `algorithmicx' style
-) (./manuscript.aux
-
-LaTeX Warning: Label `sec:methods' multiply defined.
-
-
-LaTeX Warning: Label `sec:methods' multiply defined.
-
-
-LaTeX Warning: Label `sec:methods' multiply defined.
-
-
-LaTeX Warning: Label `sec:methods' multiply defined.
-
-
-LaTeX Warning: Label `fig:GC-core_tracking_modes' multiply defined.
-
-
-LaTeX Warning: Label `sec:Results' multiply defined.
-
-
-LaTeX Warning: Label `sec:conc' multiply defined.
-
-
-LaTeX Warning: Label `sec:conc' multiply defined.
-
-
-LaTeX Warning: Label `sec:Results' multiply defined.
-
-
-LaTeX Warning: Label `sec:Results' multiply defined.
-
-)
+\c@@todonotes@numberoftodonotes=\count327
+) (./manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 173.
-LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
 \openout3 = `acs-manuscript.bib'.
 
 
@@ -1203,10 +1172,10 @@ e
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 173.
+. Activating mapping `default' on line 166.
 .................................................
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 173.
+Package hyperref Info: Link coloring ON on input line 166.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1216,257 +1185,219 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count334
 )
-LaTeX Info: Redefining \ref on input line 173.
-LaTeX Info: Redefining \pageref on input line 173.
-LaTeX Info: Redefining \nameref on input line 173.
+LaTeX Info: Redefining \ref on input line 166.
+LaTeX Info: Redefining \pageref on input line 166.
+LaTeX Info: Redefining \nameref on input line 166.
 
 (./manuscript.out) (./manuscript.out)
 \@outlinefile=\write6
 \openout6 = `manuscript.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 180.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 173.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 180.
+LaTeX Font Info:    Try loading font information for U+msa on input line 173.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 180.
+LaTeX Font Info:    Try loading font information for U+msb on input line 173.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 180.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 173.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 189.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 178.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 178.
+ [2] [3
+
+] [4]
+Overfull \hbox (0.32936pt too wide) in paragraph at lines 223--224
+\T1/cmr/m/n/12 10.1073/pnas.1525092113), and MBAR for paths (Chodera, Shirts, N
+oe ? 10.1063/1.3592152,
+ []
+
+[5]
+Overfull \hbox (32.69481pt too wide) in paragraph at lines 225--226
+\T1/cmr/m/n/12 bridiza-tion/dehybridization ki-net-ics and mech-a-nisms. This f
+am-ily of oligomers -- 5$[]$ATATATATAT3$[]$
+ []
+
+
+Overfull \hbox (12.87396pt too wide) in paragraph at lines 225--226
+\T1/cmr/m/n/12 (AT-all), 5$[]$GATATATATC3$[]$ (GC-end), 5$[]$ATATGCATAT3$[]$ (G
+C-core), and 5$[]$ATGATATCAT3$[]$
+ []
+
+[6]
+Overfull \hbox (45.09138pt too wide) in paragraph at lines 249--250
+\T1/cmr/m/n/12 frared spec-troscopy$[]$: 5$[]$ATATATATAT3$[]$ (AT-all), 5$[]$GA
+TATATATC3$[]$ (GC-end), 5$[]$ATATGCATAT3$[]$
+ []
+
+[7] [8] [9]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 259.
+
+[10]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 263.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 189.
- [2] [3] [4]
-[5] [6]
-<Figs/figs_imp/all_permute_vamps_nolegend.png, id=262, 894.7026pt x 1466.3583pt
->
-File: Figs/figs_imp/all_permute_vamps_nolegend.png Graphic file (type png)
-<use Figs/figs_imp/all_permute_vamps_nolegend.png>
-Package pdftex.def Info: Figs/figs_imp/all_permute_vamps_nolegend.png  used on 
-input line 242. on input line 242.
-Package pdftex.def Info: Requested size: 447.3502pt x 733.17737pt on input line
- 242.
- [7] [8 <./Figs/figs_imp/all_permute_vamps_nolegend.png>]
-<Figs/figs_imp/AT-all_implied_timescales.png, id=297, 3019.9224pt x 2356.9656pt
->
-File: Figs/figs_imp/AT-all_implied_timescales.png Graphic file (type png)
-<use Figs/figs_imp/AT-all_implied_timescales.png>
-Package pdftex.def Info: Figs/figs_imp/AT-all_implied_timescales.png  used on i
-nput line 276. on input line 276.
-Package pdftex.def Info: Requested size: 422.77698pt x 329.93697pt on input lin
-e 276.
- [9]
-<Figs/figs_imp/allseq_states.png, id=307, 572.63937pt x 296.10625pt>
-File: Figs/figs_imp/allseq_states.png Graphic file (type png)
-<use Figs/figs_imp/allseq_states.png>
-Package pdftex.def Info: Figs/figs_imp/allseq_states.png  used on input line 28
-9. on input line 289.
-Package pdftex.def Info: Requested size: 572.63797pt x 296.10551pt on input lin
-e 289.
-<Figs/figs_imp/allseq_transitions.png, id=308, 524.45938pt x 393.97188pt>
-File: Figs/figs_imp/allseq_transitions.png Graphic file (type png)
-<use Figs/figs_imp/allseq_transitions.png>
-Package pdftex.def Info: Figs/figs_imp/allseq_transitions.png  used on input li
-ne 298. on input line 298.
-Package pdftex.def Info: Requested size: 524.4581pt x 393.9709pt on input line 
-298.
- [10 <./Figs/figs_imp/AT-all_implied_timescales.png>] [11 <./Figs/figs_imp/alls
-eq_states.png>] [12 <./Figs/figs_imp/allseq_transitions.png>]
-<Figs/figs_imp/shifted_FE_table.png, id=337, 2965.9608pt x 1120.185pt>
-File: Figs/figs_imp/shifted_FE_table.png Graphic file (type png)
-<use Figs/figs_imp/shifted_FE_table.png>
-Package pdftex.def Info: Figs/figs_imp/shifted_FE_table.png  used on input line
- 319. on input line 319.
-Package pdftex.def Info: Requested size: 2965.9536pt x 1120.18227pt on input li
-ne 319.
- [13 <./Figs/figs_imp/shifted_FE_table.png>] [14] [15] [16] [17]
-<Figs/figs_imp/GC-mix_transitions.PNG, id=388, 643.90562pt x 248.93pt>
-File: Figs/figs_imp/GC-mix_transitions.PNG Graphic file (type png)
-<use Figs/figs_imp/GC-mix_transitions.PNG>
-Package pdftex.def Info: Figs/figs_imp/GC-mix_transitions.PNG  used on input li
-ne 363. on input line 363.
-Package pdftex.def Info: Requested size: 469.75539pt x 181.61102pt on input lin
-e 363.
+(Font)              scaled to size 10.20007pt on input line 263.
 
-Overfull \hbox (35.21585pt too wide) in paragraph at lines 370--370
-[]\T1/cmr/bx/n/14.4 Diffusion maps show struc-tural di-ver-sity within PCCA+ ma
-crostates 
+Overfull \hbox (8.62175pt too wide) in paragraph at lines 261--264
+\T1/cmr/m/n/12 Maps from Molec-u-lar Dy-nam-ics Sim-u-la-tion. J Chem The-ory C
+om-put. 2015; 11(10):5002?5011.
  []
 
-[18 <./Figs/figs_imp/GC-mix_transitions.PNG>]
-<Figs/figs_imp/GC-end_dmaps.PNG, id=399, 584.68437pt x 323.70938pt>
-File: Figs/figs_imp/GC-end_dmaps.PNG Graphic file (type png)
-<use Figs/figs_imp/GC-end_dmaps.PNG>
-Package pdftex.def Info: Figs/figs_imp/GC-end_dmaps.PNG  used on input line 377
-. on input line 377.
-Package pdftex.def Info: Requested size: 469.75539pt x 260.0891pt on input line
- 377.
- [19 <./Figs/figs_imp/GC-end_dmaps.PNG>] [20]
-<Figs/figs_imp/GC-core_dmaps.png, id=420, 619.31375pt x 346.29375pt>
-File: Figs/figs_imp/GC-core_dmaps.png Graphic file (type png)
-<use Figs/figs_imp/GC-core_dmaps.png>
-Package pdftex.def Info: Figs/figs_imp/GC-core_dmaps.png  used on input line 39
-6. on input line 396.
-Package pdftex.def Info: Requested size: 469.75539pt x 262.67871pt on input lin
-e 396.
- [21 <./Figs/figs_imp/GC-core_dmaps.png>]
-<Figs/figs_imp/GC-core_tracking_modes.png, id=428, 2078.0034pt x 2581.9662pt>
-File: Figs/figs_imp/GC-core_tracking_modes.png Graphic file (type png)
-<use Figs/figs_imp/GC-core_tracking_modes.png>
-Package pdftex.def Info: Figs/figs_imp/GC-core_tracking_modes.png  used on inpu
-t line 410. on input line 410.
-Package pdftex.def Info: Requested size: 341.43306pt x 424.23315pt on input lin
-e 410.
- [22] [23 <./Figs/figs_imp/GC-core_tracking_modes.png>] [24]
-<Figs/figs_imp/Tjump_responses.png, id=445, 3486.02374pt x 1826.825pt>
-File: Figs/figs_imp/Tjump_responses.png Graphic file (type png)
-<use Figs/figs_imp/Tjump_responses.png>
-Package pdftex.def Info: Figs/figs_imp/Tjump_responses.png  used on input line 
-436. on input line 436.
-Package pdftex.def Info: Requested size: 469.75539pt x 246.16473pt on input lin
-e 436.
- [25] [26 <./Figs/figs_imp/Tjump_responses.png>] [27] [28] [29] [30] [31] [32]
-<Figs/figs_imp/allseq_event_count.png, id=519, 845.1575pt x 489.83pt>
-File: Figs/figs_imp/allseq_event_count.png Graphic file (type png)
-<use Figs/figs_imp/allseq_event_count.png>
-Package pdftex.def Info: Figs/figs_imp/allseq_event_count.png  used on input li
-ne 520. on input line 520.
-Package pdftex.def Info: Requested size: 422.57771pt x 244.9144pt on input line
- 520.
-<Figs/figs_imp/allseq_crossval.png, id=520, 2959.055pt x 2372.865pt>
-File: Figs/figs_imp/allseq_crossval.png Graphic file (type png)
-<use Figs/figs_imp/allseq_crossval.png>
-Package pdftex.def Info: Figs/figs_imp/allseq_crossval.png  used on input line 
-530. on input line 530.
-Package pdftex.def Info: Requested size: 1479.5239pt x 1186.42963pt on input li
-ne 530.
-<Figs/figs_imp/all_seq_implied_times.png, id=521, 1782.66pt x 2483.2775pt>
-File: Figs/figs_imp/all_seq_implied_times.png Graphic file (type png)
-<use Figs/figs_imp/all_seq_implied_times.png>
-Package pdftex.def Info: Figs/figs_imp/all_seq_implied_times.png  used on input
- line 539. on input line 539.
-Package pdftex.def Info: Requested size: 891.32784pt x 1241.63573pt on input li
-ne 539.
-<Figs/figs_imp/GCSeq_TJTraces.png, id=522, 1000.6986pt x 473.1276pt>
-File: Figs/figs_imp/GCSeq_TJTraces.png Graphic file (type png)
-<use Figs/figs_imp/GCSeq_TJTraces.png>
-Package pdftex.def Info: Figs/figs_imp/GCSeq_TJTraces.png  used on input line 5
-48. on input line 548.
-Package pdftex.def Info: Requested size: 500.34807pt x 236.56322pt on input lin
-e 548.
-<Figs/figs_imp/GC-end_dmaps_full.PNG, id=523, 526.96875pt x 311.1625pt>
-File: Figs/figs_imp/GC-end_dmaps_full.PNG Graphic file (type png)
-<use Figs/figs_imp/GC-end_dmaps_full.PNG>
-Package pdftex.def Info: Figs/figs_imp/GC-end_dmaps_full.PNG  used on input lin
-e 556. on input line 556.
-Package pdftex.def Info: Requested size: 469.75539pt x 277.3943pt on input line
- 556.
-<Figs/figs_imp/GC-end_dmaps_3prime.PNG, id=524, 378.41376pt x 251.94125pt>
-File: Figs/figs_imp/GC-end_dmaps_3prime.PNG Graphic file (type png)
-<use Figs/figs_imp/GC-end_dmaps_3prime.PNG>
-Package pdftex.def Info: Figs/figs_imp/GC-end_dmaps_3prime.PNG  used on input l
-ine 564. on input line 564.
-Package pdftex.def Info: Requested size: 469.75539pt x 312.75758pt on input lin
-e 564.
-<Figs/figs_imp/Tjump_fast_slow_fits.png, id=525, 3002.5776pt x 2204.7168pt>
-File: Figs/figs_imp/Tjump_fast_slow_fits.png Graphic file (type png)
-<use Figs/figs_imp/Tjump_fast_slow_fits.png>
-Package pdftex.def Info: Figs/figs_imp/Tjump_fast_slow_fits.png  used on input 
-line 573. on input line 573.
-Package pdftex.def Info: Requested size: 469.75539pt x 344.9235pt on input line
- 573.
- Excluding 'comment' comment.
-Excluding 'comment' comment. Excluding 'comment' comment. [33] [34 <./Figs/figs
-_imp/allseq_event_count.png>] [35 <./Figs/figs_imp/allseq_crossval.png>]
-[36 <./Figs/figs_imp/all_seq_implied_times.png>] [37 <./Figs/figs_imp/GCSeq_TJT
-races.png> <./Figs/figs_imp/GC-end_dmaps_full.PNG>] [38 <./Figs/figs_imp/GC-end
-_dmaps_3prime.PNG>] [39 <./Figs/figs_imp/Tjump_fast_slow_fits.png>]
-(./manuscript.bbl [40
+[11] [12]
+Overfull \hbox (10.07106pt too wide) in paragraph at lines 267--270
+\T1/cmr/m/n/12 https://doi.org/10.1073/pnas.0905466106., https://doi.org/10.330
+11/livecoms.1.1.5965}[]. This
+ []
 
-] [41] [42] [43] [44]
-Underfull \hbox (badness 1281) in paragraph at lines 515--524
+[13] [14]
+Overfull \hbox (7.23262pt too wide) in paragraph at lines 332--332
+[]\T1/cmr/bx/n/14.4 Sequence-dependent coarse-grained ki-net-ics re-ca-pit-u-la
+te T-jump
+ []
+
+[15] [16] [17]
+<Fig2.pdf, id=312, pagebox=cropbox, 1196.47pt x 661.47125pt>
+File: Fig2.pdf Graphic file (type pdf)
+<use Fig2.pdf>
+Package pdftex.def Info: Fig2.pdf  used on input line 345. on input line 345.
+Package pdftex.def Info: Requested size: 469.75539pt x 259.70879pt on input lin
+e 345.
+ [18 <./Fig2.pdf>] [19]
+<Fig3.pdf, id=346, pagebox=cropbox, 866.23625pt x 701.62125pt>
+File: Fig3.pdf Graphic file (type pdf)
+<use Fig3.pdf>
+Package pdftex.def Info: Fig3.pdf  used on input line 390. on input line 390.
+Package pdftex.def Info: Requested size: 469.75539pt x 380.4864pt on input line
+ 390.
+
+Overfull \hbox (7.93001pt too wide) in paragraph at lines 411--411
+[]\T1/cmr/bx/n/14.4 Comparison of MSM ther-mo-dy-namic pre-dic-tions with NN mo
+del 
+ []
+
+[20] [21 <./Fig3.pdf>] [22] [23]
+<Fig5.pdf, id=430, pagebox=cropbox, 507.8975pt x 318.18875pt>
+File: Fig5.pdf Graphic file (type pdf)
+<use Fig5.pdf>
+Package pdftex.def Info: Fig5.pdf  used on input line 421. on input line 421.
+Package pdftex.def Info: Requested size: 507.89627pt x 318.18796pt on input lin
+e 421.
+ [24 <./Fig5.pdf>] [25] [26] [27] [28] [29]
+[30]
+<Fig7.pdf, id=520, pagebox=cropbox, 1457.445pt x 1223.57124pt>
+File: Fig7.pdf Graphic file (type pdf)
+<use Fig7.pdf>
+Package pdftex.def Info: Fig7.pdf  used on input line 501. on input line 501.
+Package pdftex.def Info: Requested size: 1457.44145pt x 1223.56827pt on input l
+ine 501.
+
+Overfull \hbox (13.93832pt too wide) in paragraph at lines 501--503
+ [] 
+ []
+
+[31]
+
+LaTeX Warning: Text page 32 contains only floats.
+
+[32 <./Fig7.pdf>]
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Fig6.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Fig6.pdf, id=573, pagebox=cropbox, 845.66078pt x 399.82614pt>
+File: Fig6.pdf Graphic file (type pdf)
+<use Fig6.pdf>
+Package pdftex.def Info: Fig6.pdf  used on input line 532. on input line 532.
+Package pdftex.def Info: Requested size: 845.65872pt x 399.82515pt on input lin
+e 532.
+[33 <./Fig6.pdf>] [34] [35] (./manuscript.bbl [36
+
+] [37] [38] [39] [40] [41]
+Underfull \hbox (badness 1281) in paragraph at lines 557--565
 []\T1/cmr/m/n/12 Schneider, T.; Stoll, E. Molecular-dynamics study of a three-d
 imensional one-
  []
 
-[45] [46]
-Underfull \hbox (badness 1286) in paragraph at lines 634--643
+[42]
+Underfull \hbox (badness 1286) in paragraph at lines 668--677
 \T1/cmr/m/n/12 sta-bil-ity of the 5′ dan-gling‐ended DNA hair-pins formed f
 rom se-quences
  []
 
-[47]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.20007pt on input line 704.
-) [48]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 664.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 664.
+[43]) [44] [45
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 647.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
  (./manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 664.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 664.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 647.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 647.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 6B7D037CAF333D7C7BC3E039C47A730B;1985.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 664.
+(rerunfilecheck)             Checksum: 07C23569F072A134C3A980C7758B0E6D;1651.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 647.
  ) 
 Here is how much of TeX's memory you used:
- 30208 strings out of 492990
- 577605 string characters out of 6132636
- 636194 words of memory out of 5000000
- 33128 multiletter control sequences out of 15000+600000
- 553847 words of font info for 88 fonts, out of 8000000 for 9000
+ 30100 strings out of 492990
+ 573969 string characters out of 6132636
+ 635903 words of memory out of 5000000
+ 33056 multiletter control sequences out of 15000+600000
+ 553208 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,94p,10352b,789s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
-e1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
-/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1095.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
-c/cm-super/sfss1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/
-cm-super/sfss1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm
--super/sfss1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-s
-uper/sfsx2074.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-sup
-er/sfti1200.pfb>
-Output written on manuscript.pdf (48 pages, 18019578 bytes).
+ 62i,13n,94p,10352b,787s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/cm-super/sfss1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/cm-super/sfss1200.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pu
+blic/cm-super/sfss1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publ
+ic/cm-super/sfsx2074.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
+/cm-super/sfti1200.pfb>
+Output written on manuscript.pdf (45 pages, 3143246 bytes).
 PDF statistics:
- 727 PDF objects out of 1000 (max. 8388607)
- 614 compressed objects within 7 object streams
- 173 named destinations out of 1000 (max. 500000)
- 322 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 758 PDF objects out of 1000 (max. 8388607)
+ 628 compressed objects within 7 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
