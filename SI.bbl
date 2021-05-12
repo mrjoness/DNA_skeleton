@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{2}
+\begin{mcitethebibliography}{4}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -31,6 +31,24 @@ SantaLucia,~J. {A unified view of polymer, dumbbell, and oligonucleotide DNA
   nearest-neighbor thermodynamics}. \emph{Proceedings of the National Academy
   of Sciences of the United States of America} \textbf{1998}, \emph{95},
   1460--1465\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Santalucia and Hicks(2004)Santalucia, and Hicks]{Santalucia2004TM}
+Santalucia,~J.; Hicks,~D. The thermodynamics of DNA structural motifs.
+  \emph{Annual Review of Biophysics and Biomolecular Structure} \textbf{2004},
+  \emph{33}, 415--440\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Owczarzy \latin{et~al.}(2008)Owczarzy, Moreira, You, Behlke, and
+  W{\"{a}}lder]{Owczarzy2008PredictingCations}
+Owczarzy,~R.; Moreira,~B.~G.; You,~Y.; Behlke,~M.~A.; W{\"{a}}lder,~J.~A.
+  {Predicting stability of DNA duplexes in solutions containing magnesium and
+  monovalent cations}. \emph{Biochemistry} \textbf{2008}, \emph{47},
+  5336--5353\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

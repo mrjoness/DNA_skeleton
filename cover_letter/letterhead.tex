@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Formal Letter
+% LaTeX Template
+% Version 1.0 (28/12/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Brian Moses (http://www.ms.uky.edu/~math/Resources/Templates/LaTeX/)
+% with extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+%\documentclass[11pt,a4paper,draft]{letter} % Specify the font size (10pt, 11pt and 12pt) and paper size (letterpaper, a4paper, etc) 
+\documentclass[11pt,a4paper]{letter} % Specify the font size (10pt, 11pt and 12pt) and paper size (letterpaper, a4paper, etc) 
+\usepackage{letterbib}
+\usepackage{graphicx} % Required for including pictures
+\usepackage{microtype} % Improves typography
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc} % Required for accented characters
+\usepackage[sort&compress,numbers,super]{natbib}
+\usepackage{caption}
+\usepackage{newfloat}
+\usepackage{float}
+\usepackage{url}
+\usepackage{color}
+\usepackage{soul}
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{calligra}
+\usepackage{fp}
+\FPset\marginWidth{0.7}	% margin width (all sides) in inches
+\usepackage[margin=\marginWidth in]{geometry}
+\usepackage{marginfix}
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+% Create a new command for the horizontal rule in the document which allows thickness specification
+\makeatletter
+
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+%more new commands and definitions
+\newcommand*{\rood}[1]{\textcolor{red}{#1}}
+\newcommand*{\blauw}[1]{\textcolor{blue}{#1}}
+\newcommand*{\groen}[1]{\textcolor{green}{#1}}
+\newcommand{\hlc}[2][yellow]{{\sethlcolor{#1}\hl{#2}}}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+
+\newfloat{figure}{h}{lot}
+\floatname{figure}{Figure}
+\newfloat{sfigure}{h}{lot}
+\floatname{sfigure}{Figure}
+\newfloat{lfigure}{h}{lot}
+\floatname{lfigure}{Figure}
+
+\definecolor{shadecolor}{named}{LightGray}
+
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+
+\renewcommand{\thesfigure}{S\arabic{sfigure}}
+\renewcommand{\thelfigure}{\Alph{lfigure}}
+
+%-----------------------------------------------------------------------------
+% HEADER/FOOTER INFO
+%-----------------------------------------------------------------------------
+%\pagestyle{fancy}
+\fancyhf{}
+%\cfoot{\textit{telephone} 217-333-1441 $\bullet$ \textit{fax} 217-333-2736 $\bullet$ \textit{email} matse@illinois.edu}
+\cfoot{\thepage}
+
+%----------------------------------------------------------------------------------------
+%	SENDER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\def\Who{Andrew L. Ferguson} % Your name
+\def\What{, PhD} % Your title
+\def\Where{Pritzker School of Molecular Engineering\\University of Chicago} % Your department/institution
+\def\department{Pritzker School of Molecular Engineering}
+\def\institution{University of Chicago}
+\def\Address{5640 South Ellis Avenue} % Your address
+\def\CityZip{Chicago, IL 60637} % Your city, zip code, country, etc
+\def\Email{e:~\url{andrewferguson@uchicago.edu}} % Your email address
+\def\TEL{p:~(773)~702-5950} % Your phone number
+\def\URL{w:~\url{http://andrewferguson.uchicago.edu}} % Your URL
+\def\titleone{Associate Professor}
+
+%----------------------------------------------------------------------------------------
+%	HEADER AND FROM ADDRESS STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\FPmul\tmp{2}{\marginWidth}	% computing institution logo indent based on margin width
+\FPsub\logoIndent{7.55}{\tmp}
+
+\address{
+\includegraphics[width=3.5in]{UChicago_PME_logo.png} % Include the logo of your institution
+%\hspace{\logoIndent in} % Position of the institution logo, increase to move left, decrease to move right
+\hspace{2.8in} % Position of the institution logo, increase to move left, decrease to move right
+\vskip -0.82in~\\ % Position of the text in relation to the institution logo, increase to move down, decrease to move up
+\Large\hspace{0.75in} \hfill ~\\[0.05in] % First line of institution name, adjust hspace if your logo is wide
+\hspace{0.75in} \hfill \normalsize % Second line of institution name, adjust hspace if your logo is wide
+\makebox[0ex][r]{\bf \Who \What }\hspace{0.65in} % Print your name and title with a little whitespace to the right
+~\\[-0.11in] % Reduce the whitespace above the horizontal rule
+\hspace{0in}\vhrulefill{1pt} \\ % Horizontal rule, adjust hspace if your logo is wide and \vhrulefill for the thickness of the rule
+\hspace{\fill}\parbox[t]{4in}{ % Create a box for your details underneath the horizontal rule on the right
+\footnotesize % Use a smaller font size for the details
+%\Who \\  % Your name, all text after this will be italicized
+%\\
+\titleone
+%\titletwo\\
+%\titlethree\\
+%\titlefour\\
+\vskip 0.05in
+\department\\ % Your department
+\institution\\ % Your institution
+\Address\\ % Your address
+\CityZip
+\vskip 0.05in
+\TEL\\ % Your phone number
+\Email\\ % Your email address
+\URL\\ % Your URL
+}
+\hspace{-1.4in} % Horizontal position of this block, increase to move left, decrease to move right
+\vspace{-1in} % Move the letter content up for a more compact look
+}
+
+%----------------------------------------------------------------------------------------
+%	TO ADDRESS STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\FPmul\tmp{2}{\marginWidth}	% computing date indent based on margin width
+\FPsub\dateIndent{4.15}{\tmp}
+
+\def\opening#1{\thispagestyle{empty}
+{\centering\fromaddress \vspace{1.1in} \\ % Print the header and from address here, add whitespace to move date down
+%
+\hspace*{4.15 in}\today\hspace*{\fill}\par
+} % Print today's date, remove \today to not display it
+{\raggedright \toname \\ \toaddress \par} % Print the to name and address
+\vspace{0.05in} % White space after the to address
+\noindent #1 % Print the opening line
+% Uncomment the 4 lines below to print a footnote with custom text
+%\def\thefootnote{}
+%\def\footnoterule{\hrule}
+%\footnotetext{\hspace*{0.18\textwidth}{Telephone 217-333-1441 $\bullet$ Fax 217-333-2736 $\bullet$ email matse@illinois.edu\footnotesize \hspace{3cm} \thepage}}
+%\def\thefootnote{\arabic{footnote}}
+}
+
+%----------------------------------------------------------------------------------------
+%	SIGNATURE STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\signature{\Who \What} % The signature is a combination of your name and title
+
+\long\def\closing#1{
+\vspace{0.1in} % Some whitespace after the letter content and before the signature
+\noindent % Stop paragraph indentation
+%\hspace*{\longindentation} % Move the signature right
+%\parbox{\indentedwidth}{\raggedright
+#1 % Print the signature text
+\vskip 0.0in
+\includegraphics[width=0.25\textwidth]{signature_720}
+%\vskip 0.65in % Whitespace between the signature text and your name
+\\
+\noindent
+\fromsig
+\vskip -0.05in
+\titleone\\
+\department\\
+\institution\\
+\vskip -0.1in
+\noindent cc: M.~Zhao, K.~Lachowski, S. Alamdari, J.~Sampath, P.~Mu, L.D.~Pozzo, C.-L.~Chen, C.J.~Mundy, J.~Pfaendtner 
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TO ADDRESS
+%----------------------------------------------------------------------------------------
+
+\begin{letter}
+{
+Prof.\ Erick Carreira \\
+Editor-in-Chief, \textit{The Journal of the American Chemical Society}
+}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear Prof.\ Carreira}
+
+We are pleased to submit a manuscript for consideration for publication in the \textit{The Journal of the American Chemical Society} an original research \textbf{Article} entitled \textbf{``Hierarchical Self-Assembly Pathways of Polypeptoid Helices and Sheets''} by Mingfei Zhao (U.~Chicago), Kacper Lachowski(U.W.~Seattle), Sarah Alamdari (U.W.~Seattle), Janani Sampath (PNNL),  Peng Mu (PNNL), Chun-Long Chen (PNNL, U.W.~Seattle), Lilo D.\ Pozzo (U.W.~Seattle), Christopher J.\ Mundy (PNNL, U.W.~Seattle), Jim Pfaendtner (U.W.~Seattle, PNNL), and Andrew L.\ Ferguson (U.~Chicago). This article has not been published previously and is not under consideration in any other journal. All authors have seen and approved the submission of the manuscript.
+
+
+% background and why it is important to do this.
+\textbf{Background.} Polypeptoids (poly-N-substituted glycines) are a class of highly tailorable synthetic peptidomic polymers with applications as drugs, antimicrobials, and catalysts that can be engineered to assemble into nanoaggregates including spheres, helices, tubes, and sheets. Amphiphilic diblock polypeptoids have been engineered to assemble high-aspect ratio 2D crystalline lattices with applications in catalysis, molecular separations, and photovoltaics. Assembly is induced by dissolving the peptoids in an organic solvent/water mixture and evaporating the organic phase to promote hydrophobic association, but the mechanistic pathways and thermodynamic/kinetic driving forces mediating assembly remain uncharacterized.
+
+% what we did in this paper
+\textbf{Key Results.}  In this work, we integrate all-atom molecular dynamics (MD) simulation, small angle x-ray scattering (SAXS), circular dichroism (CD), atomic force microscopy (AFM), and x-ray diffraction (XRD) to present an integrated computational/experimental study of the self-assembly of Nbrpe6Nc6 -- an amphiphilic diblock polypeptoid comprising an \ce{NH2} capped block of six hydrophobic N-((4-bromophenyl)ethyl)glycine residues conjugated to a hydrophilic 6-aminohexanal (\ce{NH3(CH2)5CO}) tail -- in organic solvent/water mixtures. Our MD simulations predict a hierarchical assembly pathway by which monomers first assemble into disordered aggregates that self-order into 1D chiral helical rods that subsequently assemble 2D achiral crystalline nanosheets. Experimentally, we observe stable, free-floating 1D rods in mixed solvent using SAXS and CD, and 2D crystalline sheets in pure water using XRD and AFM. MD predictions of the relative thermodynamic stability of disordered aggregates, helical rods, and sheets as a function of the organic solvent concentration support a thermodynamically-controlled assembly process. 
+
+% impact and importance of this paper
+\textbf{Significance.} Our work integrates simulation and experiment to establish a previously unknown hierarchical polypeptoid assembly pathway wherein 0D monomers first assemble into disordered aggregates that ripen into 1D helical rods that subsequently form 2D crystalline nanosheets. This new understanding of the hierarchical assembly mechanisms and stable intermediaries presents new principles and guidance for the rational design of peptoid-based nanomaterials with potential biochemical, biomedical, and bioengineering applications including as drugs, antimicrobials, catalysts, and molecular sieves.
+
+% fit for the journal
+\textbf{Scope.}  This work fits within the scope of \textit{The Journal of the American Chemical Society} in that it reports new fundamental physical chemical understanding of the molecular pathways and mechanisms of polypeptoid self-assembly. This new understanding establishes new mechanistic understanding and a thermodynamic basis for existing experimental evaporation-induced assembly protocols and identifies previously unknown solvent conditions for the stable fabrication of 1D helical rods. These principles offer new strategies for the supramolecular assembly of diverse peptoid sequences into 1D and 2D supramolecular aggregates.  
+
+
+% reviewers
+\textbf{Reviewers.} We propose the following scientists as well qualified to review this work.
+
+\textbf{\textit{Simulation.}}
+
+Stephen Whitelam \hfill Molecular Foundry, Lawrence Berkeley National Lab \\
+(510) 495-2769 \hfill \url{swhitelam@lbl.gov}
+
+$\circ$ \textit{Expert in biomolecular simulation and molecular modeling of peptoid assembly.}
+
+Monica Olvera de la Cruz \hfill Materials Science and Engineering and Chemistry, Northwestern University \\
+(847) 491-7801 \hfill \url{m-olvera@northwestern.edu}
+
+$\circ$ \textit{Expert in molecular modeling and simulation of peptides, polymers, and materials assembly.}
+
+Arthi Jayaraman \hfill Chemical and Biomolecular Engineering, University of Delaware \\
+(302) 831-8682 \hfill \url{arthij@udel.edu}
+
+$\circ$ \textit{Expert in theory and simulation of biomolecular assembly and molecular materials design.}
+
+\textbf{\textit{Experiment.}}
+
+Darrin Pochan \hfill Materials Science and Engineering, University of Delaware \\
+(302) 831-3569 \hfill \url{pochan@udel.edu}
+
+$\circ$ \textit{Expert in biomolecular and polymeric assembly and characterization.}
+
+Rachel Segalman \hfill Chemical Engineering, UC Santa Barbara \\
+(805) 893-3709 \hfill \url{segalman@ucsb.edu}
+
+$\circ$ \textit{Expert in biological and polymeric materials assembly.}
+
+Ron Zuckermann \hfill The Molecular Foundry, Lawrence Berkeley National Laboratory \\
+(510) 387-9364 \hfill \url{rnzuckermann@lbl.gov}
+
+$\circ$ \textit{Pioneer of peptoid science. Expert in peptoid synthesis and characterization.}
+
+
+We look forward to hearing from you.
+
+\closing{Yours Sincerely}
+
+\end{letter}
+
+%----------------------------------------------------------------------------------------
+
+%\clearpage
+%\newpage
+
+%\begin{shaded}
+%\textbf{Response to Reviewer \# 1}
+%\end{shaded}
+
+%\bibliographystyle{achemso}
+%\bibliography{bibliography.bib}
+
+\end{document}
