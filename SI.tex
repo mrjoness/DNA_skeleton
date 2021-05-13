@@ -182,7 +182,7 @@
 \begin{figure}[ht!]
 	\begin{center}
         \includegraphics[width=1.0\textwidth]{FigS1.pdf}
-        \caption{Five-fold cross-validation of the SRV VAMP-2 scores to select the optimal number of SRV coordinates for each sequence. A knee in the VAMP-2 plot was identified at the fifth, fourth, third, and second slow modes for AT-all, GC-end, GC-core, and GC-mix, respectively. An embedding of corresponding dimensionality was then used to cluster frames into discrete states. The absence of any significant separation in the training and testing VAMP-2 scores demonstrates that model is not overfitted. \noter{Please re-order panels into standard order with panel labels as per the caption.}}
+        \caption{Five-fold cross-validation of the SRV VAMP-2 scores to select the optimal number of SRV coordinates for each sequence. A knee in the VAMP-2 plot was identified at the fifth, fourth, third, and second slow modes for AT-all, GC-end, GC-core, and GC-mix, respectively. An embedding of corresponding dimensionality was then used to cluster frames into discrete states. The absence of any significant separation in the training and testing VAMP-2 scores demonstrates that model is not overfitted.}
         \label{fig:SIFig1}
 	\end{center}
 \end{figure}
@@ -217,7 +217,7 @@
 \begin{figure}[ht!]
 	\centering
     \includegraphics[width=.75\textwidth]{FigS4.pdf}
-    \caption{Exponential fits for both slow (dissociation) and fast (fraying) response for all four sequences during ``computational T-jump'' experiments. From 120 independent 1 $\mu$s simulations, we compiled the slow response data by recording the fraction of sequences with \rood{both OR either} \noter{Pick the right word.} central Watson-Crick base pairs intact as a function of time, and the fast response data as the fraction of sequences with \rood{both OR either} \noter{Pick the right word.} terminal Watson-Crick base pairs intact as a function of time. \noter{Do I have this correct?} We define a Watson-Crick base pair to be intact if the two comlementary bases lie within a linear distance of 1.3 nm. We extracted our computational estimate of $k_d^\mathrm{fast}$ by fitting a decaying exponential to the fraction of bound A:T termini as a function of time $f_\mathrm{unfrayed}(t) = \exp(-k_d^\mathrm{fast}t)$. Similarly, we extracted our computational estimate of $k_d^\mathrm{slow}$ by fitting a decaying exponential to the fraction of hybridized sequences as a function of time $f_\mathrm{hybridized}(t) = \exp(-k_d^\mathrm{slow}t)$.}
+    \caption{Exponential fits for both slow (dissociation) and fast (fraying) response for all four sequences during ``computational T-jump'' experiments. From 120 independent 1 $\mu$s simulations, we compiled the slow response data by recording the fraction of sequences with both central Watson-Crick base pairs intact as a function of time, and the fast response data as the fraction of sequences with both terminal Watson-Crick base pairs intact as a function of time. We define a Watson-Crick base pair to be intact if the two comlementary bases lie within a linear distance of 1.3 nm. We extracted our computational estimate of $k_d^\mathrm{fast}$ by fitting a decaying exponential to the fraction of bound A:T termini as a function of time $f_\mathrm{unfrayed}(t) = \exp(-k_d^\mathrm{fast}t)$. Similarly, we extracted our computational estimate of $k_d^\mathrm{slow}$ by fitting a decaying exponential to the fraction of hybridized sequences as a function of time $f_\mathrm{hybridized}(t) = \exp(-k_d^\mathrm{slow}t)$.}
     \label{fig:SIFig4}
 \end{figure}
 
@@ -261,7 +261,7 @@ $\Delta H_{NN}^{\circ}$ and $\Delta S_{NN}^{\circ}$ are assumed to be independen
 $\Delta H_{NN, i}^{\circ}$ is the NN enthalpy for a given dinucleotide step within duplex DNA, $\Delta H_{DE, j}^{\circ}$ corresponds to the enthalpic contribution from a given dangling end (DE) base next to the duplex\citep{Santalucia2004TM}, and $\Delta H_{init}^{\circ}$ is a duplex initiation term that accounts for terminal effects on duplex enthalpy. A schematic illustration of the NN and DE contributions for a fully hybridized duplex and an out-of-register shifted state is presented in Fig.~\ref{fig:SIFig4}. $\Delta S_{NN}^{\circ}$ is constructed in an analogous manner from NN, dangling end, and initiation terms, plus a symmetry term, $\Delta S_{sym}^{\circ}$, that applies an entropic penalty to self-complementary sequences for maintaining C2 symmetry. 
 
 The SantaLucia NN parameters are defined for a solution condition at neutral pH with a sodium concentration of 1M. We use the empirical salt correction developed by Owczarzy\citep{Owczarzy2008PredictingCations} to determine the NN parameters at the sodium concentration used for simulations in this work. The Owczarzy model assumes the effect of counter ions on DNA hybridization thermodynamics to be purely entropic,
-\begin{equation}\label{SIe3}
+\begin{equation}\label{SIe4}
 \Delta S_{NN}^{\circ}(c_{Na^+}) = S_{NN}^{\circ}(1M) + \Delta H_{NN}^{\circ}[(4.29f_{GC}-3.95)\times 10^{-5} \ln{(c_{Na^+})}+ 9.4\times 10^{-6} (\ln{(c_{Na^+})})^2],
 \end{equation} 
 where $f_{GC}$ is the fractional G:C content of the duplex and $c_{Na^+}$ is the concentration of sodium counter ions measured in M.  
@@ -272,7 +272,7 @@ where $f_{GC}$ is the fractional G:C content of the duplex and $c_{Na^+}$ is the
 	\centering
     \includegraphics[width=.85\textwidth]{FigS6.pdf}
     \caption{Schematic of nearest neighbor (NN) contributions for a fully hybridized AT-all duplex and an out-of-register duplex with dangling ends (DE).}
-    \label{fig:SIFig4}
+    \label{fig:SIFig6}
 \end{figure}
 
 \clearpage
