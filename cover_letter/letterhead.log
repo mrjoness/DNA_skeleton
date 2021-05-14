@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  13 MAY 2021 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  14 MAY 2021 19:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -840,11 +840,11 @@ LaTeX Info: Redefining \nameref on input line 189.
 <UChicago_PME_logo.png, id=4, 2332.715pt x 590.205pt>
 File: UChicago_PME_logo.png Graphic file (type png)
 <use UChicago_PME_logo.png>
-Package pdftex.def Info: UChicago_PME_logo.png  used on input line 205. on inpu
-t line 205.
+Package pdftex.def Info: UChicago_PME_logo.png  used on input line 206. on inpu
+t line 206.
 Package pdftex.def Info: Requested size: 252.94499pt x 63.99515pt on input line
- 205.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 205.
+ 206.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 206.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -855,7 +855,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--205
+Underfull \hbox (badness 10000) in paragraph at lines 206--206
 
  []
 
@@ -863,50 +863,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--205
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./UChic
 ago_PME_logo.png>]
-<signature_720.jpg, id=26, 183.4855pt x 59.22125pt>
+<signature_720.jpg, id=28, 183.4855pt x 59.22125pt>
 File: signature_720.jpg Graphic file (type jpg)
 <use signature_720.jpg>
-Package pdftex.def Info: signature_720.jpg  used on input line 263. on input li
-ne 263.
+Package pdftex.def Info: signature_720.jpg  used on input line 278. on input li
+ne 278.
 Package pdftex.def Info: Requested size: 124.08258pt x 40.04851pt on input line
- 263.
+ 278.
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 
  []
 
-[2 <./signature_720.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 279.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 279.
+[2 <./signature_720.jpg>] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 294.
  (./letterhead.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 279.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 279.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
 Package rerunfilecheck Info: File `letterhead.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 279.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 19846 strings out of 492990
- 351639 string characters out of 6132636
- 502152 words of memory out of 5000000
- 23162 multiletter control sequences out of 15000+600000
- 543253 words of font info for 69 fonts, out of 8000000 for 9000
+ 19849 strings out of 492990
+ 351597 string characters out of 6132636
+ 501084 words of memory out of 5000000
+ 23156 multiletter control sequences out of 15000+600000
+ 542096 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,13n,49p,10365b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,6n,43p,10365b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on letterhead.pdf (2 pages, 353040 bytes).
+/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on letterhead.pdf (3 pages, 333896 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 15371 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 69 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 14347 words of extra memory for PDF output out of 14400 (max. 10000000)
 

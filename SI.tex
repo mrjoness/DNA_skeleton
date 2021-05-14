@@ -205,7 +205,7 @@
 \begin{figure}[ht!]
 	\begin{center}
         \includegraphics[width=1.0\textwidth]{FigS3.pdf}
-        \caption{Chapman-Kolmogorov (CK) tests comparing the probabilities of remaining within each macrostates for each sequence as a function of lag time predicted by an MSM constructed at the $\tau$ = 1.2 ns lag time (dashed blue line) versus those computed from an MSM constructed at the particular lag time (solid black line). The good agreement between these two results provides numerical validation of the Markovian nature of the $\tau$ = 1.2 ns lag time MSM.}
+        \caption{Chapman-Kolmogorov (CK) tests comparing the probabilities of remaining within each macrostates for each sequence as a function of lag time predicted by $k$ applications of an MSM constructed at the $\tau$ = 1.2 ns lag time $\mathbf{P}^k(\tau)$ (dashed blue line) versus those computed from an MSM constructed at that particular lag time $\mathbf{P}(k \tau)$ (solid black line). The good agreement between these two results provides numerical validation of the Markovian nature of the $\tau$ = 1.2 ns lag time MSM.}
         \label{fig:SIFig3}
 	\end{center}
 \end{figure}
@@ -258,7 +258,7 @@ $\Delta H_{NN}^{\circ}$ and $\Delta S_{NN}^{\circ}$ are assumed to be independen
 \begin{equation}\label{SIe3}
 \Delta S_{NN}^{\circ} = \sum_{i}^{n_{NN}}\Delta S_{NN, i}^{\circ} + \sum_{j}^{n_{DE}}\Delta S_{DE, j}^{\circ} + \Delta S_{init}^{\circ} + \Delta S_{sym}^{\circ}.
 \end{equation}                          
-$\Delta H_{NN, i}^{\circ}$ is the NN enthalpy for a given dinucleotide step within duplex DNA, $\Delta H_{DE, j}^{\circ}$ corresponds to the enthalpic contribution from a given dangling end (DE) base next to the duplex\citep{Santalucia2004TM}, and $\Delta H_{init}^{\circ}$ is a duplex initiation term that accounts for terminal effects on duplex enthalpy. A schematic illustration of the NN and DE contributions for a fully hybridized duplex and an out-of-register shifted state is presented in Fig.~\ref{fig:SIFig4}. $\Delta S_{NN}^{\circ}$ is constructed in an analogous manner from NN, dangling end, and initiation terms, plus a symmetry term, $\Delta S_{sym}^{\circ}$, that applies an entropic penalty to self-complementary sequences for maintaining C2 symmetry. 
+$\Delta H_{NN, i}^{\circ}$ is the NN enthalpy for a given dinucleotide step within duplex DNA, $\Delta H_{DE, j}^{\circ}$ corresponds to the enthalpic contribution from a given dangling end (DE) base next to the duplex\citep{Santalucia2004TM}, and $\Delta H_{init}^{\circ}$ is a duplex initiation term that accounts for terminal effects on duplex enthalpy. A schematic illustration of the NN and DE contributions for a fully hybridized duplex and an out-of-register shifted state is presented in Fig.~\ref{fig:SIFig6}. $\Delta S_{NN}^{\circ}$ is constructed in an analogous manner from NN, dangling end, and initiation terms, plus a symmetry term, $\Delta S_{sym}^{\circ}$, that applies an entropic penalty to self-complementary sequences for maintaining C2 symmetry. 
 
 The SantaLucia NN parameters are defined for a solution condition at neutral pH with a sodium concentration of 1M. We use the empirical salt correction developed by Owczarzy\citep{Owczarzy2008PredictingCations} to determine the NN parameters at the sodium concentration used for simulations in this work. The Owczarzy model assumes the effect of counter ions on DNA hybridization thermodynamics to be purely entropic,
 \begin{equation}\label{SIe4}
