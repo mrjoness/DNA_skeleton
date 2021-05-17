@@ -35,12 +35,7 @@
 \usepackage{framed}
 \usepackage{achemso}
 
-%add refs to SI
-%\usepackage{xr}
-%\externaldocument{SI}
-
 %\usepackage[hidelinks]{hyperref}
-%\usepackage{algorithm}
 %\usepackage{algpseudocode}
 %\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}
 
@@ -71,21 +66,19 @@
     \setlength\@fptop{0\p@}
 \makeatother
 
-\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
+%\newcommand*\mycommand[1]{\texttt{\emph{#1}}}
 
-\newcommand{\state}[1]{$\mathcal{S}_{#1}$}
-\newcommand{\Expect}[1]{\mathrm{E}\left[#1\right]}
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\newcommand{\state}[1]{$\mathcal{S}_{#1}$}
+%\newcommand{\Expect}[1]{\mathrm{E}\left[#1\right]}
+%\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 
-
-\newcommand*{\rood}[1]{{\color{red}{#1}}}
-\newcommand*{\bood}[1]{{\color{blue}{#1}}}
+%\newcommand*{\rood}[1]{{\color{red}{#1}}}
+%\newcommand*{\bood}[1]{{\color{blue}{#1}}}
 \newcommand*{\blauw}[1]{\textcolor{blue}{#1}}
-\newcommand*{\groen}[1]{\textcolor{green}{#1}}
 
-\newcommand*{\addref}[1]{\textcolor{red}{\{ADD REF: #1\}}}
-\newcommand*{\noter}[1]{\textcolor{red}{[[#1]]}}		% notes 
-\newcommand*{\noteb}[1]{\textcolor{blue}{[[#1]]}}		% notes 
+%\newcommand*{\addref}[1]{\textcolor{red}{\{ADD REF: #1\}}}
+%\newcommand*{\noter}[1]{\textcolor{red}{[[#1]]}}		% notes 
+%\newcommand*{\noteb}[1]{\textcolor{blue}{[[#1]]}}		% notes 
 %\newcommand*{\noter}[1]{}					% notes off
 
 %\usepackage[draft]{todonotes}   % notes shown
@@ -226,11 +219,11 @@ All calculations were performed using the LAMMPS simulation package (\url{http:/
 
 \subsubsection{Markov state model construction}
 
-Markov state models (MSMs) are a powerful approach to infer long-time kinetic models from short molecular simulation trajectories \citep{Sengupta2019AutomatedSelf-assembly, Pande2010EverythingAsk, Chodera2014MarkovDynamics, Husic2018MarkovScience, Wehmeyer2019IntroductionSoftware} that we employ to construct high-resolution sequence-dependent kinetic models of DNA hybridization and dissociation. In brief, a MSM extracts from simulation trajectories an ensemble of long-lived metastable macrostates, their equilibrium occupancy populations, and the equilibrium probability fluxes between them. In this manner, they provide an interpretable and predictive model of the system thermodynamics and long-time kinetics. MSMs have recently been implemented to study the hybridization mechanism of one particular 14-mer DNA oligomer, but determining the sequence-dependent kinetics and mechanisms was not the focus of this study.\citep{Jin2019} An energy disconnectivity graph-based approach was used to interrogate the differences in hybridization rates and mechanisms between GGGGGG and GCGCGC hexamers to reveal strong deviations from ``all-or-nothing'' behaviors and the importance of zippering and slithering mechanisms.~\citep{Xiao2019} Kinetic models were constructed not from the dynamical trajectories of the molecular model, but by estimating rate constants between local minima were estimated using a transition state theory approximation. A recent application of MSMs to the long-time dynamics of short RNA oligonucleotides revealed stacking time scales to be highly sequence dependent.~\citep{Pinamonti2017} In this work, MSMs were constructed for each of the four DNA sequences from the 40$\times$25 $\mu$s simulation trajectories following the six-step protocol detailed in Ref.~\citep{Sidky}: (i) trajectory featurization, (ii) dimensionality reduction, (iii) microstate clustering and microstate transition matrix inference, (iv) macrostate clustering and macrostate transition matrix inference. Calculations were performed using the PyEMMA software package. \citep{Scherer2015PyEMMAModels}
+Markov state models (MSMs) are a powerful approach to infer long-time kinetic models from short molecular simulation trajectories \citep{Sengupta2019AutomatedSelf-assembly, Pande2010EverythingAsk, Chodera2014MarkovDynamics, Husic2018MarkovScience, Wehmeyer2019IntroductionSoftware} that we employ to construct high-resolution sequence-dependent kinetic models of DNA hybridization and dissociation. In brief, a MSM extracts from simulation trajectories an ensemble of long-lived metastable macrostates, their equilibrium occupancy populations, and the equilibrium probability fluxes between them. In this manner, they provide an interpretable and predictive model of the system thermodynamics and long-time kinetics. MSMs have recently been implemented to study the hybridization mechanism of one particular 14-mer DNA oligomer, but determining the sequence-dependent kinetics and mechanisms was not the focus of this study.\citep{Jin2019} An energy disconnectivity graph-based approach was used to interrogate the differences in hybridization rates and mechanisms between GGGGGG and GCGCGC hexamers to reveal strong deviations from ``all-or-nothing'' behaviors and the importance of zippering and slithering mechanisms.~\citep{Xiao2019} Kinetic models were constructed not from the dynamical trajectories of the molecular model, but by estimating rate constants between local minima were estimated using a transition state theory approximation. A recent application of MSMs to the long-time dynamics of short RNA oligonucleotides revealed stacking time scales to be highly sequence dependent.~\citep{Pinamonti2017} In this work, MSMs were constructed for each of the four DNA sequences from the 40$\times$25 $\mu$s simulation trajectories following the six-step protocol detailed in Ref.~\citep{Sidky2019High-ResolutionVAMPnets}: (i) trajectory featurization, (ii) dimensionality reduction, (iii) microstate clustering and microstate transition matrix inference, (iv) macrostate clustering and macrostate transition matrix inference. Calculations were performed using the PyEMMA software package. \citep{Scherer2015PyEMMAModels}
 
 \textbf{Featurization.} Trajectories comprising the Cartesian coordinates of the DNA strands as a function of time were featurized using the MDtraj Python libraries \citep{McGibbon2015MDTraj:Trajectories} to represent the system in a manner that exposes the essential system dynamics but eliminates trivial translation and rotational invariances. We adopt intermolecular pairwise distances $d(i,j)$ between the centers of mass of the 10 bases as a natural rototranslationally invariant featurization that represents each system configuration as the 10$\times$10=100-element vector of pairwise distances between all bases within the complementary pair of 10-base strands. One additional symmetry arises from the self-complementary nature of these sequences -- the sense and anti-sense strands in each pair are identical -- such that the representation of the system under our featurization should remain unchanged upon inverting the arbitrary labeling of strand ``1'' and strand ``2''.\citep{Sengupta2019AutomatedSelf-assembly} The 100-element pairwise distance vector is not invariant to this permutation, but can easily be made so via a simple symmetrization operation in which each of the $10 \choose 2$ =  45 intermolecular pairwise distances are replaced by the mean of the two permutationally invariant distances. Specifically, $\left( d(i_1,j_2) = d(i_2,j_1) \right) \leftarrow 0.5\left( d(i_1,j_2) + d(i_2,j_1) \right)$, where $i_1$ denotes the $i^\mathrm{th}$ base on strand 1 and $j_2$ the $j^\mathrm{th}$ base on strand 2. \citep{Sengupta2019AutomatedSelf-assembly} Finally, we took the reciprocal of the permutationally-symmetrized pairwise distances to provide higher resolution and differentiation between proximate strand configurations in the near hybridized state compared to distantly separated dissociated strands. VAMP-2 scoring -- calculation of the sum of the squared estimated eigenvalues of the transfer operator -- of trajectories under a particular featurization provides a measure of the kinetic variance carried by that featurization. \citep{Noe2013ASystems, Noe2015KineticSimulation, Scherer2019VariationalKinetics, Wu2020VariationalData} Performing VAMP-2 scoring at a lag time of $\tau$ = 1.2 ns and retaining the top five modes, reveals that the reciprocal permutationally-symmetrized pairwise distances can carry up to twice the kinetic variance as the non-reciprocal distances, suggesting that the higher resolution offered at close intermolecular distances can indeed boost the dynamical representational power of the model. Somewhat surprisingly, we observed that augmenting our set of intermolecular distances with intramolecular distances led to no improvement of the VAMP-2 score, indicating that the kinetically-relevant conformational state of the two strands are adequately represented via the intermolecular distances and leading us to employ only intermolecular distances within our featurization.
 
-\textbf{Dimensionality reduction.} The featurized trajectories were then projected into a low-dimensional space in preparation for microstate clustering. The standard approach to doing so is to employ time-lagged independent components analysis (tICA) to learn a linear projection into a low-dimensional embedding that maximally preserves the kinetic variance in the data.~\citep{Perez-Hernandez2013IdentificationConstruction, Schwantes2013ImprovementsNTL9, Noe2015KineticSimulation} In this work, we instead employ state-free reversible VAMPnets (SRVs) that can be conceived of as a nonlinear version of tICA. \citep{Chen} SRVs employ neural networks to learn flexible nonlinear functions of the trajectory featurization that better approximate the slow dynamical modes of the system and have been shown to produce substantially higher resolution MSMs than those developed using tICA in applications to WW-domain and Trp-cage mini-proteins.\citep{Chen, Sidky} Importantly, the SRV modes were learned independently for each system to best approximate the slow collective modes for that particular DNA sequence. SRVs were trained using the SRV package we previously developed (\url{https://github.com/hsidky/srv}) employing the default network architecture of two hidden layers each comprising 100 neurons and tanh activation functions, a learning rate of 0.001, and a batch size of 50,000. We adopted a lag time of $\tau$ = 1.2 ns as appropriately short time scale to resolve the dynamical details of the hybridization/dehybridization dynamics. \citep{Phys2018MarkovValidation} As observed by Husic and Pande, it is conceptually incorrect to treat the lag time as a model hyperparameter to be self-consistently optimized via the VAMP-2 score, but rather as a physically-motivated choice designed to expose the dynamical motions relevant at a particular time and length scale of interest. \citep{Husic2017Note:Selection} As we shall show, this choice of lag time leads to converged and Markovian macrostate MSMs. We guarded against overfitting using five-fold cross-validation in which we divided the trajectory data into 50:50 training:validation splits. We observed plateau of the validation loss and no evidence of overfitting after 20 epochs of training for each system that required approximately 22 GPU-minutes on a single NVIDIA Tesla K80 GPU card. A VAMP-2 scoring of the cumulative kinetic variance explained as a function of number of SRV collective modes retained also showed no evidence of overfitting -- as would be evinced by separation of the training and validation VAMP-2 scores \citep{Sidky} -- and exhibited a knee for each of the four DNA sequences after the fifth, fourth, third, and second slow modes for AT-all, GC-end, GC-core, and GC-mix, respectively (\blauw{Fig.~S1} in the \blauw{Supporting Information}), and motivating the construction of 5D, 4D, 3D, and 2D embeddings, respectively.
+\textbf{Dimensionality reduction.} The featurized trajectories were then projected into a low-dimensional space in preparation for microstate clustering. The standard approach to doing so is to employ time-lagged independent components analysis (tICA) to learn a linear projection into a low-dimensional embedding that maximally preserves the kinetic variance in the data.~\citep{Perez-Hernandez2013IdentificationConstruction, Schwantes2013ImprovementsNTL9, Noe2015KineticSimulation} In this work, we instead employ state-free reversible VAMPnets (SRVs) that can be conceived of as a nonlinear version of tICA. \citep{Chen} SRVs employ neural networks to learn flexible nonlinear functions of the trajectory featurization that better approximate the slow dynamical modes of the system and have been shown to produce substantially higher resolution MSMs than those developed using tICA in applications to WW-domain and Trp-cage mini-proteins.\citep{Chen, Sidky2019High-ResolutionVAMPnets} Importantly, the SRV modes were learned independently for each system to best approximate the slow collective modes for that particular DNA sequence. SRVs were trained using the SRV package we previously developed (\url{https://github.com/hsidky/srv}) employing the default network architecture of two hidden layers each comprising 100 neurons and tanh activation functions, a learning rate of 0.001, and a batch size of 50,000. We adopted a lag time of $\tau$ = 1.2 ns as appropriately short time scale to resolve the dynamical details of the hybridization/dehybridization dynamics. \citep{Phys2011MarkovValidation} As observed by Husic and Pande, it is conceptually incorrect to treat the lag time as a model hyperparameter to be self-consistently optimized via the VAMP-2 score, but rather as a physically-motivated choice designed to expose the dynamical motions relevant at a particular time and length scale of interest. \citep{Husic2017Note:Selection} As we shall show, this choice of lag time leads to converged and Markovian macrostate MSMs. We guarded against overfitting using five-fold cross-validation in which we divided the trajectory data into 50:50 training:validation splits. We observed plateau of the validation loss and no evidence of overfitting after 20 epochs of training for each system that required approximately 22 GPU-minutes on a single NVIDIA Tesla K80 GPU card. A VAMP-2 scoring of the cumulative kinetic variance explained as a function of number of SRV collective modes retained also showed no evidence of overfitting -- as would be evinced by separation of the training and validation VAMP-2 scores \citep{Sidky2019High-ResolutionVAMPnets} -- and exhibited a knee for each of the four DNA sequences after the fifth, fourth, third, and second slow modes for AT-all, GC-end, GC-core, and GC-mix, respectively (\blauw{Fig.~S1} in the \blauw{Supporting Information}), and motivating the construction of 5D, 4D, 3D, and 2D embeddings, respectively.
 
 \textbf{Microstate clustering.} The SRV projections of the 10 million frames recorded over the course of the 1 ms MD trajectories collected for each DNA sequence were then clustered into microstates using k-means clustering. The VAMP-2 score of the microstate transition matrix constructed for each sequence at the selected $\tau$ = 1.2 ns was insensitive to the choice of the number of microstates over the range 100-1000, motivating our selection of 200 microstate clusters for each system.
 
@@ -622,7 +615,7 @@ A.L.F.\ is a co-founder and consultant of Evozyne, Inc.\ and a co-author of US P
 
 \section*{Acknowledgements}
 
-This material is based upon work supported by the National Science Foundation under Grant No.\ CHE-1841805. This work was completed in part with resources provided by the University of Chicago Research Computing Center. We gratefully acknowledge computing time on the University of Chicago high-performance GPU-based cyberinfrastructure supported by the National Science Foundation under Grant No. DMR-1828629.
+This material is based upon work supported by the National Science Foundation under Grant No.\ CHE-1841805. B.A. acknowledges support from the NSF Graduate Research Fellowship Program. This work was completed in part with resources provided by the University of Chicago Research Computing Center. We gratefully acknowledge computing time on the University of Chicago high-performance GPU-based cyberinfrastructure supported by the National Science Foundation under Grant No. DMR-1828629.
 
 
 \clearpage
@@ -630,7 +623,7 @@ This material is based upon work supported by the National Science Foundation un
 
 %\bibliographystyle{unsrt}
 %\bibliographystyle{achemso} % should be pre-defined in usepackage
-\bibliography{references_210514}
+\bibliography{references_210514_abv}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -646,7 +639,7 @@ This material is based upon work supported by the National Science Foundation un
 \begin{figure}[ht!]
 	\begin{center} 
         \includegraphics[width=150mm, scale=1]{TOC.pdf}
-        %\caption*{TOC image}
+        \caption*{For Table of Contents Only}
         \label{fig:TOC}
 	\end{center}
 \end{figure}
