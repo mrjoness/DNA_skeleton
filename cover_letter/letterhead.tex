@@ -44,7 +44,7 @@
             linkcolor=blue,
             urlcolor=blue,
             citecolor=blue]{hyperref}
-\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+
 % Create a new command for the horizontal rule in the document which allows thickness specification
 \makeatletter
 
@@ -52,11 +52,27 @@
 \makeatother
 
 %more new commands and definitions
-\newcommand*{\rood}[1]{\textcolor{red}{#1}}
-\newcommand*{\blauw}[1]{\textcolor{blue}{#1}}
-\newcommand*{\groen}[1]{\textcolor{green}{#1}}
+\newcommand*{\rood}[1]{\color{red}{#1}}
+\newcommand*{\blauw}[1]{\color{blue}{#1}}
+\newcommand*{\groen}[1]{\color{green}{#1}}
+%\newcommand*{\rood}[1]{\textcolor{red}{#1}}
+%\newcommand*{\blauw}[1]{\textcolor{blue}{#1}}
+%\newcommand*{\groen}[1]{\textcolor{green}{#1}}
 \newcommand{\hlc}[2][yellow]{{\sethlcolor{#1}\hl{#2}}}
 \newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+
+% code for custom comments
+\usepackage{tikz}
+\usepackage{xcolor}
+% markers (black, blue, brown, cyan, darkgray, gray, green, lightgray, lime, magenta, olive, orange, pink, purple, red, teal, violet, white, yellow, more: https://en.wikibooks.org/wiki/LaTeX/Colors)
+\newcommand{\marker}[3]{
+  \tikz[baseline=(X.base)]{
+    \node [fill=#1!40,rounded corners] (X) {#2:};
+  }
+  {\color{#1!80!black}#3}
+}
+\newcommand{\khb}[1]{\marker{teal}{KHB}{#1}}  % Kathy Breen
+\newcommand{\replyhead}{\textbf{Author Reply: }}
 
 \newfloat{figure}{h}{lot}
 \floatname{figure}{Figure}
@@ -94,8 +110,8 @@
 \def\CityZip{Chicago, IL 60637} % Your city, zip code, country, etc
 \def\Email{e:~\url{andrewferguson@uchicago.edu}} % Your email address
 \def\TEL{p:~(773)~702-5950} % Your phone number
-\def\URL{w:~\url{http://andrewferguson.uchicago.edu}} % Your URL
-\def\titleone{Associate Professor}
+\def\URL{w:~\url{www.ferglab.com}} % Your URL
+\def\titleone{Associate Professor\\ Deputy Dean for Equity, Diversity, and Inclusion}
 
 %----------------------------------------------------------------------------------------
 %	HEADER AND FROM ADDRESS STRUCTURE
@@ -171,7 +187,7 @@
 %\parbox{\indentedwidth}{\raggedright
 #1 % Print the signature text
 \vskip 0.0in
-\includegraphics[width=0.25\textwidth]{signature_720}
+\includegraphics[width=0.2\textwidth]{signature_720}
 %\vskip 0.65in % Whitespace between the signature text and your name
 \\
 \noindent
@@ -180,8 +196,8 @@
 \titleone\\
 \department\\
 \institution\\
-\vskip -0.1in
-\noindent cc: M.S.~Jones, B.~Ashwood, A.~Tokmakoff
+%\vskip -0.1in
+%\noindent cc: M.S.~Jones, B.~Ashwood, A.~Tokmakoff
 }
 
 %----------------------------------------------------------------------------------------
@@ -272,8 +288,6 @@ Xinsheng Zhao \hfill Chemistry and Molecular Engineering, Peking University \\
 
 $\circ$ \textit{Expert in dynamic mechanisms of biomolecular reactions and nucleic acid biophysics.}
 
-
-We look forward to hearing from you.
 
 \closing{Yours Sincerely}
 

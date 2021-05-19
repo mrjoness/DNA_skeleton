@@ -72,22 +72,22 @@
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 
 
-\newcommand*{\rood}[1]{{\color{red}{#1}}}
+%\newcommand*{\rood}[1]{{\color{red}{#1}}}
 %\newcommand*{\rood}[1]{#1}
-\newcommand*{\blauw}[1]{\textcolor{blue}{#1}}
-%\newcommand*{\blauw}[1]{#1}
-\newcommand*{\groen}[1]{\textcolor{green}{#1}}
+%\newcommand*{\blauw}[1]{\textcolor{blue}{#1}}
+\newcommand*{\blauw}[1]{#1}
+%\newcommand*{\groen}[1]{\textcolor{green}{#1}}
 %\newcommand*{\groen}[1]{#1}
 %\newcommand*{\blauwr}[1]{{\color{blue}{#1}}}
 %\newcommand*{\blauwr}[1]{#1}
 
-\newcommand*{\addref}[1]{\textcolor{red}{\{ADD REF: #1\}}}
+%\newcommand*{\addref}[1]{\textcolor{red}{\{ADD REF: #1\}}}
 
-\newcommand*{\noter}[1]{\textcolor{red}{[[#1]]}}		% notes on
+%\newcommand*{\noter}[1]{\textcolor{red}{[[#1]]}}		% notes on
 %\newcommand*{\noter}[1]{}					% notes off
 
 %\usepackage[draft]{todonotes}   % notes shown
-\usepackage[disable]{todonotes} % notes hidden
+%\usepackage[disable]{todonotes} % notes hidden
 
 
 
@@ -115,7 +115,7 @@
 \affiliation{%
   Pritzker School of Molecular Engineering, %
   The University of Chicago, %
-  929 East 57th Street, Chicago, Illinois 60637, United States%
+  5640 South Ellis Avenue, Chicago, Illinois 60637, United States%
 }
 
 \author{Brennan Ashwood}
@@ -137,7 +137,7 @@
 \affiliation{%
   Pritzker School of Molecular Engineering, %
   The University of Chicago, %
-  929 East 57th Street, Chicago, Illinois 60637, United States%
+  5640 South Ellis Avenue, Chicago, Illinois 60637, United States%
 }
 
 
@@ -196,7 +196,7 @@
 \begin{figure}[ht!]
 	\centering
     \includegraphics[width=0.8\textwidth]{FigS2.pdf}
-    \caption{Convergence of the MSM implied time scales $t_i$ as a function of lag time $\tau$. Solid lines indicate maximum likelihood result while dashed lines show the Bayesian ensemble means. The implied time scales for all sequences converge at a lag time of $\tau$ = 1.2 ns (vertical line). The black solid curve marks equality of the implied time scale and lag time and delimits the shaded region wherein the implied time scales are shorter than the lag time and cannot be resolved.}
+    \caption{Convergence of the MSM implied time scales $t_i$ as a function of lag time $\tau$. Solid lines indicate maximum likelihood result while dashed lines show the Bayesian ensemble means superposed on shaded areas representing 95\% confidence intervals. The high simulation data volume used in our MSM construction means that the maximum likelihood and Bayesian ensemble means are in good agreement and confidence intervals are narrow. The implied time scales for all sequences converge at a lag time of $\tau$ = 1.2 ns (vertical line). The black solid curve marks equality of the implied time scale and lag time and delimits the shaded region wherein the implied time scales are shorter than the lag time and cannot be resolved.}
     \label{fig:SIFig2}
 \end{figure}
 
@@ -207,7 +207,7 @@
 \begin{figure}[ht!]
 	\begin{center}
         \includegraphics[width=1.0\textwidth]{FigS3.pdf}
-        \caption{Chapman-Kolmogorov (CK) tests comparing the probabilities of remaining within each macrostates for each sequence as a function of lag time predicted by $k$ applications of an MSM constructed at the $\tau$ = 1.2 ns lag time $\mathbf{P}^k(\tau)$ (dashed blue line) versus those computed from an MSM constructed at that particular lag time $\mathbf{P}(k \tau)$ (solid black line). The good agreement between these two results provides numerical validation of the Markovian nature of the $\tau$ = 1.2 ns lag time MSM.}
+        \caption{Chapman-Kolmogorov (CK) tests comparing the probabilities of remaining within each macrostates for each sequence as a function of lag time predicted by $k$ applications of an MSM constructed at the $\tau$ = 1.2 ns lag time $\mathbf{P}^k(\tau)$ (dashed blue line) versus those computed from an MSM constructed at that particular lag time $\mathbf{P}(k \tau)$ (solid black line). The blue shaded area indicates the estimated standard deviation in $\mathbf{P}^k(\tau)$. The good agreement between these two results provides numerical validation of the Markovian nature of the $\tau$ = 1.2 ns lag time MSM.}
         \label{fig:SIFig3}
 	\end{center}
 \end{figure}
@@ -238,7 +238,7 @@
 
 \begin{figure}[ht!]
 	\centering
-    \caption{GC-mix hybridizes by nucleation-zippering and dehybridizes by fraying-peeling. Tracking of the 10 intermolecular distances between native WC base pairs over the course of four additional hybridization and dissociation events. Symmetrically permutable distances (e.g., A$_1$:T$_{10}$ and T$_{10}$:A$_1$) are reflected across the x-axis to avoid congestion in the plot. Circles superposed on the x-axis indicate the instantaneous MSM state assignment as dissociated D (blue) or hybridized H (orange). Hybridization tends to occur by a nucleation-zippering mechanism, wherein a native G:C WC pair and adjacent A:T pair or central A:T pairs first form prior to rapid formation of the complete duplex. Dehybridization tends to occur by a fraying-peeling mechanism wherein fraying of the two-base AT-tails on one or both sides of the duplex precedes dissociation of the central native base pairs and complete dissolution of the duplex.}
+    \caption{GC-mix hybridizes by nucleation-zippering and dehybridizes by fraying-peeling. Tracking of the 10 intermolecular distances between native WC base pairs over the course of four additional (a) hybridization and (b) dehybridization events. Symmetrically permutable distances (e.g., A$_1$:T$_{10}$ and T$_{10}$:A$_1$) are reflected across the x-axis to avoid congestion in the plot. Circles superposed on the x-axis indicate the instantaneous MSM state assignment as dissociated D (blue) or hybridized H (orange). Hybridization tends to occur by a nucleation-zippering mechanism, wherein a native G:C pair and adjacent A:T pair or 2-3 central A:T pairs first form prior to rapid formation of the duplex. Dehybridization tends to occur by a fraying-peeling mechanism wherein fraying of the two-base AT-tails on one or both sides of the duplex precedes dissociation of the central native base pairs and complete dissolution of the duplex.}
     \label{fig:SIFig5}
 \end{figure}
 
@@ -247,7 +247,7 @@
 
 \subsection*{Nearest neighbor model of duplex thermodynamics}
 
-DNA duplex hybridization thermodynamics are most commonly predicted using nearest-neighbor (NN) models where the stability of a given base pair is assumed to solely depend on the identity and orientation of its adjacent base pairs. We apply the NN model reported by SantaLucia\citep{SantaLucia1998AThermodynamics}  to estimate the stability of fully intact, shifted, and frayed duplex configurations observed in our Markov State Model. 
+DNA duplex hybridization thermodynamics are commonly predicted using nearest-neighbor (NN) models wherein the stability of a given base pair is assumed to solely depend on the identity and orientation of its adjacent base pairs. We apply the popular NN model reported by SantaLucia\citep{SantaLucia1998AThermodynamics} to estimate the stability of fully intact, shifted, and frayed duplex configurations observed in our MSMs. 
 
 The NN model assumes hybridization proceeds in a two-state all-or-nothing manner. The Gibbs free energy difference between the hybridized and dissociated states can be determined from calculation of NN enthalpy and entropy contributions,
 \begin{equation}\label{SIe1}
@@ -260,7 +260,7 @@ $\Delta H_{NN}^{\circ}$ and $\Delta S_{NN}^{\circ}$ are assumed to be independen
 \begin{equation}\label{SIe3}
 \Delta S_{NN}^{\circ} = \sum_{i}^{n_{NN}}\Delta S_{NN, i}^{\circ} + \sum_{j}^{n_{DE}}\Delta S_{DE, j}^{\circ} + \Delta S_{init}^{\circ} + \Delta S_{sym}^{\circ}.
 \end{equation}                          
-$\Delta H_{NN, i}^{\circ}$ is the NN enthalpy for a given dinucleotide step within duplex DNA, $\Delta H_{DE, j}^{\circ}$ corresponds to the enthalpic contribution from a given dangling end (DE) base next to the duplex\citep{Santalucia2004TM}, and $\Delta H_{init}^{\circ}$ is a duplex initiation term that accounts for terminal effects on duplex enthalpy. A schematic illustration of the NN and DE contributions for a fully hybridized duplex and an out-of-register shifted state is presented in Fig.~\ref{fig:SIFig6}. $\Delta S_{NN}^{\circ}$ is constructed in an analogous manner from NN, dangling end, and initiation terms, plus a symmetry term, $\Delta S_{sym}^{\circ}$, that applies an entropic penalty to self-complementary sequences for maintaining C2 symmetry. 
+$\Delta H_{NN, i}^{\circ}$ is the NN enthalpy for a given dinucleotide step within duplex DNA, $\Delta H_{DE, j}^{\circ}$ corresponds to the enthalpic contribution from a given dangling end (DE) base next to the duplex\citep{Santalucia2004TheMotifs}, and $\Delta H_{init}^{\circ}$ is a duplex initiation term that accounts for terminal effects on duplex enthalpy. A schematic illustration of the NN and DE contributions for a fully hybridized duplex and an out-of-register shifted state is presented in Fig.~\ref{fig:SIFig6}. $\Delta S_{NN}^{\circ}$ is constructed in an analogous manner from NN, dangling end, and initiation terms, plus a symmetry term, $\Delta S_{sym}^{\circ}$, that applies an entropic penalty to self-complementary sequences for maintaining C2 symmetry. 
 
 The SantaLucia NN parameters are defined for a solution condition at neutral pH with a sodium concentration of 1M. We use the empirical salt correction developed by Owczarzy\citep{Owczarzy2008PredictingCations} to determine the NN parameters at the sodium concentration used for simulations in this work. The Owczarzy model assumes the effect of counter ions on DNA hybridization thermodynamics to be purely entropic,
 \begin{equation}\label{SIe4}
@@ -464,7 +464,7 @@ Refs for DNA fraying:
 \clearpage
 \newpage
 
-\bibliography{references_210505}
+\bibliography{references_210514_abv}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The "tocentry" environment can be used to create an entry for the
