@@ -8,42 +8,42 @@ Database file #2: references_210514_abv.bib
 achemso 2017/05/18 v3.10i
 You've used 119 entries,
             2536 wiz_defined-function locations,
-            1610 strings with 36383 characters,
-and the built_in function-call counts, 44480 in all, are:
-= -- 3630
-> -- 2686
+            1628 strings with 36366 characters,
+and the built_in function-call counts, 46043 in all, are:
+= -- 3831
+> -- 2654
 < -- 46
-+ -- 1050
-- -- 931
-* -- 4977
-:= -- 6005
++ -- 1039
+- -- 920
+* -- 5133
+:= -- 6178
 add.period$ -- 234
 call.type$ -- 119
 change.case$ -- 4
 chr.to.int$ -- 2
 cite$ -- 119
-duplicate$ -- 2436
-empty$ -- 2891
-format.name$ -- 1110
-if$ -- 8513
+duplicate$ -- 2454
+empty$ -- 3088
+format.name$ -- 1099
+if$ -- 8881
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 0
 newline$ -- 736
 num.names$ -- 354
-pop$ -- 212
+pop$ -- 210
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 120
 stack$ -- 0
-substring$ -- 2615
+substring$ -- 3088
 swap$ -- 2658
 text.length$ -- 237
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 827
 warning$ -- 0
-while$ -- 430
+while$ -- 454
 width$ -- 0
-write$ -- 1535
+write$ -- 1555

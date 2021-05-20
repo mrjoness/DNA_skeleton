@@ -175,16 +175,16 @@ Xiao,~S.; Sharpe,~D.~J.; Chakraborty,~D.; Wales,~D.~J. {Energy Landscapes and
   De~Pablo]{Hinckley2014Coarse-grainedEffects}
 Hinckley,~D.~M.; Lequieu,~J.~P.; De~Pablo,~J.~J. {Coarse-grained modeling of
   DNA oligomer hybridization: Length, sequence, and salt effects}. \emph{J.
-  Chem. Phys.} \textbf{2014}, \emph{141}\relax
+  Chem. Phys.} \textbf{2014}, \emph{141}, 035102\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[Sanstead \latin{et~al.}(2016)Sanstead, Stevenson, and
-  Tokmako]{Sanstead2016}
-Sanstead,~P.~J.; Stevenson,~P.; Tokmako,~A. {Sequence-Dependent Mechanism of
+  Tokmakoff]{Sanstead2016}
+Sanstead,~P.~J.; Stevenson,~P.; Tokmakoff,~A. {Sequence-Dependent Mechanism of
   DNA Oligonucleotide Dehybridization Resolved through Infrared Spectroscopy}.
-  \emph{J. Am. Chem. Soc.} \textbf{2016}, \emph{138}\relax
+  \emph{J. Am. Chem. Soc.} \textbf{2016}, \emph{138}, 11792--11801\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -220,7 +220,7 @@ Shah,~S.; Dubey,~A.~K.; Reif,~J. {Programming Temporal DNA Barcodes for
 Schickinger,~M.; Zacharias,~M.; Dietz,~H.; Schickinger,~M.; Zacharias,~M.;
   Dietz,~H. {Tethered Multifluorophore Motion Reveals Equilibrium Transition
   Kinetics of Single DNA Double Helices}. \emph{Proc. Natl. Acad. Sci. U. S.
-  A.} \textbf{2018}, \emph{115}\relax
+  A.} \textbf{2018}, \emph{115}, E7512--E7521\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -239,7 +239,7 @@ Zhang,~J.~X.; Fang,~J.~Z.; Duan,~W.; Wu,~L.~R.; Zhang,~A.~W.; Dalchau,~N.;
   Robert]{Araque2016LatticeCooperativity}
 Araque,~J.~C.; Robert,~M.~A. {Lattice Model of Oligonucleotide Hybridization in
   Solution. II. Specificity and Cooperativity}. \emph{J. Chem. Phys.}
-  \textbf{2016}, \emph{144}\relax
+  \textbf{2016}, \emph{144}, 125101\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -303,8 +303,8 @@ Nonin,~S.; Leroy,~J.~L.; Gu{\'{e}}ron,~M. {Terminal Base Pairs of
 \bibitem[Nikolova \latin{et~al.}(2012)Nikolova, Bascom, Andricioaei, and
   Al-Hashimi]{Nikolova2012ProbingSimulations}
 Nikolova,~E.~N.; Bascom,~G.~D.; Andricioaei,~I.; Al-Hashimi,~H.~M. {Probing
-  Sequence-Specific DNA Flexibility in A‑Tracts and Pyrimidine-Purine Steps
-  by Nuclear Magnetic Resonance 13C Relaxation and Molecular Dynamics
+  Sequence-Specific DNA Flexibility in A-Tracts and Pyrimidine-Purine Steps by
+  Nuclear Magnetic Resonance 13C Relaxation and Molecular Dynamics
   Simulations}. \emph{Biochemistry} \textbf{2012}, \emph{51}, 8654--8664\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -314,7 +314,7 @@ Nikolova,~E.~N.; Bascom,~G.~D.; Andricioaei,~I.; Al-Hashimi,~H.~M. {Probing
   Kovalenko, Ernsting, Murphy, Coleman, and Berg]{Andreatta2006UltrafastHelix}
 Andreatta,~D.; Sen,~S.; P{\'{e}}rez~Lustres,~J.~L.; Kovalenko,~S.~A.;
   Ernsting,~N.~P.; Murphy,~C.~J.; Coleman,~R.~S.; Berg,~M.~A. {Ultrafast
-  Dynamics in DNA: “Fraying” at the End of the Helix}. \emph{J. Am. Chem.
+  Dynamics in DNA: ``Fraying'' at the End of the Helix}. \emph{J. Am. Chem.
   Soc.} \textbf{2006}, \emph{128}, 6885--6892\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -430,10 +430,10 @@ Piana,~S. {Atomistic Simulation of the DNA Helix-Coil Transition}. \emph{J.
   Debenedetti]{Zerze2021ThermodynamicsSimulations}
 Zerze,~G.~H.; Stillinger,~F.~H.; Debenedetti,~P.~G. {Thermodynamics of DNA
   Hybridization from Atomistic Simulations}. \emph{J. Phys. Chem. B}
-  \textbf{2021}, \relax
-\mciteBstWouldAddEndPunctfalse
+  \textbf{2021}, \emph{125}, 771--779\relax
+\mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{}{\mcitedefaultseppunct}\relax
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[Hinckley \latin{et~al.}(2013)Hinckley, Freeman, Whitmer, and
   De~Pablo]{Hinckley2013AnHybridization}
@@ -458,7 +458,7 @@ Schmitt,~T.~J.; Rogers,~J.~B.; Knotts~IV,~T.~A. {Exploring the Mechanisms of
   De~Pablo]{Sambriski2009}
 Sambriski,~E.~J.; Schwartz,~D.~C.; De~Pablo,~J.~J. {Uncovering Pathways in DNA
   Oligonucleotide Hybridization via Transition State Analysis}. \emph{Proc.
-  Natl. Acad. Sci. U. S. A.} \textbf{2009}, \emph{106}, 18125–18130\relax
+  Natl. Acad. Sci. U. S. A.} \textbf{2009}, \emph{106}, 18125--18130\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -467,7 +467,8 @@ Sambriski,~E.~J.; Schwartz,~D.~C.; De~Pablo,~J.~J. {Uncovering Pathways in DNA
   De~Pablo]{Sambriski2009SequencePathways}
 Sambriski,~E.~J.; Ortiz,~V.; De~Pablo,~J.~J. {Sequence Effects in the Melting
   and Renaturation of Short DNA Oligonucleotides: Structure and Mechanistic
-  Pathways}. \emph{J. Phys. Condens. Matter} \textbf{2009}, \emph{21}\relax
+  Pathways}. \emph{J. Phys. Condens. Matter} \textbf{2009}, \emph{21},
+  034105\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -509,9 +510,9 @@ Perez,~A.; Orozco,~M. {Real-Time Atomistic Description of DNA Unfolding}.
 \bibitem[Prinz \latin{et~al.}(2011)Prinz, Chodera, Pande, Swope, Smith, and
   No{\'{e}}]{Prinz2011OptimalDynamics}
 Prinz,~J.~H.; Chodera,~J.~D.; Pande,~V.~S.; Swope,~W.~C.; Smith,~J.~C.;
-  No{\'{e}},~F. {Optimal Sse of Data in Parallel Tempering Simulations for the
+  No{\'{e}},~F. {Optimal Use of Data in Parallel Tempering Simulations for the
   Construction of Discrete-State Markov models of Biomolecular Dynamics}.
-  \emph{J. Chem. Phys.} \textbf{2011}, \emph{134}\relax
+  \emph{J. Chem. Phys.} \textbf{2011}, \emph{134}, 244108\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -521,7 +522,7 @@ Prinz,~J.~H.; Chodera,~J.~D.; Pande,~V.~S.; Swope,~W.~C.; Smith,~J.~C.;
 Chodera,~J.~D.; Swope,~W.~C.; No{\'{e}},~F.; Prinz,~J.~H.; Shirts,~M.~R.;
   Pande,~V.~S. {Dynamical reweighting: Improved Estimates of Dynamical
   Properties from Simulations at Multiple Temperatures}. \emph{J. Chem. Phys.}
-  \textbf{2011}, \emph{134}\relax
+  \textbf{2011}, \emph{134}, 244107\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -547,7 +548,7 @@ Donati,~L.; Hartmann,~C.; Keller,~B.~G. {Girsanov Reweighting for Path
 \bibitem[Donati and Keller(2018)Donati, and
   Keller]{Donati2018GirsanovSimulations}
 Donati,~L.; Keller,~B.~G. {Girsanov Reweighting for Metadynamics Simulations}.
-  \emph{J. Chem. Phys.} \textbf{2018}, \emph{149}\relax
+  \emph{J. Chem. Phys.} \textbf{2018}, \emph{149}, 072335\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -601,7 +602,7 @@ Lequieu,~J.; Schwartz,~D.~C.; De~Pablo,~J.~J. {In Silico Evidence for
 \bibitem[Terakawa and Takada(2015)Terakawa, and
   Takada]{Terakawa2015P53Simulations}
 Terakawa,~T.; Takada,~S. {P53 Dynamics Upon Response Element Recognition
-  Explored By Molecular Simulations}. \emph{Sci. Rep.} \textbf{2015}, \emph{5},
+  Explored by Molecular Simulations}. \emph{Sci. Rep.} \textbf{2015}, \emph{5},
   1--10\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -630,7 +631,7 @@ Srinivas,~N.; Ouldridge,~T.~E.; {\v{S}}ulc,~P.; Schaeffer,~J.~M.; Yurke,~B.;
 Haley,~N.~E.; Ouldridge,~T.~E.; Mullor~Ruiz,~I.; Geraldini,~A.; Louis,~A.~A.;
   Bath,~J.; Turberfield,~A.~J. {Design of hidden Thermodynamic Driving for
   Non-Equilibrium Systems via Mismatch Elimination During DNA Strand
-  Displacement}. \emph{Nat. Commun.} \textbf{2020}, \emph{11}\relax
+  Displacement}. \emph{Nat. Commun.} \textbf{2020}, \emph{11}, 1--11\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -650,10 +651,10 @@ Snodin,~B.~E.; Schreck,~J.~S.; Romano,~F.; Louis,~A.~A.; Doye,~J.~P.
 Doye,~J.~P.; Fowler,~H.; Pre{\v{s}}ern,~D.; Bohlin,~J.; Rovigatti,~L.;
   Romano,~F.; {\v{S}}ulc,~P.; Wong,~C.~K.; Louis,~A.~A.; Schreck,~J.~S.
   \latin{et~al.}  {The oxDNA Coarse-Grained Model as a Tool to Simulate DNA
-  Origami}. \emph{arXiv} \textbf{2020}, \relax
-\mciteBstWouldAddEndPunctfalse
+  Origami}. \emph{arXiv} \textbf{2020}, https://arxiv.org/abs/2004.05052\relax
+\mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{}{\mcitedefaultseppunct}\relax
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[C{\'{o}}rdoba \latin{et~al.}(2017)C{\'{o}}rdoba, Hinckley, Lequieu,
   and de~Pablo]{Cordoba2017AIons}
@@ -664,18 +665,19 @@ C{\'{o}}rdoba,~A.; Hinckley,~D.~M.; Lequieu,~J.; de~Pablo,~J.~J. {A Molecular
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[Lu \latin{et~al.}(2020)Lu, Bueno, Schafer, Moller, Jin, Chen, Chen,
+\bibitem[Lu \latin{et~al.}(2021)Lu, Bueno, Schafer, Moller, Jin, Chen, Chen,
   Gu, de~Pablo, and Wolynes]{Lu2020OpenAWSEMSimulations}
 Lu,~W.; Bueno,~C.; Schafer,~N.~P.; Moller,~J.; Jin,~S.; Chen,~X.; Chen,~M.;
   Gu,~X.; de~Pablo,~J.~J.; Wolynes,~P.~G. {OpenAWSEM with Open3SPN2: A Fast,
   Flexible, and Accessible Framework for Large-Scale Coarse-Grained
-  Biomolecular Simulations}. \emph{bioRxiv} \textbf{2020}, 1--21\relax
+  Biomolecular Simulations}. \emph{PLOS Comput. Biol.} \textbf{2021},
+  \emph{17}, e1008308\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[Plimpton(1997)]{Plimpton1997FastDynamics}
-Plimpton,~S. {Fast Parallel Algorithms for Short–Range Molecular Dynamics}.
+Plimpton,~S. {Fast Parallel Algorithms for Short--Range Molecular Dynamics}.
   \emph{Journal of Computational Physics} \textbf{1997}, \emph{117},
   1--42\relax
 \mciteBstWouldAddEndPuncttrue
@@ -692,7 +694,7 @@ Dunweg,~W.,~B.;~Paul {Brownian Dynamics Simulations Without Gaussian Random
 \bibitem[Bussi and Parrinello(2007)Bussi, and
   Parrinello]{Bussi2007AccurateDynamics}
 Bussi,~G.; Parrinello,~M. {Accurate Sampling Using Langevin Dynamics}.
-  \emph{Phys. Rev. E} \textbf{2007}, \emph{75}\relax
+  \emph{Phys. Rev. E} \textbf{2007}, \emph{75}, 056707\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -708,8 +710,8 @@ Nkodo,~A.~E.; Garnier,~J.~M.; Tinland,~B.; Ren,~H.; Desruisseaux,~C.;
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[Debye and E.(1923)Debye, and E.]{Debye1923ZurElektrolyte}
-Debye,~P.; E.,~H. {Zur Theorie der Elektrolyte}. \emph{Phys. Zeitschrift}
-  \textbf{1923}, 185--206\relax
+Debye,~P.; E.,~H. {Zur theorie der elektrolyte. II}. \emph{Das Grenzgesetz
+  f{\"u}r die elektrische Leitf{\"a}higkeit. Phys} \textbf{1923}, 305\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -778,7 +780,7 @@ Wehmeyer,~C.; Scherer,~M.~K.; Hempel,~T.; Husic,~B.~E.; Olsson,~S.;
 \bibitem[Jin and Maibaum(2019)Jin, and Maibaum]{Jin2019}
 Jin,~R.; Maibaum,~L. {Mechanisms of DNA Hybridization: Transition Path Analysis
   of a Simulation-Informed Markov Model}. \emph{J. Chem. Phys.} \textbf{2019},
-  \emph{150}\relax
+  \emph{150}, 105103\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -847,7 +849,7 @@ No{\'{e}},~F.; Clementi,~C. {Kinetic Distance and Kinetic Maps from Molecular
   No{\'{e}}]{Scherer2019VariationalKinetics}
 Scherer,~M.~K.; Husic,~B.~E.; Hoffmann,~M.; Paul,~F.; Wu,~H.; No{\'{e}},~F.
   {Variational Selection of Features for Molecular Kinetics}. \emph{J. Chem.
-  Phys.} \textbf{2019}, \emph{150}\relax
+  Phys.} \textbf{2019}, \emph{150}, 194108\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -865,7 +867,8 @@ Wu,~H.; No{\'{e}},~F. {Variational Approach for Learning Markov Processes from
   De~Fabritiis, and No{\'{e}}]{Perez-Hernandez2013IdentificationConstruction}
 P{\'{e}}rez-Hern{\'{a}}ndez,~G.; Paul,~F.; Giorgino,~T.; De~Fabritiis,~G.;
   No{\'{e}},~F. {Identification of Slow Molecular Order Parameters for Markov
-  model Construction}. \emph{J. Chem. Phys.} \textbf{2013}, \emph{139}\relax
+  Model Construction}. \emph{J. Chem. Phys.} \textbf{2013}, \emph{139},
+  015102\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -882,18 +885,17 @@ Schwantes,~C.~R.; Pande,~V.~S. {Improvements in Markov State Model Construction
 \bibitem[Chen \latin{et~al.}(2019)Chen, Sidky, and Ferguson]{Chen}
 Chen,~W.; Sidky,~H.; Ferguson,~A.~L. {Nonlinear Discovery of Slow Molecular
   Modes using State-Free Reversible VAMPnets}. \emph{J. Chem. Phys.}
-  \textbf{2019}, \emph{150}\relax
+  \textbf{2019}, \emph{150}, 214114\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[Phys \latin{et~al.}(2011)Phys, Prinz, Wu, Sarich, Keller, Senne, Held,
-  Chodera, Sch{\"{u}}tte, No{\'{e}}, Prinz, Wu, Sarich, Keller, Senne, Held,
+\bibitem[Prinz \latin{et~al.}(2011)Prinz, Wu, Sarich, Keller, Senne, Held,
   Chodera, Sch{\"{u}}tte, and No{\'{e}}]{Phys2011MarkovValidation}
-Phys,~J.~C.; Prinz,~J.-h.; Wu,~H.; Sarich,~M.; Keller,~B.; Senne,~M.; Held,~M.;
-  Chodera,~J.~D.; Sch{\"{u}}tte,~C.; No{\'{e}},~F. \latin{et~al.}  {Markov
-  Models of Molecular Kinetics : Generation and Validation}. \emph{J. Chem.
-  Phys.} \textbf{2011}, \emph{134}\relax
+Prinz,~J.-H.; Wu,~H.; Sarich,~M.; Keller,~B.; Senne,~M.; Held,~M.;
+  Chodera,~J.~D.; Sch{\"{u}}tte,~C.; No{\'{e}},~F. Markov Models of Molecular
+  Kinetics: Generation and Validation. \emph{J. Chem. Phys.} \textbf{2011},
+  \emph{134}, 174105\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -925,7 +927,7 @@ Weber,~M. {Implications of PCCA+ in Molecular Simulation}. \emph{Computation}
 \bibitem[Kube and Weber(2007)Kube, and Weber]{Kube2007AConformations}
 Kube,~S.; Weber,~M. {A Coarse Graining Method for the Identification of
   Transition Rates Between Bolecular Conformations}. \emph{J. Chem. Phys.}
-  \textbf{2007}, \emph{126}\relax
+  \textbf{2007}, \emph{126}, 024103\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -944,7 +946,7 @@ No{\'{e}},~F.; Sch{\"{u}}tte,~C.; Vanden-Eijnden,~E.; Reich,~L.; Weikl,~T.~R.
   Tokmakoff]{Chung2007TransientKinetics}
 Chung,~H.~S.; Khalil,~M.; Smith,~A.~W.; Tokmakoff,~A. {Transient
   Two-Dimensional IR Spectrometer for Probing Nanosecond Temperature-Jump
-  Kinetics}. \emph{Rev. Sci. Instrum.} \textbf{2007}, \emph{78}\relax
+  Kinetics}. \emph{Rev. Sci. Instrum.} \textbf{2007}, \emph{78}, 063101\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -963,7 +965,7 @@ Jones,~K.~C.; Ganim,~Z.; Tokmakoff,~A. {Heterodyne-Detected Dispersed
 Jones,~K.~C.; Ganim,~Z.; Peng,~C.~S.; Tokmakoff,~A. {Transient Two-Dimensional
   Spectroscopy with Linear Absorption Corrections Applied to Temperature-Jump
   Two-Dimensional Infrared}. \emph{J. Opt. Soc. Am. B} \textbf{2012},
-  \emph{29}, 118\relax
+  \emph{29}, 118--129\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -1008,7 +1010,7 @@ Galindo-Murillo,~R.; Roe,~D.~R.; Cheatham,~T.~E. {Convergence and
   Bussi]{Pinamonti2019TheModels}
 Pinamonti,~G.; Paul,~F.; Rodriguez,~A.; Bussi,~G. {The Mechanism of RNA Base
   Fraying: Molecular Dynamics Simulations Analyzed with Core-Set Markov State
-  Models}. \emph{J. Chem. Phys.} \textbf{2019}, \emph{150}\relax
+  Models}. \emph{J. Chem. Phys.} \textbf{2019}, \emph{150}, 154123\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -1052,9 +1054,9 @@ Di~Michele,~L.; Mognetti,~B.~M.; Yanagishima,~T.; Varilly,~P.; Ru,~Z.;
 \bibitem[Dickman \latin{et~al.}(2012)Dickman, Manyanga, Brewood, Fish, Fish,
   Summers, Horne, and Benight]{Dickman2012ThermodynamicDNAs}
 Dickman,~R.; Manyanga,~F.; Brewood,~G.~P.; Fish,~D.~J.; Fish,~C.~A.;
-  Summers,~C.; Horne,~M.~T.; Benight,~A.~S. {Thermodynamic Contributions of
-  5’- and 3’-Single Strand Dangling-Ends to the Stability of Short Duplex
-  DNAs}. \emph{J. Biophys. Chem.} \textbf{2012}, \emph{3}, 1--15\relax
+  Summers,~C.; Horne,~M.~T.; Benight,~A.~S. {Thermodynamic Contributions of 5'-
+  and 3'-Single Strand Dangling-Ends to the Stability of Short Duplex DNAs}.
+  \emph{J. Biophys. Chem.} \textbf{2012}, \emph{3}, 1--15\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -1062,8 +1064,8 @@ Dickman,~R.; Manyanga,~F.; Brewood,~G.~P.; Fish,~D.~J.; Fish,~C.~A.;
 \bibitem[Doktycz \latin{et~al.}(1990)Doktycz, Paner, Amaratunga, and
   Benight]{Doktycz1990ThermodynamicC}
 Doktycz,~M.~J.; Paner,~T.~M.; Amaratunga,~M.; Benight,~A.~S. {Thermodynamic
-  Stability of the 5 Dangling-Ended DNA Hairpins Formed from Sequences 5- (XY)
-  2GGATAC (T) ,GTATCC-3, Where X, Y = A, T, G, C}. \emph{Biopolymers}
+  Stability of the 5 Dangling-Ended DNA Hairpins Formed from Sequences 5-(XY)
+  2GGATAC (T), GTATCC-3, Where X,Y = A,T,G,C}. \emph{Biopolymers}
   \textbf{1990}, \emph{30}, 829--845\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}

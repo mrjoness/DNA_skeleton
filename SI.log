@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  19 MAY 2021 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  20 MAY 2021 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,13 +933,9 @@ e 186.
 File: FigS2.pdf Graphic file (type pdf)
 <use FigS2.pdf>
 Package pdftex.def Info: FigS2.pdf  used on input line 198. on input line 198.
-Package pdftex.def Info: Requested size: 375.80574pt x 529.93134pt on input lin
+Package pdftex.def Info: Requested size: 352.31653pt x 496.81906pt on input lin
 e 198.
-
-
-LaTeX Warning: Float too large for page by 20.00095pt on input line 201.
-
-[3 <./FigS2.pdf>]
+ [3 <./FigS2.pdf>]
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FigS3.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
@@ -960,12 +956,11 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FigS4.pdf): PDF inclusion:
 File: FigS4.pdf Graphic file (type pdf)
 <use FigS4.pdf>
 Package pdftex.def Info: FigS4.pdf  used on input line 221. on input line 221.
-Package pdftex.def Info: Requested size: 352.31653pt x 499.78093pt on input lin
+Package pdftex.def Info: Requested size: 328.82733pt x 466.46048pt on input lin
 e 221.
+[5
 
-LaTeX Warning: Float too large for page by 18.85054pt on input line 224.
-
-[5 <./FigS4.pdf>]
+ <./FigS4.pdf>]
 <FigS5a.pdf, id=135, pagebox=cropbox, 1443.95467pt x 2242.53801pt>
 File: FigS5a.pdf Graphic file (type pdf)
 <use FigS5a.pdf>
@@ -981,7 +976,6 @@ Package pdftex.def Info: FigS5b.pdf  used on input line 236. on input line 236.
 Package pdftex.def Info: Requested size: 375.80574pt x 583.62785pt on input lin
 e 236.
  [6
-
 
  <./FigS5a.pdf>] [7 <./FigS5b.pdf>] [8] [9
 
@@ -1014,7 +1008,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
 Here is how much of TeX's memory you used:
  19642 strings out of 492990
  343876 string characters out of 6132636
- 437969 words of memory out of 5000000
+ 437992 words of memory out of 5000000
  22939 multiletter control sequences out of 15000+600000
  550270 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1040,7 +1034,7 @@ mf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2017/texmf
 ist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2017/texmf-dis
 t/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on SI.pdf (11 pages, 8950639 bytes).
+Output written on SI.pdf (11 pages, 8950589 bytes).
 PDF statistics:
  290 PDF objects out of 1000 (max. 8388607)
  172 compressed objects within 2 object streams
