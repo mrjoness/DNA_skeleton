@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  20 MAY 2021 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  20 MAY 2021 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -784,7 +784,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 245.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 245.
-<signature_720.jpg, id=31, 183.4855pt x 59.22125pt>
+<signature_720.jpg, id=28, 183.4855pt x 59.22125pt>
 File: signature_720.jpg Graphic file (type jpg)
 <use signature_720.jpg>
 Package pdftex.def Info: signature_720.jpg  used on input line 292. on input li
@@ -792,7 +792,7 @@ ne 292.
 Package pdftex.def Info: Requested size: 99.26454pt x 32.03772pt on input line 
 292.
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
 
  []
 
@@ -809,7 +809,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
 Here is how much of TeX's memory you used:
  18816 strings out of 492990
  345847 string characters out of 6132636
- 471610 words of memory out of 5000000
+ 471660 words of memory out of 5000000
  21982 multiletter control sequences out of 15000+600000
  14338 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -823,10 +823,10 @@ ocal/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on letterhead.pdf (2 pages, 333795 bytes).
+Output written on letterhead.pdf (2 pages, 331900 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  14359 words of extra memory for PDF output out of 14400 (max. 10000000)
 
