@@ -226,8 +226,6 @@ Associate Editor, \textit{The Journal of the American Chemical Society}
 
 \opening{Dear Prof.\ Sleiman}
 
-\noteg{update below} 
-
 Thank you for your 23-Jul-2020 message regarding our article “Molecular Latent Space Simulators” assigned ID SC-EDG-07-2020-003635. We thank you for handling our submission and the anonymous reviewers for their careful reading and critical assessment of our work.
 
 We reproduce below the full text of the reviewer comments in blue along with our responses, reproduction of the changes made to our manuscript, and the locations of these edits. The modifications within our revised submission in response to the reviewer comments are indicated in red text. 
@@ -243,6 +241,8 @@ In light of these changes, we hope that our revised submission is suitable for p
 \clearpage
 \newpage
 
+\noteg{My notes and questions are all in green. The rest of the color scheme is the same as the example you sent me. For most comments I have attempted some change in this doc but have not changed anything major in the actual manuscript or tracked version (manuscript\_marked\_up.tex) yet. In some places I have proposed a couple options but did not want to delve to deep in case I'm going down the wrong path.} 
+
 \begin{shaded}
 \textbf{Response to Reviewer \# 1}
 \end{shaded}
@@ -255,25 +255,25 @@ In light of these changes, we hope that our revised submission is suitable for p
 1)      Many of the core conclusions about the hybridization and dehybridzation mechanisms are based on the designation of the relevant metastable states as H, 5S2, 3S2, 5S4, F4, and D. While the authors do an excellent job of demonstrating that 2-6 state models provide an accurate description of the dynamics, in the current form, the paper does not provide sufficient evidence to support their chosen representative microstates and associated nomenclature (the only evidence being the ‘representative’ structures shown in Figures 2A, C). A given macrostate represents an ensemble of microstates and it should be demonstrated that a significant fraction of the microstates that have a high probability of belonging to a particular macrostate share the same or similar base-pairing pattern. This would better justify how the authors chose to describe these states as 5S2, 3S2, etc., and provide the reader with more confidence that the mechanisms follow from the simulations. At the least, the authors should describe how the representative microstates (depicted in Figure 2A, C) were obtained.
 }
 
-\textbf{Author Reply:}   We acknowledge that this information in crucial to the core conclusions of the manuscript and that some information regarding state definitions and representative structures was unclear.
+\textbf{Author Reply:}   We acknowledge that the designation of states is crucial to the core conclusions of the manuscript and that some information regarding state definitions and representative structures was unclear.
 
-When defining macrostates, we both visually inspected configurations and compared distributions along a variety of structural metrics.  During the analysis process, we have found that two distance features in particular allow for interpretable visualization of each of the seven macrostate. Specifically, these features correspond to the reciprocal mean distance between 2-base-shifted base pairs in the 5$\prime$ and 3$\prime$ directions. We have visualized these features below (Figure \ref{fig:macrostate_colors_FES}), and use the PyEMMA free energy function to plot the distribution of each macrostate/sequence on the low dimensional feature representation. Each color map corresponds to a different macrostate according to the legend, and lighter regions correspond to higher probability at equilibrium (lower free energy). We agree with the reviewer that it is important readers to understand the physical definitions and distributions of each state, and we have added this figure to the supplemental information.
+\noteg{I think this comment is really getting at why the cartoon representations are appropriate to describe the state as a whole and is less concerned with how we obtained the molecular rendering. I've tried to address both aspects below and can add more detail the first figure or choose a different kind of representation.}
+
+When defining macrostates, we both visually inspected configurations and compared distributions along a variety of structural features.  During the analysis process, we have found that two distance features in particular allow for interpretable visualization of each of the seven macrostate. Specifically, these features correspond to the reciprocal mean distance between 2-base-shifted base pairs in the 5$\prime$ and 3$\prime$ directions. These features highlight not only shifted states in both directions, but also a distinct frayed regions between the H and D wells. We have visualized these features below (Figure \ref{fig:macrostate_colors_FES}), and use the PyEMMA free energy function to plot the distribution of each macrostate/sequence on the low dimensional feature representation. Each color map corresponds to a different macrostate according to the legend, and lighter regions indicate a higher probability at equilibrium (lower free energy). We agree with the reviewer that it is important for readers to understand the physical definitions and distributions of each macrostate and its associated microstates, and we have added this figure to the supplemental information.
 
 %In order to demonstrate that configuration in a given macrostates are well-defined by the representations in figure 2, we show the distribution of several structural metrics for each macrostate and sequence combination. These metrics are a collection of mean intermolecular distance that we have found work well to differentiate between states. 
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=200mm]{cover_letter/revision_figures/macrostate_colors_FES.png}
-        \caption{The free energy surface of each macrostate and sequence combination. The x and y axes correspond to the reciprocal mean distance between 2-base-shifted base pairs in the 5$\prime$ and 3$\prime$ directions, respectively. These distances are visualized by the corresponding red arrow representation. Color maps define both the macrostate identity and relative free energy of a region within that macrostate, lighter regions correspond to lower free energy.}
+        \includegraphics[width=150mm]{cover_letter/revision_figures/macrostate_colors_FES.png}
+        \caption{Free energy surface of each macrostate and sequence combination. The x and y axes correspond to the reciprocal mean distance between 2-base-shifted base pairs in the 5$\prime$ and 3$\prime$ directions, respectively. These distances are visualized by the corresponding red arrow representations. Color maps define both the macrostate identity and relative free energy of a region within that macrostate, lighter regions correspond to lower free energy.}
         \label{fig:macrostate_colors_FES}
 	\end{center}
 \end{figure}
 
-With regard the representative states shown in figure 2A, these were chosen from microstates with the highest probability of being assigned to the macrostates they represent. Accordingly, they should correspond to structures  that are representative of that macrostate as whole. As the reviewer points out, it is unclear how these selected microstates were defined and we include the following addition to section 3.2 to make this point explicit:
+With regard the molecular renderings shown in figures 2A and 2C, these were chosen from microstates with the highest probability of being assigned to their corresponding macrostates. Accordingly, they should correspond to structures  that are most representative of that macrostate as whole. As the reviewer points out, it is unclear how these selected microstates were defined in the main text, and we include the following addition to section 3.2 to make this point explicit:
 
-``We present these seven macrostates in Fig. 2a along with schematic and cartoon renderings of representative microstates contained within each of these macrostates. \rood{Molecular renderings were sampled from microstates with the highest probability of being clustered into their respective PCCA+ macrostates and should therefore reflect the macrostate population as whole''}
-
-\noteg{I think this comment is really getting at why the cartoon representations are appropriate to describe the state as a whole and is less concerned with how we obtained the molecular rendering. I'be tried to address both aspect above and can add more detail the first figure or choose a different kind of representation.}
+``We present these seven macrostates in Fig. 2a along with schematic and cartoon renderings of representative microstates contained within each of these macrostates. \rood{Molecular renderings were sampled from microstates with the highest probability of being clustered into their respective PCCA+ macrostates and should therefore reflect the macrostate population as whole. A more detailed representation of macrostate membership is shown in supplemental figure \noteg{add supplemental reference here}''}
 
 \textcolor{blue}{1)      It is unclear how five datasets were selected used for cross-validation in the SRVs (P. 10 L. 43). One would naively think a 50:50 split of a single trajectory would result in only one dataset. A bit more detail could be provided here.}
 
@@ -283,7 +283,7 @@ We guarded against overfitting using five-fold cross-validation in which we divi
 
 \textcolor{blue}{2)      For the validation of embedding dimensions (P. 11 L. 3), it is hard to judge the presence of a kink at 5D in the AT-all sequence since only a maximum of 6D is shown in Figure S1. Could a few additional dimensions be provided?}
 
-\textbf{Author Reply:}   We agree that it is more difficult to see the kink for the AT-all sequence. As suggested by the reviewer, we added two additional modes to the cross-validation procedure showing this kink after five modes and have updated the AT-all subplot of Figure S1 as follows in Figure \ref{fig:AT-all_crossval}.
+\textbf{Author Reply:}   We agree that it is more difficult to see the kink for the AT-all sequence than the other sequences. As suggested by the reviewer, we added two additional modes to the cross-validation procedure showing this kink after five modes and have updated the AT-all subplot of Figure S1 with the panel shown in Figure \ref{fig:AT-all_crossval}.
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -295,7 +295,7 @@ We guarded against overfitting using five-fold cross-validation in which we divi
 
 \textcolor{blue}{3)      The values associated with the “slow” and “fast” rates appear to be inverse quantities, but this is not mentioned in the text (P. 14 L. 44).}
 
-\textbf{Author Reply:}   The reviewer is correct that the rates have units s$^{-1}$ and describe the inverse of the experimental timescales shown on page 14. We agree that this sentence in unclear in its current form and have made the following change:
+\textbf{Author Reply:}   The reviewer is correct that the rates have units s$^{-1}$ and describe the inverse of the experimental timescales shown on page 14. We agree that the sentence on (P. 14 L. 44) in unclear in its current form and have made the following change:
 
 ``We conducted T-jump IR experiments for each DNA sequence as a function of temperature and extracted \rood{the ``slow'' $k_d^\mathrm{slow}$  and ``fast'' $k_d^\mathrm{fast}$ rates, corresponding to processes on the 10-30 $\mu$s and 70-100 ns timescales, respectively''}
 
@@ -303,10 +303,9 @@ We guarded against overfitting using five-fold cross-validation in which we divi
 
 \textbf{Author Reply:}   Figure 1 has been updated to include units in s$^{-1}$. In accordance with suggestions by reviewer \#3 we have also displayed the slow responses on a y-log axis, and used the finite size effect correction mentioned by reviewer \#2 to improve the fit (Figure \ref{fig:conc_correction}). \noteg{Should we include the figure here instead? Thought it made more sense in the R2 section since we are addressing a more substantial change}
 
-
 \textcolor{blue}{5)      In the comparison between experiments and theory for slow and fast T-jump IR responses (P. 17 L. 9), were there any correlations between the goodness-of-fit in the calculated rates (Figure S4) and the agreement with experiments for a given system? It is hard to judge as is because the goodness-of-fit values were not provided with Figure S4.}
 
-\textbf{Author Reply:}     We have updated all Figure S4 plots to include goodness-of-fit values determined by the $R^2$ values of log fits (Figure \ref{fig:goodness-of-fit}). We have also re-plotted these on the log axis for easier comparisons between the simulated data and fits. Although all fits are strong, it does appear that GC-core may be slightly worse than the others sequences. As the reviewer suggests, this may be a contributing factor to the weaker experimental agreement for GC-core as well, however it is difficult for us to make that claim definitely given the data. As we note in the original text, this discrepancy ``may be a result of its high propensity to fray'' \noteg{Not sure if we really want to go into this or update the main text?}
+\textbf{Author Reply:}     We have updated all Figure S4 plots to include goodness-of-fit values determined by the $R^2$ values of log fits (Figure \ref{fig:goodness-of-fit}). We have also re-plotted these on the log axis for easier comparisons between the simulated data and fits. Although all fits are strong, it does appear that GC-core may be slightly worse than the others sequences. As the reviewer suggests, this may be a contributing factor to the weaker experimental agreement for GC-core as well, however it is difficult for us to make that claim definitely given the data. As we note in the original text, this discrepancy may also be a result of its high propensity to fray. \noteg{Not sure if we really want to go into this or update the main text?}
 
 \begin{figure}[ht!]
 	\begin{center}
@@ -325,7 +324,7 @@ We have since experimented with some of these techniques using built-in PyEMMA f
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=120mm]{cover_letter/revision_figures/responses_all.png}
+        \includegraphics[width=150mm]{cover_letter/revision_figures/responses_all.png}
         \caption{a) Experimental rate representations for each sequence. Both the 1600 cm$-1$ corresponding to A,T dynamics and 1660$-1$ corresponding to G,T dynamics are shown. b) Simulated relaxation using MSM built from each sequence. An A:T and G:C response are calculated based on the distance between available WC pairs. c) Change in response when factoring in shifting motions. Because shifting is low in amplitude and occurs on timescales approaching full dissociation, the response is not expected to be clearly discernible experimentally.  \noteg{need more description here, but not sure how much of this to include} }
         \label{fig:responses_all}
 	\end{center}
@@ -337,13 +336,13 @@ The second problem we encountered with the MSM relaxation approach is that it do
 
 In addition to the issues discussed above, the main reason that we extracted responses directly from MD simulations was that effects of coarse graining, concentration, salt, etc. were unknown and could not be accounted for at a single temperature. For the slow response in particular,  timescales have an exponential dependence on temperature which could not be sufficiently standardized between experiment and simulation. Furthermore, generating equilibrium simulation data over a range of temperatures for each sequence was computationally prohibitive, prompting our decision to run an ensemble of shorter simulations at each temperature.
 
-The additional references cited by the reviewer highlight important related work and should be included \citep{Noe2011DynamicalExperiments, Pinamonti2017, Remington2019MolecularKinetics}. Although we discussed the connection to (J. Chem. Theory Comput. 2017;108(2):926–934)\citep{Pinamonti2017} in the introduction, we failed to reference it with respect to relaxation rate simulations. We do believe that our work is quite distinct from these previous studies, given that much smaller RNA oligonucleotide systems were investigated. Furthermore, the RNA studies were either lacking experimental data or compared against older data which suffered some experimental flaws. This highlights the difficulty in making strong connections uses MSM relaxation techniques alone.
+The additional references cited by the reviewer highlight important related work and should be included \citep{Noe2011DynamicalExperiments, Pinamonti2017, Remington2019MolecularKinetics}. Although we discussed our work's connection to (J. Chem. Theory Comput. 2017;108(2):926–934)\citep{Pinamonti2017} in the introduction, we did not originally reference it with respect to relaxation rate simulations. We do believe that our work is quite distinct from these previous studies, given that much smaller RNA oligonucleotide systems were investigated. Furthermore, the RNA studies were either lacking experimental data or compared against older data which suffered some experimental flaws. This highlights the difficulty in making strong experimental comparions for oligonucleotide systems using MSM relaxation techniques alone.
 
 We have added the following text to section 3.1 make some of these difficulties more explicit and qualify our approach:
 
 \noteg{Not totally sure where do put this, maybe end of first paragraph of 3.1 or at the end of that section?}
 
-\rood{"Previous studies have used a dynamical fingerprinting approach \citep{Noe2011DynamicalExperiments} to compute rates from MSMs. These techniques were used to study base stacking dynamics in 2-4 base RNA oligomers \citep{Pinamonti2017, Remington2019MolecularKinetics} and showed some reasonable agreement to experiment. We tried this techniques with our SRV-MSMs as well, but found that i) termini fraying timescales were too fast for a Markovian lag time and ii) coarse-graining effects could not be properly standardized between experiment and simulations at single temperature. This motivated us to directly analyze responses from simulation data over a range of temperatures."}
+\rood{"Previous studies have used a dynamical fingerprinting approach \citep{Noe2011DynamicalExperiments} to compute rates from MSMs. These techniques were used to study base stacking dynamics in 2-4 base RNA oligomers \citep{Pinamonti2017, Remington2019MolecularKinetics} and some attempts were made to compare against experiment. However, Limitations in all-atom force fields and potential experimental artefacts have made strong comparisons difficult to achieve for oligonucleotide systems \citep{Pinamonti2017}. We tried applying these techniques with our SRV-MSMs as well, but found that i) termini fraying timescales were too fast for a Markovian lag time and ii) coarse-graining effects could not be properly standardized between experiment and simulations at a single temperature. This motivated us to directly analyze responses from simulation data over a range of temperatures."}
 
 \begin{shaded}
 \textbf{Response to Reviewer \# 2}
@@ -351,11 +350,11 @@ We have added the following text to section 3.1 make some of these difficulties 
 
 \textcolor{blue}{This paper reports simulation results on the hybridization and dehybridization mechanisms near to the melting temperature of a number of short DNA sequences, and accompanying temperature jump IR experiments. The sequences are chosen to have a repeating AT motif that potentially allows relatively stable out-of register duplex states, with a focus being on how these states are disrupted, by the presence of GC base pairs. The authors show that the introduction of just 2 appropriately-positioned base pairs can change the kinetics to a simple two-state behaviour from one in which multiple states contribute.}
 
-\textbf{Author Reply:}   We thank the reviewer... \noteg{need to say anything here?}
+\textbf{Author Reply:}   We thank the reviewer for their comments. \noteg{need to say anything here?}
 
 \textcolor{blue}{I found this an interesting study that nicely illustrated some of the potential effects of sequence on (de)hybridization mechanisms. However, I found the results unsurprising, and these types of effects have been previously explored in the literature. Although I can't therefore recommend publication in JACS, I think it would be very appropriate for one of the more specialized ACS journals.}
 
-\textbf{Author Reply:}  We are glad that the reviewer finds our results interesting, and we acknowledge that there is precedent in the literature for mechanisms that we discuss.  Indeed, although similar states have been identified previously, the transition probabilities between states and sequence-dependent role in hybridization had not been identified. As suggested by reviewer \#2 and later by reviewer \#3, we have updated several introductory sentences to specify that the transition network between states reflects the main significance of this work rather than the discovery of the states themselves. 
+\textbf{Author Reply:}  We are glad that the reviewer finds our results interesting, and we acknowledge that there is precedent in the literature for the states and mechanisms that we discuss.  Indeed, although similar dynamics have been identified previously, the transition probabilities between states and sequence-dependent affect on these transitions has not been identified and quantified. As suggested by reviewer \#2 and later by reviewer \#3, we have updated several introductory sentences to specify that the transition network between states reflects is significance of this work rather than the discovery of the states or mechanisms themselves
 
 \noteg{focus more on transition probabilities and not just states? See Reviewer \#3.10 comment:}
 
@@ -373,7 +372,7 @@ We have added the following text to section 3.1 make some of these difficulties 
 
 The principal reasons that we performed brute force simulations were that we observed strong experimental agreement and obtained adequate sampling on the ms scale without needing to bias the system.  Indeed methods just as transition path sampling and forward-flux sampling have been successful in elucidating hybridization kinetics \citep{Sambriski2009, Hinckley2014Coarse-grainedEffects, Jin2019}, however these methods do rely on some knowledge and manual specification of relevant states or collective variables \emph{a priori}. In contrast, our unbiased approached allowed us to use a fully \noteg{can we say this?} unsupervised machine learning pipeline to cluster configuration and build MSMs. To summarize these points, we have added the following to \noteg{section} of the manuscript:
 
-\noteg{Expand on this here:}
+\noteg{Expand on this here?}
 
 ``The effect of the applied bias upon the thermodynamics can be rigorously corrected for using standard reweighting techniques, but approaches to rigorously correct the kinetics, particularly under the conditions of high bias necessary for good sampling, are in their infancy.''
 
@@ -385,6 +384,8 @@ We also note that the 7 M concentration should have been 7 mM (only 3.5x higher 
 + p16 line 3: "Although the 3SPN.2 model reproduces melting temperatures relatively well, we observed a systematic 4 K under-prediction relative to experiment and so we apply a universal (+4) K corrective calibration to our computational results". This sentence confused me at first. I presume you are just shifting your simulated kd slow curves to better match experiment, rather than shifting the data so that the melting temperatures agree. You may want to be more explicit as I read it as the latter at first. (Note one shouldn't expect the melting temperatures to agree as very different concentrations are being used in simulation and experiment, and one also has to correct for finite-size effects when estimating melting points from single duplex simulations (https://doi.org/10.1088/0953-8984/22/10/104102)}
 
 \textbf{Author Reply:}   We greatly appreciate this comment and suggestion, especially in the context of questions from other reviewers regarding temperature and concentration. 
+
+\noteg{Add a small methods paragraph to describe the temp-dependent fits? I think this would also help address reviewer \#3 confusions about the various temps used }
 
 We have since incorporated the finite size correction for homodimers reported in  https://doi.org/10.1088/0953-8984/22/10/104102 \citep{Ouldridge2010ExtractingSimulations} when computing the slow dissociation fits. We find that the results show even better agreement with experiment, motivating us to update figure 1 with these data as shown below \ref{fig:conc_correction}. In addition, we have added the units and log scale changes proposed by reviewers \#1 and \#3, respectively.
 
@@ -399,16 +400,14 @@ We have since incorporated the finite size correction for homodimers reported in
 \begin{figure}[ht!]
 	\begin{center}
         \includegraphics[width=\textwidth]{cover_letter/revision_figures/both_response_log_no_correction_4K_shift.png}
-        \caption{Updated figure 1 of the main text. We added units to both plots and displayed the slow response on a log axis as proposed by reviewers \#1 and \#3, respectively}
+        \caption{Updated figure 1 of the main text. We added units to both plots and displayed the slow response on a log axis as proposed by reviewers \#1 and \#3, respectively \noteg{This is with no correction and the results do not look all the different (homodimer correction is less than hetero). I'm leaning towards just using this given that the temp-dependent simulations are not performed in equlibrium and the correction appears unncessary}}
         \label{fig:conc_no_correction}
 	\end{center}
 \end{figure}
 
-The following was added to the methods section to describe the fluctuation correction:
-
-\noteg{Add a small methods paragraph to describe the temp-dependent fits? I think this would also help address reviewer \#3 confusions about the various temps used }
-
 \noteg{Everything below would only be if we choose to include the fluctuation corrections}
+
+The following was added to the methods section to describe the fluctuation correction:
 
 \rood{The following calculates the dimer fraction in bulk solution from simulations performed in a periodic box. We apply this to the dissociation fraction in order to better compare with the experimental slow response. We compute these values from the dimer fraction (DD) and monomer fraction (D, D).}
 
@@ -432,7 +431,7 @@ With regard to the longer simulations used to construct SRV-MSMs, we maintain th
 
 \textcolor{blue}{Jones et al present a combined experimental and computational paper that probes the dynamics of the DNA hybridization/de-hybridization transition. Through a Markov state model analysis of coarse-grained simulation, the authors identify states that contribute to the process, and present experimental evidence to support the role of these states. In particular, repetitive sequences are observed in simulations to have a number of misaligned states that are both appreciably stable and contribute to hybridization and de-hybridization pathways as intermediates. The role of these states is diminished by base pairs that disrupt the repetitive sequence. In the special case of a sequence with a strong core and weaker extremities, metastable "frayed" states are also observed. The presence of these states is assessed experimentally trough the analysis of relaxation timescales observed in T-jump IR spectroscopy; fast relaxation is attributed to fraying equilibria, and a broader fast relaxation to an increased heterogeniety due to the presence of mis-aligned intermediates.}
 
-\textbf{Author Reply:}   We appreciate ...
+\textbf{Author Reply:}   We appreciate the reviewer's detailed summary of our work
 
 \textcolor{blue}{The paper is generally well-written, and, I believe, represents a good attempt to tackle this important process. I personally have had a manuscript "desk-rejected" by JACS on the basis that it is "too focussed on DNA biotechnology", and "primarily of interest to RNA and DNA chemists". The same statements could be made about this paper. However, I disagree with the conclusion that such papers are not appropriate for JACS. I would therefore recommend publication, subject to satisfactory responses to the comments below.  }
 
@@ -440,7 +439,11 @@ With regard to the longer simulations used to construct SRV-MSMs, we maintain th
 
 \textcolor{blue}{1.   I was frequently confused as to the temperatures used in the experiments and analysis. At one point, it is noted that simulations are performed at melting temperatures. However, simulations are actually performed at a range of temperatures and it isn't always clear when looking at a figure which temperatures were used for simulation, NN model comparison or experiments (see eg. Figs 2 and 3 and 5). I would recommend noting the temperature used to obtain the data in each case.}
 
-\textbf{Author Reply:}   Good comment, add some clarification to the text. Be more explicit here. The “main” data is all taken at Tm, but maybe we should make more not of the temperature range in the intro/methods? 
+\textbf{Author Reply:}   This is a good comment that requires some clarification in the text. We should be more explicit that the MSM data was all acquired at sequence-specific melting temperatures, but the experimental validatoin in 3.1 was performed over a range of temperature in experiment and simulation. 
+
+\noteg{we don't really have a methods section on the temp-dependent simulations, maybe this should be added to 2.1.1 address this comment and a question from reviewer \#2? Alternatively we could just add something like this to the intro in addition to another sentence or two?}
+
+"We validate the new computational models of hybridization/dehybridization dynamics developed in this work against new experimental data \rood{over a range of temperatures} and reinterpret our prior experimental observations in light of the new computational understanding."
 
 \textcolor{blue}{P7 line 13 - surely these simulations were not really done at 7M? That sounds impossibly dense.}
 
@@ -454,7 +457,7 @@ With regard to the longer simulations used to construct SRV-MSMs, we maintain th
 
 \textcolor{blue}{3.  The authors repeatedly refer to "slithering" mechanisms for rearrangement. I believe this is unfortunate. In the context of the 3SPN model, the "slithering" term was first introduced in Ref. 49 by Sambriski et al, and describes two helical single strands sliding along each other. As noted by Hinckley et al in Ref 18, that mechanism is largely an artifact of the form of the potential in 3SPN.1. The rearrangement mechanism in 3SPN.2 is more of a "defect diffusion", analogous to the "inchworm mechanism" previously identified in the oxDNA model (ref 52 - note, the author list for this reference is wrong). Given this context, it seems unnecessarily confusing to talk about "slithering".}
 
-\textbf{Author Reply:}    We share the reviewers concerns with using ``slithering'' to describe a process that would be more appropriately described as ``defect diffusion'' or the ``inchworm mechanism.`` In the manuscript, we made the effort to only use this term in reference to studies that were focused on this processes and described it as such -- namely refs 17 and 49 \noteg{update these after adding ref}. In our revisions, we have removed the term from the introduction so that it now reads as follows:
+\textbf{Author Reply:}    We share the reviewer's concerns with using ``slithering'' to describe a process that would be more appropriately called ``defect diffusion'' or the ``inchworm mechanism.`` In the manuscript, we made the effort to only use this term in reference to studies that were focused on this processes and described it as such -- namely refs 17 and 49 \noteg{update these after adding ref}. In our revisions, we have removed the term from the introduction so that it now reads as follows:
 
 ``An energy disconnectivity graph-based approach was used to interrogate the differences in hybridization rates and mechanisms between GGGGGG and GCGCGC hexamers to reveal strong deviations from ``all-or-nothing'' behaviors and the importance of zippering and \rood{out-of-register diffusion mechanisms.~\citep{Xiao2019}''}
 
@@ -527,7 +530,7 @@ To demonstrate the flexibility of this parameter, we show the slow response from
 
 \textbf{Author Reply:}   We appreciate the reviewer's helpful suggestion to highlight the role of macrostates rather than the identification of states themselves. We have updated some introductory language (in response comments from reviewer \#2 as well) to better communicate the novelty of the kinetic network:
 
-\noteg{Same change as used above in response to \#2 wrt to better introductory language}
+\noteg{Same change as used above in response to \#2 wrt to better introductory language. Maybe some addtions in the main text or conclusions as well?}
 
 
 \textcolor{blue}{11. Related to the above, the references on line 3 of p4 should probably also include Ref 52, where a similar analysis of metastable states in a repetitive sequence is performed (for a different coarse-grained model) and [Flamm, W., Fontana,J.M., Hofacker, I.L. and Schuster,P. (2000) RNA folding at elementary step resolution. RNA, 6, 325–338] where a defect diffusion mechanism is proposed.
