@@ -243,14 +243,6 @@ In light of these changes, we hope that our revised submission is suitable for p
 \clearpage
 \newpage
 
-Brennan comments:
-\begin{enumerate}
-    \item Get rid of "elevated" fraying response
-    \item Rev 1, either view to show
-    \item Figure out if the conc correction makes sense -- how much does it actually improve things?
-    \item Kd hybridization does not actually increase with temp
-\end{enumerate}
-
 \begin{shaded}
 \textbf{Response to Reviewer \# 1}
 \end{shaded}
@@ -265,19 +257,23 @@ Brennan comments:
 
 \textbf{Author Reply:}   We acknowledge that this information in crucial to the core conclusions of the manuscript and that some information regarding state definitions and representative structures was unclear.
 
-When defining macrostates, we used both visual inspection of configurations and plots along a variety of structural metrics. In order to demonstrate that configuration in a given macrostates are well-defined by the representations in figure 2, we show the distribution of several structural metrics for each macrostate and sequence combination. These metrics are a collection of mean intermolecular distance that we have found work well to differentiate between states. 
+When defining macrostates, we both visually inspected configurations and compared distributions along a variety of structural metrics.  During the analysis process, we have found that two distance features in particular allow for interpretable visualization of each of the seven macrostate. Specifically, these features correspond to the reciprocal mean distance between 2-base-shifted base pairs in the 5$\prime$ and 3$\prime$ directions. We have visualized these features below (Figure \ref{fig:macrostate_colors_FES}), and use the PyEMMA free energy function to plot the distribution of each macrostate/sequence on the low dimensional feature representation. Each color map corresponds to a different macrostate according to the legend, and lighter regions correspond to higher probability at equilibrium (lower free energy). We agree with the reviewer that it is important readers to understand the physical definitions and distributions of each state, and we have added this figure to the supplemental information.
 
-During the analysis process, we have found that two distance features in particular allow for interpretable visualization of each of the seven macrostate. Specifically, these features correspond to the reciprocal mean distance between 2-base-shifted base pairs in the 5\prime and 3\prime directions. We have visualized these features below, and use the PyEMMA free energy function to plot the distribution of each macrostate/sequence on the low dimensional feature representation. Each color map corresponds to a different macrostate according to the legend, and lighter regions correspond to higher probability at equilibrium (lower free energy).
+%In order to demonstrate that configuration in a given macrostates are well-defined by the representations in figure 2, we show the distribution of several structural metrics for each macrostate and sequence combination. These metrics are a collection of mean intermolecular distance that we have found work well to differentiate between states. 
 
-We agree with the reviewer that it is important readers to understand the physical definitions and distributions of each state, and we have added this figure to the supplemental information.
-
-\noteg{state distribution figure}
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=200mm]{cover_letter/revision_figures/macrostate_colors_FES.png}
+        \caption{The free energy surface of each macrostate and sequence combination. The x and y axes correspond to the reciprocal mean distance between 2-base-shifted base pairs in the 5$\prime$ and 3$\prime$ directions, respectively. These distances are visualized by the corresponding red arrow representation. Color maps define both the macrostate identity and relative free energy of a region within that macrostate, lighter regions correspond to lower free energy.}
+        \label{fig:macrostate_colors_FES}
+	\end{center}
+\end{figure}
 
 With regard the representative states shown in figure 2A, these were chosen from microstates with the highest probability of being assigned to the macrostates they represent. Accordingly, they should correspond to structures  that are representative of that macrostate as whole. As the reviewer points out, it is unclear how these selected microstates were defined and we include the following addition to section 3.2 to make this point explicit:
 
 ``We present these seven macrostates in Fig. 2a along with schematic and cartoon renderings of representative microstates contained within each of these macrostates. \rood{Molecular renderings were sampled from microstates with the highest probability of being clustered into their respective PCCA+ macrostates and should therefore reflect the macrostate population as whole''}
 
-\noteg{I think this comment is really getting at why the cartoon representations are appropriate to describe the state as a whole and is less concerned with how we obtained the molecular rendering. I'be tried to address both aspect above, but I think}
+\noteg{I think this comment is really getting at why the cartoon representations are appropriate to describe the state as a whole and is less concerned with how we obtained the molecular rendering. I'be tried to address both aspect above and can add more detail the first figure or choose a different kind of representation.}
 
 \textcolor{blue}{1)      It is unclear how five datasets were selected used for cross-validation in the SRVs (P. 10 L. 43). One would naively think a 50:50 split of a single trajectory would result in only one dataset. A bit more detail could be provided here.}
 
@@ -291,7 +287,7 @@ We guarded against overfitting using five-fold cross-validation in which we divi
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=100mm]{cover_letter/revision_figures/AT-all_added_modes.png}
+        \includegraphics[width=75mm]{cover_letter/revision_figures/AT-all_added_modes.png}
         \caption{Cross-validation for the AT-all sequence with two additional modes to show the presence of a kink in the VAMP-2 score after the fifth mode.}
         \label{fig:AT-all_crossval}
 	\end{center}
@@ -310,11 +306,11 @@ We guarded against overfitting using five-fold cross-validation in which we divi
 
 \textcolor{blue}{5)      In the comparison between experiments and theory for slow and fast T-jump IR responses (P. 17 L. 9), were there any correlations between the goodness-of-fit in the calculated rates (Figure S4) and the agreement with experiments for a given system? It is hard to judge as is because the goodness-of-fit values were not provided with Figure S4.}
 
-\textbf{Author Reply:}     We have updated all Figure S4 plots to include goodness-of-fit values determined by the $R^2$ values of log fits (Figure \ref{goodness-of-fit}). We have also re-plotted these on the log axis for easier comparisons between the simulated data and fits. Although all fits are strong, it does appear that GC-core may be slightly worse than the others sequences. As the reviewer suggests, this may be a contributing factor to the weaker experimental agreement for GC-core as well, however it is difficult for us to make that claim definitely given the data.  \noteg{Not sure if we really want to go into this or update the main text?}
+\textbf{Author Reply:}     We have updated all Figure S4 plots to include goodness-of-fit values determined by the $R^2$ values of log fits (Figure \ref{fig:goodness-of-fit}). We have also re-plotted these on the log axis for easier comparisons between the simulated data and fits. Although all fits are strong, it does appear that GC-core may be slightly worse than the others sequences. As the reviewer suggests, this may be a contributing factor to the weaker experimental agreement for GC-core as well, however it is difficult for us to make that claim definitely given the data. As we note in the original text, this discrepancy ``may be a result of its high propensity to fray'' \noteg{Not sure if we really want to go into this or update the main text?}
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=100mm]{cover_letter/revision_figures/goodness_of_fit.png}
+        \includegraphics[width=120mm]{cover_letter/revision_figures/goodness_of_fit.png}
         \caption{Exponential fits for both slow (dissociation) and fast (fraying) response for all four sequences during ``computational T-jump'' experiments. We have updated this supplemental figure to include goodness-of-fit values determined by the $R^2$ values of log fits and plotted both the slow and fast fits on a log scale.}
         \label{fig:goodness-of-fit}
 	\end{center}
@@ -324,11 +320,12 @@ We guarded against overfitting using five-fold cross-validation in which we divi
 
 \textbf{Author Reply:}   The reviewer raises an important point regarding previous methodologies that have been developed to directly recapitulate experimental relaxation rates from MD-derived MSMs.
 
+\noteg{This paragraph may not be necessary}
 We have since experimented with some of these techniques using built-in PyEMMA functions, and although the results are interesting, they do not provide the most informative analysis of these particular dynamics or a strong experimental connection. We believe this is the case for the following reasons: i) shifting dynamics occur on timescales approaching that of dissociation and ii) shifting populations are small in amplitude relative to fraying and full dissociation and iii) a shifting signal is difficult to interpret experimentally without a more advanced technique such a as isotope labeling. \noteg{check with Brennan here} The combined result of these effects is that shifting dynamics are thought to make small contributions blended with the slow dissociation response. We support this hypothesis with data shown in Figure \ref{fig:responses_all}) \noteg{not sure how much to go into here}.
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=100mm]{cover_letter/revision_figures/responses_all.png}
+        \includegraphics[width=120mm]{cover_letter/revision_figures/responses_all.png}
         \caption{a) Experimental rate representations for each sequence. Both the 1600 cm$-1$ corresponding to A,T dynamics and 1660$-1$ corresponding to G,T dynamics are shown. b) Simulated relaxation using MSM built from each sequence. An A:T and G:C response are calculated based on the distance between available WC pairs. c) Change in response when factoring in shifting motions. Because shifting is low in amplitude and occurs on timescales approaching full dissociation, the response is not expected to be clearly discernible experimentally.  \noteg{need more description here, but not sure how much of this to include} }
         \label{fig:responses_all}
 	\end{center}
@@ -336,9 +333,9 @@ We have since experimented with some of these techniques using built-in PyEMMA f
 
 % Can also describe fraying issue
 % The appraoch in PNAS assumes that the dynamical observable can be captured by a markovian lag time
-The second problem we encountered with the MSM relaxation approach is that it does not adequately describe fast-termini fraying. As discussed in section 3.1, the experimental fast responses is thought to corresponds to single base fraying of (mostly A:T) termini. This is a process that occurs even faster in simulation as shown by our derived acceleration factor. We found that although fraying does occur for each sequence, this process cannot be captured by a Markovian lag time. On the other hand, multi-base fraying observed in GC-core is slower and corresponds to the second leading slow mode for that sequence. As shown in Figure \ref{fig:responses_all})b, we only see a distinct fast response for GC-core despite the fact that termini fraying is occurring in each sequence (as demonstrated by Figure 1 in the main text). 
+The second problem we encountered with the MSM relaxation approach is that it does not adequately describe fast-termini fraying. As discussed in section 3.1, the experimental fast responses is thought to corresponds to single base fraying of (mostly A:T) termini. This is a process that occurs even faster in simulation as shown by our derived acceleration factor. We found that although fraying does occur for each sequence, this process cannot be captured by a Markovian lag time. On the other hand, multi-base fraying observed in GC-core is slower and corresponds to the second leading slow mode for that sequence. As shown in Figure \ref{fig:responses_all}b, we only see a distinct fast response for GC-core despite the fact that termini fraying is occurring in each sequence (as demonstrated by Figure 1 in the main text). 
 
-In addition to the issues discussed above, the main reason that we extracted responses directly from MD simulations was that effects of coarse graining, concentration, salt, etc. were unknown and could not be accounted for at a single temperature. For the slow response in particular,  timescales have an exponential dependence on temperature which could not be sufficiently standardized between experiment and simulation. Furthermore, generating equilibrium simulation data over a range of temperatures for each sequence was computationally prohibitive. 
+In addition to the issues discussed above, the main reason that we extracted responses directly from MD simulations was that effects of coarse graining, concentration, salt, etc. were unknown and could not be accounted for at a single temperature. For the slow response in particular,  timescales have an exponential dependence on temperature which could not be sufficiently standardized between experiment and simulation. Furthermore, generating equilibrium simulation data over a range of temperatures for each sequence was computationally prohibitive, prompting our decision to run an ensemble of shorter simulations at each temperature.
 
 The additional references cited by the reviewer highlight important related work and should be included \citep{Noe2011DynamicalExperiments, Pinamonti2017, Remington2019MolecularKinetics}. Although we discussed the connection to (J. Chem. Theory Comput. 2017;108(2):926–934)\citep{Pinamonti2017} in the introduction, we failed to reference it with respect to relaxation rate simulations. We do believe that our work is quite distinct from these previous studies, given that much smaller RNA oligonucleotide systems were investigated. Furthermore, the RNA studies were either lacking experimental data or compared against older data which suffered some experimental flaws. This highlights the difficulty in making strong connections uses MSM relaxation techniques alone.
 
@@ -358,9 +355,17 @@ We have added the following text to section 3.1 make some of these difficulties 
 
 \textcolor{blue}{I found this an interesting study that nicely illustrated some of the potential effects of sequence on (de)hybridization mechanisms. However, I found the results unsurprising, and these types of effects have been previously explored in the literature. Although I can't therefore recommend publication in JACS, I think it would be very appropriate for one of the more specialized ACS journals.}
 
-\textbf{Author Reply:}  We are glad that the reviewer finds our results interesting, and we acknowledge that there is precedent in the literature for mechanisms that we discuss.  Indeed, although similar states have been identified previously, the transition probabilities between states and sequence-dependent role in hybridization had not been identified. As suggested by reviewer \#2 and later by reviewer \#3, we have updated several introductory sentences to specify that the transition network between states \noteg{how easy will this be to do...} reflects the main significance of this work rather than the discovery of the states themselves. 
+\textbf{Author Reply:}  We are glad that the reviewer finds our results interesting, and we acknowledge that there is precedent in the literature for mechanisms that we discuss.  Indeed, although similar states have been identified previously, the transition probabilities between states and sequence-dependent role in hybridization had not been identified. As suggested by reviewer \#2 and later by reviewer \#3, we have updated several introductory sentences to specify that the transition network between states reflects the main significance of this work rather than the discovery of the states themselves. 
 
-\rood{update intro to focus on transition probabilities and not just states}
+\noteg{focus more on transition probabilities and not just states? See Reviewer \#3.10 comment:}
+
+\noteg{I think we do a pretty good job of this here:}
+
+``Out-of-register ``shifted'' base paired structures \citep{Flamm2000RNAResolution, Romano2013DNADependence, Hinckley2014Coarse-grainedEffects, Maciejczyk2014DNAModel, Araque2016LatticeCooperativity, Xiao2019} and frayed structures \citep{Zgarbova2014BaseRNA, Nonin1995TerminalFraying, Nikolova2012ProbingSimulations, Andreatta2006UltrafastHelix} stand as candidates for metastable states with the potential to mediate substantial deviations from all-or-nothing behavior, but the degree to which these states are kinetically relevant is difficult to determine experimentally and is likely to be highly sequence-dependent.''
+
+\noteg{Add some more changes below?}
+
+``Consistent with previous studies, \citep{Hinckley2014Coarse-grainedEffects,Romano2013DNADependence,Araque2016LatticeCooperativity} we find the degree of repetitiveness in the sequence -- and therefore the kinetic accessibility and thermodynamic stability of out-of-register shifted states -- leads to richer dynamics populated by a diversity of long-lived metastable states. Our data-driven modeling and analysis rigorously quantifies these behaviors and furnishes accurate predictive models of the hybridization/dehybridization rates, dynamical pathways, and metastable states. Specifically, we demonstrate that disrupting repetitive stretches of A:T bases by placement of interrupting G:C base pairs enables us to tune the landscape from rich six-state to simple two-state ``all-or-nothing'' behavior, and the specific location of the interrupting pair can be used to modulate the stability of long-lived frayed states.''
 
 \textcolor{blue}{One limitation of the study is its reliance on``brute-force'' simulations (rather than using advanced sampling/rare-event techniques) to probe the transition. This means that systems of very high concentration (7 M) and temperatures close to the melting point have to be used, which are probably not the conditions of most interest.}
 
@@ -368,7 +373,9 @@ We have added the following text to section 3.1 make some of these difficulties 
 
 The principal reasons that we performed brute force simulations were that we observed strong experimental agreement and obtained adequate sampling on the ms scale without needing to bias the system.  Indeed methods just as transition path sampling and forward-flux sampling have been successful in elucidating hybridization kinetics \citep{Sambriski2009, Hinckley2014Coarse-grainedEffects, Jin2019}, however these methods do rely on some knowledge and manual specification of relevant states or collective variables \emph{a priori}. In contrast, our unbiased approached allowed us to use a fully \noteg{can we say this?} unsupervised machine learning pipeline to cluster configuration and build MSMs. To summarize these points, we have added the following to \noteg{section} of the manuscript:
 
-\rood{``A couple sentences on why we chose unbiased simulation''}
+\noteg{Expand on this here:}
+
+``The effect of the applied bias upon the thermodynamics can be rigorously corrected for using standard reweighting techniques, but approaches to rigorously correct the kinetics, particularly under the conditions of high bias necessary for good sampling, are in their infancy.''
 
 We also note that the 7 M concentration should have been 7 mM (only 3.5x higher than the 2 mM experimental concentration), and we appreciate both reviewers \#2 and \#3 for pointing out the unphysically high reported value. We have updated this change in the manuscript in section 2.5:
 
@@ -391,9 +398,9 @@ We have since incorporated the finite size correction for homodimers reported in
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=\textwidth]{cover_letter/revision_figures/both_response_log_4K_shift.png}
+        \includegraphics[width=\textwidth]{cover_letter/revision_figures/both_response_log_no_correction_4K_shift.png}
         \caption{Updated figure 1 of the main text. We added units to both plots and displayed the slow response on a log axis as proposed by reviewers \#1 and \#3, respectively}
-        \label{fig:conc_correction}
+        \label{fig:conc_no_correction}
 	\end{center}
 \end{figure}
 
@@ -467,7 +474,7 @@ To demonstrate the flexibility of this parameter, we show the slow response from
 
 \begin{figure}[ht!]
 	\begin{center}
-        \includegraphics[width=\textwidth]{slow_response_compare_cutoff.png}
+        \includegraphics[width=\textwidth]{cover_letter/revision_figures/slow_response_compare_cutoff.png}
         \caption{Comparing the experimental slow response when increasing the cutoff parameter from 1.3 nm to 2.0 nm}
         \label{fig:compare_cutoffs}
 	\end{center}
@@ -485,13 +492,21 @@ To demonstrate the flexibility of this parameter, we show the slow response from
 
 \textcolor{blue}{7. The authors could explain a bit more carefully (perhaps in the SI) how they handle the multiple nearest-neighbour states that correspond to their microstates (eg. F4 clearly involves more than one NN configuration).}
 
-\textbf{Author Reply:}   \noteg{ask Brennan about this...} NN calculations we only explicitly considered configurations when we have four unbound on either side, and the rest are fully bound. We could also add configurations with partial fraying on one side but this is unlikely to change the values substantially
+\textbf{Author Reply:}   \noteg{Brennan working on this}  NN calculations only explicitly considered configurations where four base pairs are entirely unbound on either side, and the rest are fully bound. The analysis below adds configurations with partial fraying on one side to better treat the diversity of microstates present in F4 (Figure \ref{fig:F4_microstates}).
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{cover_letter/revision_figures/F4_microstates.png}
+        \caption{Microstates distribution within the F4 macrostate. Fraying in the permutable up/down direction is symmetrized such that all frayed ends are on the left and all bound ends on are the right. Panel B shows the percentage of distances greater than a 1.3 nm cutoff, where 21\% of states have at least one base paired frayed and 11\% of states have at least two base pairs frayed. \noteg{Brennan calculating how the inclusion of these states affects the estimated free energy.}}
+        \label{fig:F4_microstates}
+	\end{center}
+\end{figure}
 
 \textcolor{blue}{8. I don't understand how the population of F4 could be >50\% that of H for the GC-core system, when the free energy of F4 is reported as > 5kJ/mol. My back-of-the-envelope maths predicts a ratio of 8:1 for a 5kJ/mol gap. Incidentally, 8:1 is roughly the ratio I got from running the configurations through NUPACK.}
 
-\textbf{Author Reply:}   We appreciate this comment, and we feel that it illustrates some confusion regarding the log population plot shown in Figure 2. Indeed, it may appear that the F4 state is >50\% that of H for the GC-core, however it is only about 1\% of the of H. We have decided to keep the log plot in order to capture small populations of shifted and frayed states, however we had added the following lines to the main text figure 2 caption:
+\textbf{Author Reply:}   We appreciate this comment, and we feel that it highlights some possible confusion regarding the log population plot shown in Figure 2. Indeed, it may appear that the F4 state is >50\% that of H for the GC-core, however it is only about 1\% of the of H. We have decided to keep the log plot in order to capture small populations of shifted and frayed states, however we had added the following lines to the main text figure 2 caption:
 
-``(b) \textbf{Thermodynamics.} Histograms reporting the number of the $10^7$ total frames within the 1 ms of simulation trajectories observed to occupy each of the seven macrostates, corresponding to our numerical estimates of the equilibrium occupancy probabilities. Uncertainties are calculated across 100 MSMs using a Bayesian MSM estimation are reported for each bar and are very small compared to the total counts. \rood{Values are reported on a log y-axis to properly visualize less low-population states}''
+``Histograms reporting the number of the $10^7$ total frames within the 1 ms of simulation trajectories observed to occupy each of the seven macrostates, corresponding to our numerical estimates of the equilibrium occupancy probabilities. Uncertainties are calculated across 100 MSMs using a Bayesian MSM estimation are reported for each bar and are very small compared to the total counts. \rood{Values are reported on a log y-axis to properly visualize less low-population states}'' \noteg{maybe this is too condescending}
 
 \textcolor{blue}{9. Is the MSM model explicitly constrained to obey detailed balance? The numbers that come out seem consistent with detailed balance - forward and backward trajectories at the same T essentially look the same (they're equally likely to go through intermediates). This should be a feature of the MSM, but it's unclear to me whether it's hard-coded or just arises naturally in the coarse-graining.}
 
@@ -501,35 +516,38 @@ To demonstrate the flexibility of this parameter, we show the slow response from
 
 \textcolor{blue}{Relatedly, some of the discussion of the hybridization and de-hybridization pathways in non-repetitive sequences seems to ignore this fact. In these equilibrium simulations, hybridization trajectories played in reverse should be statistically indistinguishable from de-hybridization trajectories. I don't think anything that's said is wrong, per se, but it might be worth considering how the contrast between "nucleation and zippering" and "fraying-peeling" is consistent with the symmetry in the pathways.}
 
-\textbf{Author Reply:}   \noteg{Do we want to change this terminology? or clarify? Fraying-peeling is effectively the reverse of nucleation-zippering. If we imply that they are distinct processes, then the reviewer is correct that it undercuts the reversible MSM assumption we make when looking at the other sequences. A proposed addition is below:}
+\textbf{Author Reply:}  \noteg{Do we want to change this terminology? or clarify? Fraying-peeling is effectively the reverse of nucleation-zippering. If we imply that they are distinct processes, then the reviewer is correct that it undercuts the reversible MSM assumption we make when looking at the other sequences. A proposed addition is below:}
 
 `` In dehybridization, we observe fraying on the two-base AT-tails on one or both sides of the duplex followed by rapid dissociation of the central WC base pairs. Qualitatively, we observed some short-lived states composed of two to four native WC base pair contacts immediately before full dissociation occurs, but, in contrast to the F4 state we observe in GC-core, these conformations do not constitute a metastable state within our MSM nor do they tend to reform intact duplexes. \rood{These dissociation dynamics are consistent with a ``fraying-peeling'' dehybridization mechanism.\citep{Wong2008TheSimulations, Perez2010Real-timeUnfolding, Zgarbova2014BaseRNA} which can be thought of as the analogous reverse process to nucleation-zippering. Indeed, the qualitative similarity between the forward and reverse process suggest detailed balance is obeyed and that our reversible MSM analyses are well-founded.}'' \noteg{I know this doesn't sound very good, but want to make sure this is what the reviewer is getting at.  Also, should we just get rid of citations when quoting from the main text?}
 
 
 \textcolor{blue}{10. I think some of the characterisation of the "all or nothing" picture is a bit misleading. The two state model of duplex formation is really a thermodynamic model, based on the assumption that the ensemble of hybridized and de-hybridized states look very different and are separated by a large barrier. This model is perfectly consistent with the transition between the two ensembles involving a complex network of metastable states. Indeed, as the authors note on line 3 of p4, a number of previous authors have considered what such states might look like, particularly for repetitive sequences. The authors' primary contribution here is not proposing that these states exist for the first time, but trying to tie together evidence from simulation and experiment to describe them.}
 
-\textbf{Author Reply:}   This is very helpful point, and we have updated some introductory language (in response to reviewer \#2) to better communicate the novelty of the kinetic network over the states themselves:
+\noteg{The ``all-or-nothing'' comment is an important point. Brennan had cautioned using this term necessarily synonym for ``two-state'' and the reviewer seems to be making the same point. There are 11 instances of ``all-or-nothing'' in the main text, and it is often used in conjunction with ``two-state all-or-nothing.'' I think we may want to consider removing most of them, but we should probably word this carefully.}
 
-\rood{same change as used above in response to \#2}
+\textbf{Author Reply:}   We appreciate the reviewer's helpful suggestion to highlight the role of macrostates rather than the identification of states themselves. We have updated some introductory language (in response comments from reviewer \#2 as well) to better communicate the novelty of the kinetic network:
 
-\noteg{Not sure the best way to address the ``all-or-nothing model is fine'' portion of this comment.}
+\noteg{Same change as used above in response to \#2 wrt to better introductory language}
+
 
 \textcolor{blue}{11. Related to the above, the references on line 3 of p4 should probably also include Ref 52, where a similar analysis of metastable states in a repetitive sequence is performed (for a different coarse-grained model) and [Flamm, W., Fontana,J.M., Hofacker, I.L. and Schuster,P. (2000) RNA folding at elementary step resolution. RNA, 6, 325–338] where a defect diffusion mechanism is proposed.
 }
 
-\textbf{Author Reply:}   We agree with the reviewer's suggested additions in this section, and we have included both references in the following section. \noteg{need to read through these}
+\textbf{Author Reply:}   We agree that the reviewer's suggested additions are pertinent and provide the interested reader more context into shifted states and their associated mechanisms. We have included both references in the following section: \noteg{do we actually need to paste the complete sentence if we're just adding references?}
 
-\citep{Flamm2000RNAResolution}
+``\rood{Out-of-register ``shifted'' base paired structures \citep{Flamm2000RNAResolution, Romano2013DNADependence, Hinckley2014Coarse-grainedEffects, Maciejczyk2014DNAModel, Araque2016LatticeCooperativity, Xiao2019}} and frayed structures \citep{Zgarbova2014BaseRNA, Nonin1995TerminalFraying, Nikolova2012ProbingSimulations, Andreatta2006UltrafastHelix} stand as candidates for metastable states with the potential to mediate substantial deviations from all-or-nothing behavior, but the degree to which these states are kinetically relevant is difficult to determine experimentally and is likely to be highly sequence-dependent.''
 
 \textcolor{blue}{12. The reasoning behind why the broader relaxation spectrum is indicative of misaligned states was not that clear to me. Why would "elevated" fraying cause a broader response? Wouldn't it also, then, be broader for CG-core, which has elevated fraying? It seems to me that the argument is more along the lines of the heterogeneity of the configurations leading to heterogeneous dynamics, and hence a broader relaxation profile. But I am no expert on this technique.}
 
-\textbf{Author Reply:}   Make some references to the relaxation experiments of reviewer \#1 is we decide to include this.
+\textbf{Author Reply:}   The reviewer makes a good comment on our choice of language used to described the stretched AT-all response. 
+
+In its current form, the section may mislead the reading into thinking that an elevated fraying response alone would cause a broader fast response. As the reviewer indicates, this would would suggest that GC-core might have the most stretched response. Our hypothesis, rather, is that differential fraying behavior from an ensemble of shifted states will stretch the fast response relative to fraying from only intact duplexes. We believe that the reviewer's apt suggestion ``heterogeneity of configurations leads to heterogeneous dynamics'' expresses this idea much more clearly and we have integrated it into the final paragraph of section 3.7. We have also 
 
 % Should not use "elevated" response here but rather put the emphasis on broadening the response. (borrow lanaguage)
 
 The latter interpretation here is correct. The key is that the response does not come from shifting itself, so it’s fraying in the shifted state that would cause the change in response. We have have updated the language in the section to better express this point. (configurational entropy)
 
-``Nevertheless, the presence of these out-of-register shifted states in the low-temperature equilibrium ensemble prior to the T-jump step may be observable via their influence on the fast T-jump IR response attributable to fraying. Specifically, we hypothesize that the dangling ends and inert tails present in the out-of-register shifted states should promote an elevated fraying response over the course of the relaxation, and should therefore be manifest in the observation of a more stretched relaxation over experimental time scales of 70-100 ns. Analysis of the MSM equilibrium distributions (Fig.~\ref{fig:allseq_table}b) reveals 10.0\% of the equilibrium ensemble to reside in out-of-register shifted states 3S2, 5S2, 3S4, and 5S4 for AT-all, compared to just 0.23\% for GC-end, and 0\% for GC-core and GC-mix. It is our conjecture that a substantial population of out-of-register shifted states in the pre-T-jump AT-all ensemble should be distinguishable from the GC-end, GC-core, and GC-mix as an elongation of the fast relaxation response associated with terminal base fraying.''
+``Nevertheless, the presence of these out-of-register shifted states in the low-temperature equilibrium ensemble prior to the T-jump step may be observable via their influence on the fast T-jump IR response attributable to fraying. Specifically, we hypothesize that the dangling ends and inert tails present in the out-of-register shifted states should promote an \rood{elevated fraying response over the course of the relaxation that is distinct from that of in-register fraying. This heterogeneity of configurations should lead to heterogeneous dynamics, manifested in the observation of a more stretched relaxation over experimental time scales of 70-100 ns.} Analysis of the MSM equilibrium distributions reveals 10.0\% of the equilibrium ensemble to reside in out-of-register shifted states 3S2, 5S2, 3S4, and 5S4 for AT-all, compared to just 0.23\% for GC-end, and 0\% for GC-core and GC-mix. It is our conjecture that a substantial population of out-of-register shifted states in the pre-T-jump AT-all ensemble should be distinguishable from the GC-end, GC-core, and GC-mix as an elongation of the fast relaxation response associated with terminal base fraying.''
 
 \textcolor{blue}{13. How much of the code is being made available? Ideally, the initialization files for the simulations and the code used to perform the MSM analysis would be publicly available. Additionally, it would be good to publish the raw experimental data and the processing tools used to obtain the final results.}
 
@@ -551,17 +569,30 @@ Updated
 
 Updated
 
-\textcolor{blue}{4. The TOC graphic should fit in an area no larger than 3.25 in. × 1.75 in. (approx. 8.25 cm × 4.45  cm) and should have adequate resolution and clarity. Confirm that all text is legible at this size.}
+\textcolor{blue}{4. The TOC graphic should fit in an area no larger than 3.25 in. by 1.75 in. (approx. 8.25 cm by 4.45  cm) and should have adequate resolution and clarity. Confirm that all text is legible at this size.}
 
-SRV axis labels were enlarged in the bottom right panel and the loss function was removed from the top right panel. \noteg{perhaps the flattened version is more appropriate for the aspect ratio? Should we provide both?}
+SRV axis labels were enlarged in the bottom right panel and the loss function was removed from the top right panel (Figure \ref{fig:TOC_square}). \noteg{perhaps the flattened version is more appropriate for the aspect ratio? Should we provide both? (Figure \ref{fig:TOC_long})}
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{cover_letter/revision_figures/TOC_updated.png}
+        \caption{}
+        \label{fig:TOC_square}
+	\end{center}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+        \includegraphics[width=\textwidth]{cover_letter/revision_figures/TOC_updated_long.png}
+        \caption{}
+        \label{fig:TOC_long}
+	\end{center}
+\end{figure}
+
+\clearpage
+\newpage
 
 \bibliographystyle{achemso}
 \bibliography{references_210514_abv}
 \end{document}
-
-Brennan comments:
-    \begin{enumerate}
-        \item Using new fig1 plot -- is the fluct correction appropriate here?
-        \item Accounting for NN macrostates included in the F4 configuration -- need percentages of each frayed state
-    \end{enumerate}
 
