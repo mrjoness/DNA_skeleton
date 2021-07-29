@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  21 JUL 2021 18:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  29 JUL 2021 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -913,7 +913,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--237
 ago_PME_logo.png> <./signature_720.jpg>] [2
 
 ]
-<./revision_figures/macrostate_colors_FES.png, id=31, 555.0336pt x 436.9926pt>
+<./revision_figures/macrostate_colors_FES.png, id=29, 555.0336pt x 436.9926pt>
 File: ./revision_figures/macrostate_colors_FES.png Graphic file (type png)
 <use ./revision_figures/macrostate_colors_FES.png>
 Package pdftex.def Info: ./revision_figures/macrostate_colors_FES.png  used on 
@@ -930,19 +930,19 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<./revision_figures/AT-all_added_modes.png, id=40, 314.52718pt x 260.57915pt>
+<./revision_figures/AT-all_added_modes.png, id=37, 314.52718pt x 260.57915pt>
 File: ./revision_figures/AT-all_added_modes.png Graphic file (type png)
 <use ./revision_figures/AT-all_added_modes.png>
 Package pdftex.def Info: ./revision_figures/AT-all_added_modes.png  used on inp
-ut line 320. on input line 320.
+ut line 321. on input line 321.
 Package pdftex.def Info: Requested size: 213.39566pt x 176.79784pt on input lin
-e 320.
+e 321.
  [4
 
 ] [5 <./revision_figures/AT-all_added_modes.png>] [6] [7
 
 ]
-Overfull \hbox (75.17004pt too wide) in paragraph at lines 451--452
+Overfull \hbox (75.17004pt too wide) in paragraph at lines 452--453
 \T1/cmr/m/n/10.95 (-20) reweight-ing tech-niques [][[Add some ap-pro-pri-ate re
 f-er-ences here, maybe: https://www.springer.com/gp/book/9783540384472;
  []
@@ -950,76 +950,59 @@ f-er-ences here, maybe: https://www.springer.com/gp/book/9783540384472;
 [8] [9] [10] [11
 
 ] [12]
-<./revision_figures/slow_response_compare_cutoff.png, id=148, 430.2474pt x 227.
+<./revision_figures/slow_response_compare_cutoff.png, id=146, 430.2474pt x 227.
 8914pt>
 File: ./revision_figures/slow_response_compare_cutoff.png Graphic file (type pn
 g)
 <use ./revision_figures/slow_response_compare_cutoff.png>
 Package pdftex.def Info: ./revision_figures/slow_response_compare_cutoff.png  u
-sed on input line 635. on input line 635.
+sed on input line 636. on input line 636.
 Package pdftex.def Info: Requested size: 496.33032pt x 262.90762pt on input lin
-e 635.
+e 636.
  [13 <./revision_figures/slow_response_compare_cutoff.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 702.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 703.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 702.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 703.
  [14]
-Overfull \hbox (38.67976pt too wide) in paragraph at lines 721--722
+Overfull \hbox (38.67976pt too wide) in paragraph at lines 722--723
 \T1/cmr/m/n/10.95 (-20) in the con-struc-tion of the MSM. [][[Maybe add a ref-e
 r-ence here. Pos-si-bly https://doi.org/10.33011/livecoms.1.1.5965]][][]'' 
  []
 
 
-Package natbib Warning: Citation `Sikora2013ModelingIntermediates' on page 15 u
-ndefined on input line 746.
-
-
-Package natbib Warning: Citation `Sanstead2016' on page 15 undefined on input l
-ine 746.
-
-
 LaTeX Warning: Reference `fig:allseq_table' on page 15 undefined on input line 
-746.
+747.
 
 [15] [16] [17] [18
 
 ] (./response_letter.bbl [19
 
-])
-
-Package natbib Warning: There were undefined citations.
-
-[20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 816.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 816.
- (./response_letter.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 816.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 816.
+]) [20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 817.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 817.
+ (./response_letter.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 817.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 817.
 Package rerunfilecheck Info: File `response_letter.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 816.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 817.
  ) 
 Here is how much of TeX's memory you used:
- 21356 strings out of 492990
- 389808 string characters out of 6132636
- 544097 words of memory out of 5000000
- 24300 multiletter control sequences out of 15000+600000
- 24239 words of font info for 123 fonts, out of 8000000 for 9000
+ 21362 strings out of 492990
+ 389829 string characters out of 6132636
+ 539616 words of memory out of 5000000
+ 24297 multiletter control sequences out of 15000+600000
+ 23822 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,54p,4734b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,54p,4610b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -1029,25 +1012,23 @@ local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/cm-super/sfsi1000.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2017/texmf-dist/f
-onts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2017/texmf-dist/fon
-ts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
-ype1/public/cm-super/sftt1095.pfb>
-Output written on response_letter.pdf (20 pages, 1084273 bytes).
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/cm-super/sfsi1000.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/cm-super/sfsx1000.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2017/texmf-dist/f
+onts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/public/cm-super/sftt1095.pfb>
+Output written on response_letter.pdf (20 pages, 1059358 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
+ 292 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
  63 named destinations out of 1000 (max. 500000)
- 24614 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 24102 words of extra memory for PDF output out of 24883 (max. 10000000)
 
