@@ -223,7 +223,7 @@
 
 \begin{figure}[ht!]
 	\begin{center}
-    	\caption{Exponential fits for both slow (dissociation) and fast (fraying) response for all four sequences during ``computational T-jump'' experiments. From 120 independent 1 $\mu$s simulations, we compiled the slow response data by recording the fraction of sequences with both central Watson-Crick base pairs intact as a function of time, and the fast response data as the fraction of sequences with both terminal Watson-Crick base pairs intact as a function of time. We define a Watson-Crick base pair to be intact if the centers-of-mass of the two comlementary bases lie within a linear distance of 1.3 nm. We extracted our computational estimate of $k_d^\mathrm{fast}$ by fitting a decaying exponential to the fraction of bound A:T termini as a function of time $f_\mathrm{unfrayed}(t) = \exp(-k_d^\mathrm{fast}t)$. Similarly, we extracted our computational estimate of $k_d^\mathrm{slow}$ by fitting a decaying exponential to the fraction of hybridized sequences as a function of time $f_\mathrm{hybridized}(t) = \exp(-k_d^\mathrm{slow}t)$. \rood{We report within the figure legend to each panel the coefficient of determination $R^2$ for a least squares linear fit of the model to the data in log space (i.e., $\log \left( f \right) = -k_d t$) and data are plotted on log-linear axes to facilitate visual comparison of the fits. In all cases we observe excellent fits of the models to the data with all $R^2$ values equal to or better than 0.88 (except for the slow response at the the lowest temperature T$_m$-5K where dissociation events are sparse).}}
+    	\caption{Exponential fits for both slow (dissociation) and fast (fraying) response for all four sequences during ``computational T-jump'' experiments. From 120 independent 1 $\mu$s simulations, we compiled the slow response data by recording the fraction of sequences with both central Watson-Crick base pairs intact as a function of time, and the fast response data as the fraction of sequences with both terminal Watson-Crick base pairs intact as a function of time. We define a Watson-Crick base pair to be intact if the centers-of-mass of the two comlementary bases lie within a linear distance of 1.3 nm. We extracted our computational estimate of $k_d^\mathrm{fast}$ by fitting a decaying exponential to the fraction of bound A:T termini as a function of time $f_\mathrm{unfrayed}(t) = \exp(-k_d^\mathrm{fast}t)$. Similarly, we extracted our computational estimate of $k_d^\mathrm{slow}$ by fitting a decaying exponential to the fraction of hybridized sequences as a function of time $f_\mathrm{hybridized}(t) = \exp(-k_d^\mathrm{slow}t)$. \rood{We report within the figure legend of each panel the coefficient of determination $R^2$ for a least squares linear fit of the model to the data in log space (i.e., $\log \left( f \right) = -k_d t$) and data are plotted on log-linear axes to facilitate visual comparison of the fits. In all cases we observe excellent fits of the models to the data with all $R^2$ values equal to or better than 0.88 (except for the slow response at the the lowest temperature T$_m$-5K where dissociation events are sparse).}}
     \label{fig:SIFig4}
     	\end{center}
 \end{figure}
@@ -231,24 +231,21 @@
 \clearpage
 \newpage
 
-% Fig. S5
 \begin{figure}[ht!]
 	\centering
-    \includegraphics[width=0.8\textwidth]{FigS5a.pdf}
-\end{figure}
-\begin{figure}[ht!]
-	\centering
-    \includegraphics[width=0.8\textwidth]{FigS5b.pdf}
+	\includegraphics[angle=90,origin=c,width=1.0\textwidth]{FigS5.pdf}
 \end{figure}
 
 \begin{figure}[ht!]
-	\centering
-    \caption{GC-mix hybridizes by nucleation-zippering and dehybridizes by fraying-peeling. Tracking of the 10 intermolecular distances between native WC base pairs over the course of four additional (a) hybridization and (b) dehybridization events. Symmetrically permutable distances (e.g., A$_1$:T$_{10}$ and T$_{10}$:A$_1$) are reflected across the x-axis to avoid congestion in the plot. Circles superposed on the x-axis indicate the instantaneous MSM state assignment as dissociated D (blue) or hybridized H (orange). Hybridization tends to occur by a nucleation-zippering mechanism, wherein a native G:C pair and adjacent A:T pair or 2-3 central A:T pairs first form prior to rapid formation of the duplex. Dehybridization tends to occur by a fraying-peeling mechanism wherein fraying of the two-base AT-tails on one or both sides of the duplex precedes dissociation of the central native base pairs and complete dissolution of the duplex.}
-    \label{fig:SIFig5}
+	\begin{center}
+        \caption{\rood{Macrostate interpretation and structural analysis. The Markov state model macrostates are learned from the simulation trajectories using the featurization and deep learning procedure described in Section 2.1.2 of the main text, but it is informative to perform a \textit{post hoc} projection of the simulation data into a low-dimensional space spanned by physically interpretable order parameters in order to determine the structural characteristics of each macrostate and the structural heterogeneity of the microstate ensemble. (a) Definition of two physically-interpretable order parameters useful in characterizing the structure and base pairing of each microstate under both shifting and fraying. We define the $3^\prime$ shift for a particular base on a strand as the linear distance between that base and the base on the complementary strand offset by two base pairs in the $3^\prime$ direction. This distance reaches a minimum when the two strands are mutually shifted two base pairs in the $3^\prime$ direction. We define $d_{3^\prime}$ as the mean $3^\prime$ shift averaged over the two central bases, represented by red arrows, in the complementary strands. It is more convenient to work the reciprocal $d_{3^\prime}^{-1}$, since it has a finite range whereas $d_{3^\prime}$ diverges for dehybridized strands. We define $d_{5^\prime}^{-1}$ analogously as the reciprocal mean $5^\prime$ shift. We have found this pair of variables extremely informative in revealing the microstate and macrostate structure and base pairing patterns. (b) We report the mean and standard deviation of $d_{3^\prime}$ and $d_{5^\prime}$ taken over all microstates comprising each macrostate for each sequence. The small standard deviations that are consistent with a narrow distribution of the bulk of the microstates around the free energy minimum of each macrostate. (c) Superposition of sample density for each macrostate for each sequence AT-all, GC-end, GC-core, and GC-mix projected into $d_{3^\prime}^{-1}$-$d_{5^\prime}^{-1}$. This panel conveys two important pieces of information. First, each macrostate is anchored around a single free energy minimum containing the preponderance of the probability mass of the microstate ensemble. These projections indicate a relatively narrowly peaked distribution of microstates around the free energy minimum with a broad tail. Second, the location of each macrostate free energy minimum in the $d_{3^\prime}^{-1}$-$d_{5^\prime}^{-1}$ projection readily illuminates the base pair pattern within the duplex. Within the fully hybridized H state (blue) $d_{3^\prime}^{-1}$ $\approx$ $d_{5^\prime}^{-1}$ $\approx$ 1.2 nm$^{-1}$. A 2 b.p.\ shift to 3$^\prime$ is manifest in a decrease in $d_{3^\prime}^{-1}$ (increase in $d_{3^\prime}$) and an increase in $d_{5^\prime}^{-1}$ (decrease in $d_{5^\prime}$) producing the stable 3S2 state (green). A further 2 b.p.\ shift to 3$^\prime$ results in a further decrease in $d_{3^\prime}^{-1}$ and also a decrease in $d_{5^\prime}^{-1}$ (back down to the same value as in the H state) to produce the 3S4 state (black). Analogous arguments apply to the 2 b.p.\ 5$^\prime$ shifted state 5S2 (orange) and 4 b.p.\ 5$^\prime$ shifted state 5S4 (purple). The separated dehybridized state D exists not at the origin, but, due to the finite size of our simulation box, at $d_{3^\prime}^{-1}$ $\approx$ $d_{5^\prime}^{-1}$ $\approx$ 0.2 nm$^{-1}$ (red). The GC-core frayed state F4 (orange) exists as a heart-shaped region between the H and D sates, with each symmetric lobe of the heart corresponding to fraying of one or other of the loose ends. (d) Coloring the microstates by their membership probabilities to their assigned macrostate under a fuzzy clustering procedure shows that microstates lying in the vicinity of the free energy minima have high probabilities whereas those at the macrostate cluster boundaries have less definitive assignments. The former comprise the preponderance of the microstate ensemble while the latter represent intermediate configurations that are transiently occupied as the system transitions from one macrostate to another.}}
+        %\label{fig:macrostate_colors_FES}
+	\end{center}
 \end{figure}
 
 \clearpage
 \newpage
+
 
 \subsection*{Nearest neighbor model of duplex thermodynamics}
 
@@ -273,8 +270,7 @@ The SantaLucia NN parameters are defined for a solution condition at neutral pH 
 \end{equation} 
 where $f_{GC}$ is the fractional G:C content of the duplex and $c_{Na^+}$ is the concentration of sodium counter-ions measured in M.  
 
-\rood{In applying the NN models to each macrostate, we made the simplifying assumption that the ensemble of microstates constituting each macrostate could be represented by a single pattern of Watson-Crick base pairing that are schematically illustrated in Fig.~2a. Indeed, each macrostate is composed of an ensemble of partially frayed states with higher free energy contributions than the intact pattern. However, when averaging across the frayed contributions of all microstates in each macrostate, we have found that incorporating additional NN configurations changes 
-$\Delta\Delta$ F values by $<$ 1 kJ/mol when compared to using a single microstate. Given the extent to which a single NN representation captures each macrostate (which is further demonstrated in Fig.~S7), we have elected to maintain a single microstate free energy estimate for each macrostate}
+\rood{In applying the NN model to each macrostate, we made the simplifying assumption that the ensemble of microstates constituting each macrostate could be represented by a single pattern of Watson-Crick base pairing that are schematically illustrated in Fig.~2a. Indeed, each macrostate is composed of an ensemble of partially frayed states with higher free energy contributions than the intact pattern. However, when averaging across the frayed contributions of all microstates in each macrostate, we have found that in all cases incorporating additional NN configurations changes $\Delta$ F values (relative the corresponding partially frayed H state) by $<$ 1 kJ/mol when compared to using a single microstate. Furthermore, treating termini fraying as complete removal of a nearest neighbor pair is a crude approximation since the model was not intended to incorporate fraying. Given the extent to which a single NN representation captures each macrostate (which is further demonstrated in Fig.~S5), we have elected to maintain a single microstate free energy estimate for each macrostate}
 
 \vspace{+0.5in}
 
@@ -282,28 +278,30 @@ $\Delta\Delta$ F values by $<$ 1 kJ/mol when compared to using a single microsta
 	\centering
     \includegraphics[width=.85\textwidth]{FigS6.pdf}
     \caption{Schematic of nearest neighbor (NN) contributions for a fully hybridized AT-all duplex and an out-of-register duplex with dangling ends (DE).}
+    \label{fig:SIFig7}
+\end{figure}
+
+\clearpage
+\newpage
+
+% Fig. S7
+\begin{figure}[ht!]
+	\centering
+    \includegraphics[width=0.8\textwidth]{FigS7a.pdf}
+\end{figure}
+\begin{figure}[ht!]
+	\centering
+    \includegraphics[width=0.8\textwidth]{FigS7b.pdf}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+    \caption{GC-mix hybridizes by nucleation-zippering and dehybridizes by fraying-peeling. Tracking of the 10 intermolecular distances between native WC base pairs over the course of four additional (a) hybridization and (b) dehybridization events. Symmetrically permutable distances (e.g., A$_1$:T$_{10}$ and T$_{10}$:A$_1$) are reflected across the x-axis to avoid congestion in the plot. Circles superposed on the x-axis indicate the instantaneous MSM state assignment as dissociated D (blue) or hybridized H (orange). Hybridization tends to occur by a nucleation-zippering mechanism, wherein a native G:C pair and adjacent A:T pair or 2-3 central A:T pairs first form prior to rapid formation of the duplex. Dehybridization tends to occur by a fraying-peeling mechanism wherein fraying of the two-base AT-tails on one or both sides of the duplex precedes dissociation of the central native base pairs and complete dissolution of the duplex.}
     \label{fig:SIFig6}
 \end{figure}
 
 \clearpage
 \newpage
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[angle=90,origin=c,width=1.0\textwidth]{FigS7.pdf}
-\end{figure}
-
-\begin{figure}[ht!]
-	\begin{center}
-        \caption*{Figure S7. \rood{Macrostate interpretation and structural analysis. The Markov state model macrostates are learned from the simulation trajectories using the featurization and deep learning procedure described in Section 2.1.2 of the main text, but it is informative to perform a \textit{post hoc} projection of the simulation data into a low-dimensional space spanned by physically interpretable order parameters in order to determine the structural characteristics of each macrostate and the structural heterogeneity of the microstate ensemble. (a) Definition of two physically-interpretable order parameters useful in characterizing the structure and base pairing of each microstate under both shifting and fraying. We define the $3^\prime$ shift for a particular base on a strand as the linear distance between that base and the base on the complementary strand offset by two base pairs in the $3^\prime$ direction. This distance reaches a minimum when the two strands are mutually shifted two base pairs in the $3^\prime$ direction. We define $d_{3^\prime}$ as the mean $3^\prime$ shift averaged over the two central bases, represented by red arrows, in the complementary strands. It is more convenient to work the reciprocal $d_{3^\prime}^{-1}$, since it has a finite range whereas $d_{3^\prime}$ diverges for dehybridized strands. We define $d_{5^\prime}^{-1}$ analogously as the reciprocal mean $5^\prime$ shift. We have found this pair of variables extremely informative in revealing the microstate and macrostate structure and base pairing patterns. (b) We report the mean and standard deviation of $d_{3^\prime}$ and $d_{5^\prime}$ taken over all microstates comprising each macrostate for each sequence. The small standard deviations that are consistent with a narrow distribution of the bulk of the microstates around the free energy minimum of each macrostate. (c) Superposition of sample density for each macrostate for each sequence AT-all, GC-end, GC-core, and GC-mix projected into $d_{3^\prime}^{-1}$-$d_{5^\prime}^{-1}$. This panel conveys two important pieces of information. First, each macrostate is anchored around a single free energy minimum containing the preponderance of the probability mass of the microstate ensemble. These projections indicate a relatively narrowly peaked distribution of microstates around the free energy minimum with a broad tail. Second, the location of each macrostate free energy minimum in the $d_{3^\prime}^{-1}$-$d_{5^\prime}^{-1}$ projection readily illuminates the base pair pattern within the duplex. Within the fully hybridized H state (blue) $d_{3^\prime}^{-1}$ $\approx$ $d_{5^\prime}^{-1}$ $\approx$ 1.2 nm$^{-1}$. A 2 b.p.\ shift to 3$^\prime$ is manifest in a decrease in $d_{3^\prime}^{-1}$ (increase in $d_{3^\prime}$) and an increase in $d_{5^\prime}^{-1}$ (decrease in $d_{5^\prime}$) producing the stable 3S2 state (green). A further 2 b.p.\ shift to 3$^\prime$ results in a further decrease in $d_{3^\prime}^{-1}$ and also a decrease in $d_{5^\prime}^{-1}$ (back down to the same value as in the H state) to produce the 3S4 state (black). Analogous arguments apply to the 2 b.p.\ 5$^\prime$ shifted state 5S2 (orange) and 4 b.p.\ 5$^\prime$ shifted state 5S4 (purple). The separated dehybridized state D exists not at the origin, but, due to the finite size of our simulation box, at $d_{3^\prime}^{-1}$ $\approx$ $d_{5^\prime}^{-1}$ $\approx$ 0.2 nm$^{-1}$ (red). The GC-core frayed state F4 (orange) exists as a heart-shaped region between the H and D sates, with each symmetric lobe of the heart corresponding to fraying of one or other of the loose ends. (d) Coloring the microstates by their membership probabilities to their assigned macrostate under a fuzzy clustering procedure shows that microstates lying in the vicinity of the free energy minima have high probabilities whereas those at the macrostate cluster boundaries have less definitive assignments. The former comprise the preponderance of the microstate ensemble while the latter represent intermediate configurations that are transiently occupied as the system transitions from one macrostate to another.}}
-        %\label{fig:macrostate_colors_FES}
-	\end{center}
-\end{figure}
-
-\clearpage
-\newpage
-
-
 
 
 %\section{Supplemental Information}
