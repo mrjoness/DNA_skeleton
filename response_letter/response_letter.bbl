@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{37}
+\begin{mcitethebibliography}{55}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -119,7 +119,7 @@ Zgarbov{\'{a}},~M.; Otyepka,~M.; {\v{S}}poner,~J.; Lanka{\v{s}},~F.;
 \EndOfBibitem
 \bibitem[Nonin \latin{et~al.}(1995)Nonin, Leroy, and
   Gu{\'{e}}ron]{Nonin1995TerminalFraying}
-Nonin,~S.; Leroy,~J.~L.; Gu{\'{e}}ron,~M. \emph{Biochemistry} \textbf{1995},
+Nonin,~S.; Leroy,~J.~L.; Gu{\'{e}}ron,~M. \emph{Biochem} \textbf{1995},
   \emph{34}, 10652--10659\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
@@ -128,7 +128,7 @@ Nonin,~S.; Leroy,~J.~L.; Gu{\'{e}}ron,~M. \emph{Biochemistry} \textbf{1995},
 \bibitem[Nikolova \latin{et~al.}(2012)Nikolova, Bascom, Andricioaei, and
   Al-Hashimi]{Nikolova2012ProbingSimulations}
 Nikolova,~E.~N.; Bascom,~G.~D.; Andricioaei,~I.; Al-Hashimi,~H.~M.
-  \emph{Biochemistry} \textbf{2012}, \emph{51}, 8654--8664\relax
+  \emph{Biochem} \textbf{2012}, \emph{51}, 8654--8664\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -153,6 +153,85 @@ Shah,~S.; Dubey,~A.~K.; Reif,~J. \emph{ACS Synth. Biol.} \textbf{2019},
   Jungmann]{Strauss2020UpDNA-PAINT}
 Strauss,~S.; Jungmann,~R. \emph{Nat. Methods} \textbf{2020}, \emph{17},
   789--791\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sidky \latin{et~al.}(2020)Sidky, Chen, and
+  Ferguson]{Sidky2020MolecularSimulators}
+Sidky,~H.; Chen,~W.; Ferguson,~A.~L. \emph{Chem} \textbf{2020}, \emph{11},
+  9459--9467\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sidky \latin{et~al.}(2020)Sidky, Chen, and
+  Ferguson]{Sidky2020MachineSimulation}
+Sidky,~H.; Chen,~W.; Ferguson,~A.~L. \emph{Mol. Phys.} \textbf{2020},
+  \emph{118}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \latin{et~al.}(2019)Chen, Sidky, and
+  Ferguson]{Chen2019CapabilitiesSystems}
+Chen,~W.; Sidky,~H.; Ferguson,~A.~L. \emph{J. Chem. Phys.} \textbf{2019},
+  \emph{151}, 1--16\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \latin{et~al.}(2019)Chen, Sidky, and
+  Ferguson]{Chen2019NonlinearVAMPnets}
+Chen,~W.; Sidky,~H.; Ferguson,~A.~L. \emph{J. Chem. Phys.} \textbf{2019},
+  \emph{150}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Phys \latin{et~al.}(2018)Phys, Chen, Tan, and
+  Ferguson]{Phys2018CollectiveDesign}
+Phys,~J.~C.; Chen,~W.; Tan,~A.~R.; Ferguson,~A.~L. \textbf{2018},
+  \emph{072312}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen and Ferguson(2018)Chen, and
+  Ferguson]{Chen2018MolecularExploration}
+Chen,~W.; Ferguson,~A.~L. \textbf{2018}, 2079--2102\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gallicchio \latin{et~al.}(2005)Gallicchio, Andrec, Felts, and
+  Levy]{Gallicchio2005TemperaturePaths}
+Gallicchio,~E.; Andrec,~M.; Felts,~A.~K.; Levy,~R.~M. \emph{J. Phys. Chem. B}
+  \textbf{2005}, \emph{109}, 6722--6731\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Souaille and Roux(2001)Souaille, and
+  Roux]{Souaille2001ExtensionCalculations}
+Souaille,~M.; Roux,~B. \emph{Comput. Phys. Commun} \textbf{2001}, \emph{135},
+  40--57\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shirts and Chodera(2008)Shirts, and
+  Chodera]{Shirts2008StatisticallyStates}
+Shirts,~M.~R.; Chodera,~J.~D. \emph{J. Chem. Phys} \textbf{2008}, \emph{129},
+  1--10\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kumar \latin{et~al.}(1992)Kumar, Rosenberg, Bouzida, Swendsen, and
+  Kollman]{Kumar1992THEMethod}
+Kumar,~S.; Rosenberg,~J.~M.; Bouzida,~D.; Swendsen,~R.~H.; Kollman,~P.~A.
+  \emph{J. Comput. Chem.} \textbf{1992}, \emph{13}, 1011--1021\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -201,6 +280,13 @@ Donati,~L.; Keller,~B.~G. \emph{J. Chem. Phys.} \textbf{2018}, \emph{149},
   Weber]{Quer2018ANCOORDINATES}
 Quer,~J.; Donati,~L.; Keller,~B.~G.; Weber,~M. \emph{SIAM J. SCI. Comput}
   \textbf{2018}, \emph{40}, 653--670\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mey \latin{et~al.}(2014)Mey, Wu, and No{\'{e}}]{Mey2014XTRAM:States}
+Mey,~A.~S.; Wu,~H.; No{\'{e}},~F. \emph{Phys. Rev. X} \textbf{2014}, \emph{4},
+  041018\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -296,6 +382,55 @@ Doye,~J.~P.; Fowler,~H.; Pre{\v{s}}ern,~D.; Bohlin,~J.; Rovigatti,~L.;
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Wu \latin{et~al.}(2014)Wu, Mey, Rosta, and
+  No{\'{e}}]{Wu2014StatisticallyStates}
+Wu,~H.; Mey,~A.~S.; Rosta,~E.; No{\'{e}},~F. \emph{J. Chem. Phys.}
+  \textbf{2014}, \emph{141}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Scherer \latin{et~al.}(2015)Scherer, Trendelkamp-schroer, Paul, Pe,
+  Ho, Plattner, Wehmeyer, Prinz, and Noe]{Scherer2015PyEMMAModels}
+Scherer,~M.~K.; Trendelkamp-schroer,~B.; Paul,~F.; Pe,~G.; Ho,~M.;
+  Plattner,~N.; Wehmeyer,~C.; Prinz,~J.-h.; Noe,~F. \emph{J. Chem. Theory
+  Comput.} \textbf{2015}, \emph{11}, 5525--5542\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ouldridge \latin{et~al.}(2010)Ouldridge, Louis, and
+  Doye]{Ouldridge2010ExtractingSimulations}
+Ouldridge,~T.~E.; Louis,~A.~A.; Doye,~J.~P. \emph{J. Condens. Matter Phys.}
+  \textbf{2010}, \emph{22}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[SantaLucia(1998)]{SantaLucia1998AThermodynamics}
+SantaLucia,~J. \emph{Proc. Natl. Acad. Sci. U. S. A.} \textbf{1998}, \emph{95},
+  1460--1465\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Santalucia and Hicks(2004)Santalucia, and
+  Hicks]{Santalucia2004TheMotifs}
+Santalucia,~J.; Hicks,~D. \emph{Annu. Rev. Biophys. Biomol. Struct}
+  \textbf{2004}, \emph{33}, 415--440\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wehmeyer \latin{et~al.}(2019)Wehmeyer, Scherer, Hempel, Husic, Olsson,
+  and No{\'{e}}]{Wehmeyer2019IntroductionSoftware}
+Wehmeyer,~C.; Scherer,~M.~K.; Hempel,~T.; Husic,~B.~E.; Olsson,~S.;
+  No{\'{e}},~F. \emph{Living J. Comput. Mol. Sci.} \textbf{2019}, \emph{1},
+  1--12\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Wong and Pettitt(2008)Wong, and Pettitt]{Wong2008TheSimulations}
 Wong,~K.~Y.; Pettitt,~B.~M. \emph{Biophys. J.} \textbf{2008}, \emph{95},
   5618--5626\relax
@@ -306,6 +441,14 @@ Wong,~K.~Y.; Pettitt,~B.~M. \emph{Biophys. J.} \textbf{2008}, \emph{95},
 \bibitem[Perez and Orozco(2010)Perez, and Orozco]{Perez2010Real-timeUnfolding}
 Perez,~A.; Orozco,~M. \emph{Angew. Chemie - Int. Ed.} \textbf{2010}, \emph{49},
   4805--4808\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McCully \latin{et~al.}(2008)McCully, Beck, and
+  Daggett]{McCully2008MicroscopicHomeodomain}
+McCully,~M.~E.; Beck,~D.~A.; Daggett,~V. \emph{Biochem} \textbf{2008},
+  \emph{47}, 7079--7089\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

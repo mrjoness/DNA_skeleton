@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{119}
+\begin{mcitethebibliography}{130}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -281,6 +281,25 @@ Maciejczyk,~M.; Spasic,~A.; Liwo,~A.; Scheraga,~H.~A. {DNA Duplex Formation
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Ouldridge \latin{et~al.}(2013)Ouldridge, {\v S}ulc, Romano, Doye, and
+  Louis]{Romano2013DNADependence}
+Ouldridge,~T.~E.; {\v S}ulc,~P.; Romano,~F.; Doye,~J. P.~K.; Louis,~A.~A. {DNA
+  Hybridization Kinetics : Zippering , Internal Displacement and Sequence
+  Dependence}. \emph{Nucleic Acids Res.} \textbf{2013}, \emph{41},
+  8886--8895\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Flamm \latin{et~al.}(2000)Flamm, Fontana, Hofacker, and
+  Schuster]{Flamm2000RNAResolution}
+Flamm,~C.; Fontana,~W.; Hofacker,~I.~L.; Schuster,~P. {RNA folding at
+  elementary step resolution}. \emph{Rna} \textbf{2000}, \emph{6},
+  325--338\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Zgarbov{\'{a}} \latin{et~al.}(2014)Zgarbov{\'{a}}, Otyepka,
   {\v{S}}poner, Lanka{\v{s}}, and Jure{\v{c}}ka]{Zgarbova2014BaseRNA}
 Zgarbov{\'{a}},~M.; Otyepka,~M.; {\v{S}}poner,~J.; Lanka{\v{s}},~F.;
@@ -294,8 +313,8 @@ Zgarbov{\'{a}},~M.; Otyepka,~M.; {\v{S}}poner,~J.; Lanka{\v{s}},~F.;
 \bibitem[Nonin \latin{et~al.}(1995)Nonin, Leroy, and
   Gu{\'{e}}ron]{Nonin1995TerminalFraying}
 Nonin,~S.; Leroy,~J.~L.; Gu{\'{e}}ron,~M. {Terminal Base Pairs of
-  Oligodeoxynucleotides: Imino Proton Exchange and Fraying}.
-  \emph{Biochemistry} \textbf{1995}, \emph{34}, 10652--10659\relax
+  Oligodeoxynucleotides: Imino Proton Exchange and Fraying}. \emph{Biochem}
+  \textbf{1995}, \emph{34}, 10652--10659\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -305,7 +324,7 @@ Nonin,~S.; Leroy,~J.~L.; Gu{\'{e}}ron,~M. {Terminal Base Pairs of
 Nikolova,~E.~N.; Bascom,~G.~D.; Andricioaei,~I.; Al-Hashimi,~H.~M. {Probing
   Sequence-Specific DNA Flexibility in A-Tracts and Pyrimidine-Purine Steps by
   Nuclear Magnetic Resonance 13C Relaxation and Molecular Dynamics
-  Simulations}. \emph{Biochemistry} \textbf{2012}, \emph{51}, 8654--8664\relax
+  Simulations}. \emph{Biochem} \textbf{2012}, \emph{51}, 8654--8664\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -482,16 +501,6 @@ Hoefert,~M.~J.; Sambriski,~E.~J.; Jos{\'{e}} De~Pablo,~J. {Molecular Pathways
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[Ouldridge \latin{et~al.}(2013)Ouldridge, Sulc, Romano, Doye, and
-  Louis]{Romano2013DNADependence}
-Ouldridge,~T.~E.; Sulc,~P.; Romano,~F.; Doye,~J. P.~K.; Louis,~A.~A. {DNA
-  Hybridization Kinetics : Zippering , Internal Displacement and Sequence
-  Dependence}. \emph{Nucleic Acids Res.} \textbf{2013}, \emph{41},
-  8886--8895\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem[Wong and Pettitt(2008)Wong, and Pettitt]{Wong2008TheSimulations}
 Wong,~K.~Y.; Pettitt,~B.~M. {The Pathway of Oligomeric DNA Melting Investigated
   by Molecular Dynamics Simulations}. \emph{Biophys. J.} \textbf{2008},
@@ -503,6 +512,43 @@ Wong,~K.~Y.; Pettitt,~B.~M. {The Pathway of Oligomeric DNA Melting Investigated
 \bibitem[Perez and Orozco(2010)Perez, and Orozco]{Perez2010Real-timeUnfolding}
 Perez,~A.; Orozco,~M. {Real-Time Atomistic Description of DNA Unfolding}.
   \emph{Angew. Chemie - Int. Ed.} \textbf{2010}, \emph{49}, 4805--4808\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gallicchio \latin{et~al.}(2005)Gallicchio, Andrec, Felts, and
+  Levy]{Gallicchio2005TemperaturePaths}
+Gallicchio,~E.; Andrec,~M.; Felts,~A.~K.; Levy,~R.~M. {Temperature weighted
+  histogram analysis method, replica exchange, and transition paths}. \emph{J.
+  Phys. Chem. B} \textbf{2005}, \emph{109}, 6722--6731\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Souaille and Roux(2001)Souaille, and
+  Roux]{Souaille2001ExtensionCalculations}
+Souaille,~M.; Roux,~B. {Extension to the weighted histogram analysis method:
+  Combining umbrella sampling with free energy calculations}. \emph{Comput.
+  Phys. Commun} \textbf{2001}, \emph{135}, 40--57\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shirts and Chodera(2008)Shirts, and
+  Chodera]{Shirts2008StatisticallyStates}
+Shirts,~M.~R.; Chodera,~J.~D. {Statistically optimal analysis of samples from
+  multiple equilibrium states}. \emph{J. Chem. Phys} \textbf{2008}, \emph{129},
+  1--10\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kumar \latin{et~al.}(1992)Kumar, Rosenberg, Bouzida, Swendsen, and
+  Kollman]{Kumar1992THEMethod}
+Kumar,~S.; Rosenberg,~J.~M.; Bouzida,~D.; Swendsen,~R.~H.; Kollman,~P.~A. {THE
+  weighted histogram analysis method for free‐energy calculations on
+  biomolecules. I. The method}. \emph{J. Comput. Chem.} \textbf{1992},
+  \emph{13}, 1011--1021\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -559,6 +605,14 @@ Quer,~J.; Donati,~L.; Keller,~B.~G.; Weber,~M. {An Automatic Adaptive
   Importance Sampling Algorithm for Molecular Dynamics in Reaction
   Coordinates}. \emph{SIAM J. SCI. Comput} \textbf{2018}, \emph{40},
   653--670\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Mey \latin{et~al.}(2014)Mey, Wu, and No{\'{e}}]{Mey2014XTRAM:States}
+Mey,~A.~S.; Wu,~H.; No{\'{e}},~F. {xTRAM: Estimating equilibrium expectations
+  from time-correlated simulation data at multiple thermodynamic states}.
+  \emph{Phys. Rev. X} \textbf{2014}, \emph{4}, 041018\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -1015,6 +1069,15 @@ Pinamonti,~G.; Paul,~F.; Rodriguez,~A.; Bussi,~G. {The Mechanism of RNA Base
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
+\bibitem[Ouldridge \latin{et~al.}(2010)Ouldridge, Louis, and
+  Doye]{Ouldridge2010ExtractingSimulations}
+Ouldridge,~T.~E.; Louis,~A.~A.; Doye,~J.~P. {Extracting bulk properties of
+  self-assembling systems from small simulations}. \emph{J. Condens. Matter
+  Phys.} \textbf{2010}, \emph{22}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Marrink \latin{et~al.}(2007)Marrink, Risselada, Yefimov, Tieleman, and
   De~Vries]{Marrink2007TheSimulations}
 Marrink,~S.~J.; Risselada,~H.~J.; Yefimov,~S.; Tieleman,~D.~P.; De~Vries,~A.~H.
@@ -1037,6 +1100,27 @@ Fritz,~D.; Koschke,~K.; Harmandaris,~V.~A.; Van Der~Vegt,~N.~F.; Kremer,~K.
   Tieleman]{Marrink2013PerspectiveModel}
 Marrink,~S.~J.; Tieleman,~D.~P. {Perspective on the Martini Model}. \emph{Chem.
   Soc. Rev.} \textbf{2013}, \emph{42}, 6801--6822\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[No{\'{e}} \latin{et~al.}(2011)No{\'{e}}, Doose, Daidone,
+  L{\"{o}}llmann, Sauer, Chodera, and Smith]{Noe2011DynamicalExperiments}
+No{\'{e}},~F.; Doose,~S.; Daidone,~I.; L{\"{o}}llmann,~M.; Sauer,~M.;
+  Chodera,~J.~D.; Smith,~J.~C. {Dynamical fingerprints for probing individual
+  relaxation processes in biomolecular dynamics with simulations and kinetic
+  experiments}. \emph{Proc. Natl. Acad. Sci. U. S. A} \textbf{2011},
+  \emph{108}, 4822--4827\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Remington \latin{et~al.}(2019)Remington, McCullagh, and
+  Kohler]{Remington2019MolecularKinetics}
+Remington,~J.~M.; McCullagh,~M.; Kohler,~B. {Molecular Dynamics Simulations of
+  2-Aminopurine-Labeled Dinucleoside Monophosphates Reveal Multiscale Stacking
+  Kinetics}. \emph{J. Phys. Chem. B} \textbf{2019}, \emph{123},
+  2291--2304\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
@@ -1084,6 +1168,24 @@ Yakovchuk,~P.; Protozanova,~E.; Frank-Kamenetskii,~M.~D. {Base-Stacking and
 Zacharias,~M. {Base-Pairing and Base-Stacking Contributions to Double-Stranded
   DNA Formation}. \emph{The J. Phys. Chem. B} \textbf{2020}, \emph{124},
   10345--10352\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McCully \latin{et~al.}(2008)McCully, Beck, and
+  Daggett]{McCully2008MicroscopicHomeodomain}
+McCully,~M.~E.; Beck,~D.~A.; Daggett,~V. {Microscopic reversibility of protein
+  folding in molecular dynamics simulations of the engrailed homeodomain}.
+  \emph{Biochem} \textbf{2008}, \emph{47}, 7079--7089\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wu \latin{et~al.}(2014)Wu, Mey, Rosta, and
+  No{\'{e}}]{Wu2014StatisticallyStates}
+Wu,~H.; Mey,~A.~S.; Rosta,~E.; No{\'{e}},~F. {Statistically optimal analysis of
+  state-discretized trajectory data from multiple thermodynamic states}.
+  \emph{J. Chem. Phys.} \textbf{2014}, \emph{141}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
