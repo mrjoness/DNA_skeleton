@@ -494,27 +494,31 @@ Finally, we have also edited the following text in Section 3.1 on p.~17 to clari
 
 In Section 2.1.1 of the Methods on p.~7, we have added:
 
-``\rood{With the exception of the simulation data reported in Section 3.1 where we draw comparisons against experimental data collected over a range of temperatures,} each sequence was simulated at its melting temperature -- AT-all: 309 K, GC-end: 317 K, GC- core: 324 K, GC-mix: 324 K -- in order to maximize the number of spontaneous transitions between dissociated and hybridized states.''
+``\rood{With the exception of the simulation data reported in Section 3.1 where we draw comparisons against experimental data collected over a range of temperatures,} each sequence was simulated at its \rood{respective melting temperature dictated by the 3SPN.2 model} -- AT-all: 309 K, GC-end: 317 K, GC- core: 324 K, GC-mix: 324 K -- in order to maximize the number of spontaneous transitions between dissociated and hybridized states.''
 
 In Section 2.1.2 of the Methods on p.~9, we have added:
 
-``In this work, MSMs were constructed for each of the four DNA sequences \rood{at their respective melting temperatures} from the 40$\times$25 simulation trajectories following a four-step protocol...''
+``In this work, MSMs were constructed for each of the four DNA sequences \rood{at their respective 3SPN.2 melting temperatures} from the 40$\times$25 simulation trajectories following a four-step protocol...''
 
 In the first sentence of Section 3.3 on p.~21, we have added:
 
-``We first compare the thermodynamic predictions for the equilibrium macrostate probabilities \rood{made by the MSM models fitted at the sequence melting temperatures} to those of the nearest neighbor (NN) model as a popular empirical model of DNA hybridization thermodynamics.''
+``We first compare the thermodynamic predictions for the equilibrium macrostate probabilities \rood{made by the MSM models fitted at the sequence 3SPN.2 melting temperatures} to those of the nearest neighbor (NN) model as a popular empirical model of DNA hybridization thermodynamics.''
 
 In the first sentence of the caption of Fig.~2, we have added:
 
-``Thermodynamic and kinetic predictions of the sequence-specific MSMs \rood{fitted at the sequence melting temperatures} for AT-all, GC-end, GC-core, and GC-mix.''
+``Thermodynamic and kinetic predictions of the sequence-specific MSMs \rood{fitted at the sequence melting temperatures AT-all: 309 K, GC-end: 317 K, GC- core: 324 K, and GC-mix: 324 K}.''
 
 In the first sentence of the caption of Fig.~3, we have added:
 
-``Comparison of the macrostate free energy predictions of the MSMs and nearest neighbor (NN) thermodynamic model \rood{at the sequence melting temperatures}.''
+``Comparison of the macrostate free energy predictions of the MSMs and nearest neighbor (NN) thermodynamic model \rood{at the sequence 3SPN.2 melting temperatures}.''
 
 In the first sentence of Section 3.4 on p.~26, we have added:
 
 ``In addition to thermodynamic stabilities, the macrostate MSM also furnishes quantitative and interpretable predictions of hybridization and dehybridization pathways and mechanisms \rood{at the sequence melting temperatures}.''
+
+We have modified the opening of the caption of Fig.~5 to read:
+
+``\rood{The final temperature for each measurement is AT-all: 320 K, GC-end: 319 K, GC-core: 327 K, and GC-mix: 326 K. (a) Mid-IR t-HDVE difference spectra for GC-core at time delays from 5 ns to 560 $\mu$s. Normalized time traces for each sequence are shown at (b) 1600 cm$^{-1}$ and (c) 1660 cm$^{-1}$.}''
 
 In the second sentence of the Conclusions in Section 4 on p.~36, we have added:
 
@@ -682,9 +686,9 @@ and the text in Section 3.4 on p.~26 to read:
 \textcolor{blue}{10. I think some of the characterisation of the "all or nothing" picture is a bit misleading. The two state model of duplex formation is really a thermodynamic model, based on the assumption that the ensemble of hybridized and de-hybridized states look very different and are separated by a large barrier. This model is perfectly consistent with the transition between the two ensembles involving a complex network of metastable states. Indeed, as the authors note on line 3 of p4, a number of previous authors have considered what such states might look like, particularly for repetitive sequences. The authors' primary contribution here is not proposing that these states exist for the first time, but trying to tie together evidence from simulation and experiment to describe them.}
 
 
-\textbf{Author Reply:}   We thank the reviewer for this important observation and illuminating our need to better clarify this potentially ambiguous concept. We have modified the text in Section 3.6 on p.~29 to read:
+\textbf{Author Reply:}   We thank the reviewer for this important observation and illuminating our need to better clarify this potentially ambiguous concept. We have modified the text in Section 3.6 on p.~31 to read:
 
-``The GC-mix sequence is the only one of the four sequences studied that exhibits simple two-state ``all-or-nothing'' behavior.~\citep{Xiao2019, Araque2016LatticeCooperativity, Sikora2013ModelingIntermediates, Sanstead2016} \rood{This characterization is intended to reflect that the mechanistic observation that} GC-mix MSM comprises just two states, the hybridized H and dehybridized D (Fig.~2c), indicating that association and dissociation of the strands proceeds directly without passing through any metastable intermediate states resolvable under the $\tau$=1.2 ns lag time of our MSM. \rood{Indeed, the sequence's propensity to fray in simulation and the role of termini fraying in dissociation experiments \citep{Sanstead2016} indicate that there remain deviations from ``all-or-nothing'' behavior which are not fully captured within the MSM lag time. (We note that ``all-or-nothing'' can also be used, somewhat ambiguously, to refer to a two-state thermodynamic model where the hybridized and dehybridized are separated by a large free energy barrier but that the transitions between them may proceed through a network of metastable states.)}''
+``The GC-mix sequence is the only one of the four sequences studied that exhibits simple two-state ``all-or-nothing'' behavior.~\citep{Xiao2019, Araque2016LatticeCooperativity, Sikora2013ModelingIntermediates, Sanstead2016} \rood{This characterization is intended to reflect the mechanistic observation that} GC-mix MSM comprises just two states, the hybridized H and dehybridized D (Fig.~2c), indicating that association and dissociation of the strands proceeds directly without passing through any metastable intermediate states resolvable under the $\tau$=1.2 ns lag time of our MSM. \rood{Indeed, the sequence's propensity to fray in simulation and the role of termini fraying in dissociation experiments \citep{Sanstead2016} indicate that there remain deviations from ``all-or-nothing'' behavior which are not fully captured within the MSM lag time. (We note that ``all-or-nothing'' can also be used, somewhat ambiguously, to refer to a two-state thermodynamic model where the hybridized and dehybridized are separated by a large free energy barrier but that the transitions between them may proceed through a network of metastable states.)}''
 
 We have also removed ``all-or-nothing'' from the experimental methods section as the fitting procedure is more appropriately described as simply ``two-state'' so that the relevant text in Section 2.2.3 on p.~14 now reads:
 
@@ -702,7 +706,7 @@ We have also removed ``all-or-nothing'' from the experimental methods section as
 
 \textbf{Author Reply:}   The reviewer makes a good comment on our choice of language used to described the stretched AT-all response. It is indeed our contention that the heterogeneity of the configurations in the initial ensemble and the fraying dynamics exhibited in each of these states that is the origin of the broadening of the relaxation profile, but our wording here was insufficiently clear. We believe that the reviewer's phrasing ``heterogeneity of configurations leads to heterogeneous dynamics'' expresses this idea much more clearly and we have integrated it into our edits of Section 3.7 on p.~33:
 
-``Nevertheless, the presence of these out-of-register shifted states in the low-temperature equilibrium ensemble prior to the T-jump step may be observable via their influence on the fast T-jump IR response attributable to fraying. Specifically, we hypothesize that the dangling ends and inert tails present in the out-of-register shifted states should promote an \rood{elevated fraying response over the course of the relaxation that is distinct from that of in-register fraying. This heterogeneity of configurations should lead to heterogeneous dynamics, manifested in the observation of a more stretched relaxation over experimental time scales of 70-100 ns.} Analysis of the MSM equilibrium distributions reveals 10.0\% of the equilibrium ensemble to reside in out-of-register shifted states 3S2, 5S2, 3S4, and 5S4 for AT-all, compared to just 0.23\% for GC-end, and 0\% for GC-core and GC-mix. It is our conjecture that a substantial population of out-of-register shifted states in the pre-T-jump AT-all ensemble should be distinguishable from the GC-end, GC-core, and GC-mix as an elongation of the fast relaxation response associated with terminal base fraying.''
+``Nevertheless, the presence of these out-of-register shifted states in the low-temperature equilibrium ensemble prior to the T-jump step may be observable via their influence on the fast T-jump IR response attributable to fraying. Specifically, we hypothesize that the dangling ends and inert tails present in the out-of-register shifted states should promote an \rood{broader fraying response over the course of the relaxation that is distinct from that of in-register fraying. This heterogeneity of configurations should lead to heterogeneous dynamics, manifested in the observation of a more stretched relaxation over experimental time scales of 70-100 ns.} Analysis of the MSM equilibrium distributions reveals 10.0\% of the equilibrium ensemble to reside in out-of-register shifted states 3S2, 5S2, 3S4, and 5S4 for AT-all, compared to just 0.23\% for GC-end, and 0\% for GC-core and GC-mix. It is our conjecture that a substantial population of out-of-register shifted states in the pre-T-jump AT-all ensemble should be distinguishable from the GC-end, GC-core, and GC-mix as an elongation of the fast relaxation response associated with terminal base fraying.''
 
 
 \textcolor{blue}{13. How much of the code is being made available? Ideally, the initialization files for the simulations and the code used to perform the MSM analysis would be publicly available. Additionally, it would be good to publish the raw experimental data and the processing tools used to obtain the final results.}
@@ -736,6 +740,10 @@ Updated.
 \textcolor{blue}{4. The TOC graphic should fit in an area no larger than 3.25 in. by 1.75 in. (approx. 8.25 cm by 4.45  cm) and should have adequate resolution and clarity. Confirm that all text is legible at this size.}
 
 Updated and confirmed.
+
+=====
+
+We have also corrected a small number of typos throughout the main text that we have indicated in red.
 
 
 \clearpage
