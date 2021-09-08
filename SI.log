@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  4 AUG 2021 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.28)  8 SEP 2021 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -722,84 +722,84 @@ Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 ) (./SI.aux)
 \openout1 = `SI.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
 \openout3 = `acs-SI.bib'.
 
 *geometry* driver: auto-detecting
@@ -874,10 +874,10 @@ e
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 168.
+. Activating mapping `default' on line 169.
 .................................................
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring ON on input line 168.
+Package hyperref Info: Link coloring ON on input line 169.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -887,31 +887,31 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 168.
-LaTeX Info: Redefining \pageref on input line 168.
-LaTeX Info: Redefining \nameref on input line 168.
+LaTeX Info: Redefining \ref on input line 169.
+LaTeX Info: Redefining \pageref on input line 169.
+LaTeX Info: Redefining \nameref on input line 169.
 
 (./SI.out) (./SI.out)
 \@outlinefile=\write5
 \openout5 = `SI.out'.
 
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 169.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 170.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 169.
+LaTeX Font Info:    Try loading font information for U+msa on input line 170.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 169.
+LaTeX Font Info:    Try loading font information for U+msb on input line 170.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 169.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 170.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -924,18 +924,18 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FigS1.pdf): PDF inclusion:
 <FigS1.pdf, id=25, pagebox=cropbox, 738.11053pt x 594.10188pt>
 File: FigS1.pdf Graphic file (type pdf)
 <use FigS1.pdf>
-Package pdftex.def Info: FigS1.pdf  used on input line 187. on input line 187.
+Package pdftex.def Info: FigS1.pdf  used on input line 188. on input line 188.
 Package pdftex.def Info: Requested size: 469.75539pt x 378.10263pt on input lin
-e 187.
+e 188.
 [2
 
  <./FigS1.pdf>]
 <FigS2.pdf, id=37, pagebox=cropbox, 627.36887pt x 884.65192pt>
 File: FigS2.pdf Graphic file (type pdf)
 <use FigS2.pdf>
-Package pdftex.def Info: FigS2.pdf  used on input line 199. on input line 199.
+Package pdftex.def Info: FigS2.pdf  used on input line 200. on input line 200.
 Package pdftex.def Info: Requested size: 352.31653pt x 496.81906pt on input lin
-e 199.
+e 200.
  [3
 
  <./FigS2.pdf>]
@@ -945,9 +945,9 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FigS3.pdf): PDF inclusion:
 <FigS3.pdf, id=111, pagebox=cropbox, 619.42458pt x 595.48657pt>
 File: FigS3.pdf Graphic file (type pdf)
 <use FigS3.pdf>
-Package pdftex.def Info: FigS3.pdf  used on input line 210. on input line 210.
+Package pdftex.def Info: FigS3.pdf  used on input line 211. on input line 211.
 Package pdftex.def Info: Requested size: 469.75539pt x 451.61133pt on input lin
-e 210.
+e 211.
 [4
 
  <./FigS3.pdf>]
@@ -957,11 +957,11 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FigS4.pdf): PDF inclusion:
 <FigS4.pdf, id=124, pagebox=cropbox, 580.56903pt x 842.54778pt>
 File: FigS4.pdf Graphic file (type pdf)
 <use FigS4.pdf>
-Package pdftex.def Info: FigS4.pdf  used on input line 222. on input line 222.
+Package pdftex.def Info: FigS4.pdf  used on input line 223. on input line 223.
 Package pdftex.def Info: Requested size: 455.66328pt x 661.2729pt on input line
- 222.
+ 223.
 
-LaTeX Warning: Float too large for page by 10.84253pt on input line 223.
+LaTeX Warning: Float too large for page by 10.84253pt on input line 224.
 
 [5 <./FigS4.pdf>] [6]
 
@@ -970,11 +970,11 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FigS5.pdf): PDF inclusion:
 <FigS5.pdf, id=141, pagebox=cropbox, 827.96283pt x 594.39455pt>
 File: FigS5.pdf Graphic file (type pdf)
 <use FigS5.pdf>
-Package pdftex.def Info: FigS5.pdf  used on input line 237. on input line 237.
+Package pdftex.def Info: FigS5.pdf  used on input line 238. on input line 238.
 Package pdftex.def Info: Requested size: 827.96082pt x 594.3931pt on input line
- 237.
+ 238.
 
-LaTeX Warning: Float too large for page by 3.93103pt on input line 238.
+LaTeX Warning: Float too large for page by 3.93103pt on input line 239.
 
 [7 <./FigS5.pdf>] [8] [9
 
@@ -987,45 +987,45 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./FigS6.pdf): PDF inclusion:
 <FigS6.pdf, id=181, pagebox=cropbox, 845.79pt x 352.44pt>
 File: FigS6.pdf Graphic file (type pdf)
 <use FigS6.pdf>
-Package pdftex.def Info: FigS6.pdf  used on input line 280. on input line 280.
+Package pdftex.def Info: FigS6.pdf  used on input line 281. on input line 281.
 Package pdftex.def Info: Requested size: 399.29494pt x 166.38358pt on input lin
-e 280.
+e 281.
 [10] [11 <./FigS6.pdf>]
 <FigS7a.pdf, id=198, pagebox=cropbox, 1443.95467pt x 2242.53801pt>
 File: FigS7a.pdf Graphic file (type pdf)
 <use FigS7a.pdf>
-Package pdftex.def Info: FigS7a.pdf  used on input line 291. on input line 291.
+Package pdftex.def Info: FigS7a.pdf  used on input line 292. on input line 292.
 
 Package pdftex.def Info: Requested size: 375.80574pt x 583.62785pt on input lin
-e 291.
+e 292.
 <FigS7b.pdf, id=199, pagebox=cropbox, 1443.95467pt x 2242.53801pt>
 File: FigS7b.pdf Graphic file (type pdf)
 <use FigS7b.pdf>
-Package pdftex.def Info: FigS7b.pdf  used on input line 295. on input line 295.
+Package pdftex.def Info: FigS7b.pdf  used on input line 296. on input line 296.
 
 Package pdftex.def Info: Requested size: 375.80574pt x 583.62785pt on input lin
-e 295.
+e 296.
  [12
 
  <./FigS7a.pdf>] [13 <./FigS7b.pdf>] [14] (./SI.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
 [15
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
  (./SI.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
 Package rerunfilecheck Info: File `SI.out' has not changed.
 (rerunfilecheck)             Checksum: 1B0F96CF6DEB7938A0060CE3E34DC752;130.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
  ) 
 Here is how much of TeX's memory you used:
- 19676 strings out of 492990
- 344502 string characters out of 6132636
- 487166 words of memory out of 5000000
- 22957 multiletter control sequences out of 15000+600000
+ 19677 strings out of 492990
+ 344507 string characters out of 6132636
+ 487159 words of memory out of 5000000
+ 22958 multiletter control sequences out of 15000+600000
  554660 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,8n,94p,10344b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1055,7 +1055,7 @@ ts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
 e1/public/cm-super/sfti1200.pfb>
-Output written on SI.pdf (15 pages, 5218995 bytes).
+Output written on SI.pdf (15 pages, 5218951 bytes).
 PDF statistics:
  338 PDF objects out of 1000 (max. 8388607)
  207 compressed objects within 3 object streams
