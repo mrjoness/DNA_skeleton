@@ -272,7 +272,17 @@ The SantaLucia NN parameters are defined for a solution condition at neutral pH 
 \end{equation} 
 where $f_{GC}$ is the fractional G:C content of the duplex and $c_{Na^+}$ is the concentration of sodium counter-ions measured in M.  
 
-\rood{In applying the NN model to each macrostate, we made the simplifying assumption that the ensemble of microstates constituting each macrostate could be represented by a single pattern of Watson-Crick base pairing that are schematically illustrated in Fig.~2a. In reality, each macrostate is composed of an ensemble of microstates that may have slightly different base pairing patterns and explicitly averaging over all of these microstates may change the predictions of the NN model. Recalculating the NN predictions by explicitly averaging over all microstates in the macrostate leads to changes in the $\Delta F = F - F_H$ values reported in Fig.~3 (i.e., the free energy of each macrostate relative to the hybridized state) of $<$1 kJ/mol. As such, representing each macrostate by a single representative microstate and base pairing pattern is a highly accurate simplifying approximation for the purposes of this calculation.}
+\rood{In applying the NN model to each macrostate, we made the simplifying assumption that the ensemble of microstates constituting each macrostate could be represented by a single pattern of Watson-Crick base pairing that are schematically illustrated in Fig.~2a. In reality, each macrostate is composed of an ensemble of microstates that may have slightly different base pairing patterns and explicitly averaging over all of these microstates may change the predictions of the NN model.} \roodr{To evaluate the extent to which incorporating microstate ensembles would change our free energy estimates, we calculated a NN microstate free energy by taking a simple average of the NN free energy associated with each configurations in a given microstate. This is a reasonable assumption given the structural similarity of configurations within a microstate. Macrostate free energies were then calculated by weighting each microstate free energy according the its corresponding probability in the MSM stationary distribution. This can be represented as follows, where i indexes configurations, j indexes microstates, and $p_j$ represents the microstate probability.}
+
+\begin{equation}
+    F^{micro} = \frac{1}{N} \sum_{i \in micro} F_i^{NN} 
+\end{equation}
+
+\begin{equation}  
+    F^{macro} = \sum_{j \in macro} F_j^{micro} p_j
+\end{equation}
+
+\roodr{Recalculating the NN predictions in this way leads to changes in the $\Delta F = F - F_H$ values reported in Fig.~3 (i.e., the free energy of each macrostate relative to the hybridized state) of $<$1 kJ/mol. As such, representing each macrostate by a single representative microstate and base pairing pattern is a highly accurate simplifying approximation for the purposes of this calculation.}
 
 \vspace{+0.5in}
 

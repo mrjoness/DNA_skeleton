@@ -290,25 +290,44 @@ However, the authors have actually simulated at 3.5x the experimental conc. If t
 However, it is not appropriate to apply the Ouldridge correction to data measuring the dissociation time. The authors effectively measure the statistics of dissociation events in infinite dilution - these are unaffected by the factors that lead to the Ouldridge correction. More specifically, the Ouldridge correction accounts for concentration fluctuations neglected in small, canonical simulations. These concentration fluctuations contribute to the hybridisation rates, not the dissociation rates.
 }
 
-\textbf{Author Reply:} XXX 
+%Remove of correction. Report updated text here and in main text and SI using roodr code. Maybe something like ``(We note that although the melting temperature of the homodimer is not affected by the Ouldridge et al. finite size corrections [REF], this empirical correction does account for the higher DNA concentration employed in simulation (7 mM) relative to experiment (2 mM). Although we do not do so here, Owczarzy et al. present a prescription to apply concentration corrections to Tm using knowledge of the enthalpy and entropy of duplex formation and helix nucleation [REF; ``Predicting Sequence- Dependent Melting Stability of Short Duplex DNA Oligomers'' Biopoly 44: 217?239, 1997].''. In your response you can also elaborate on your point of using Eqn. 11 in Ouldridge would fix conc effects at same T but not at new Tm so would need new T ramp or knowledge of dH and dS. Close with saying in any case our empirical correction accounts for these effects plus other uncontrolled effects such as model accuracy etc.
 
-1. Removal of correction. Report updated text here and in main text and SI using roodr code. Maybe something like ``(We note that although the melting temperature of the homodimer is not affected by the Ouldridge et al. finite size corrections [REF], this empirical correction does account for the higher DNA concentration employed in simulation (7 mM) relative to experiment (2 mM). Although we do not do so here, Owczarzy et al. present a prescription to apply concentration corrections to Tm using knowledge of the enthalpy and entropy of duplex formation and helix nucleation [REF; ``Predicting Sequence- Dependent Melting Stability of Short Duplex DNA Oligomers'' Biopoly 44: 217?239, 1997].''. In your response you can also elaborate on your point of using Eqn. 11 in Ouldridge would fix conc effects at same T but not at new Tm so would need new T ramp or knowledge of dH and dS. Close with saying in any case our empirical correction accounts for these effects plus other uncontrolled effects such as model accuracy etc.
+\textbf{Author Reply:} We appreciate the reviewer pointing out that the fluctuation correction should not be applied at an effective infinite dilution, and we have removed the fluctuation correction discussion and text from section 3.1. We have also updated the Figure 1 plot and caption in line with the uncorrected (original) data. As mentioned in the previous response letter, the uncorrected rates maintain high qualitative similarity to the corrected rates, and the slight deviation does not change our interpretation of the data.
+
+We have also edited the following line on page 17. which erroneously suggested that the homodimer fluctuation correction would affect melting temperature predictions.
+
+`` The computational time scales and melting temperatures reported in the remainder of the paper are not \roodr{corrected by these calibration corrections} since we are only interested in the relative trends in the behaviors of the four sequences.''
+
+We agree with the reviewer's suggestion to specify that melting temperatures are only valid under the corresponding experimental conditions. As such we have revised the text in several places to note we are using the melting temperature specific to the 7 mM concentration:
+
+On page 7:
+
+``each sequence was simulated at its \rood{respective melting temperature at 7mM concentration as dictated by the 3SPN.2 model}''
+
+On page 9:
+
+`` MSMs were constructed for each of the four DNA sequences \roodr{at their respective 3SPN.2 melting temperatures at 7 mM concentration} from the 40$\times$25 $\mu$s simulation trajectories''
+
+On page 20:
+
+``Since each system is simulated at the \roodr{same 7 mM concentration} and at its respective melting temperature''
 
 
-2. Adding ``at 7 mM'' at various places in text where necessary in defining Tm.)
+The reviewer helpfully points out that equation (7) in Ouldridge et al. \cite{Ouldridge2010ExtractingSimulations} may be used to determine the effective dimer fraction at the experimental concentration. Furthermore, a new melting curve could be refit using this concentration correction in order to determine the effective melting temperature at the experimental concentration. Although this relation would not changed our approach -- given our explicit goal to ``maximize the number of spontaneous transitions between dissociated and hybridized states'' -- we agree the reader should be aware that the predicted melting temperatures would in fact be slightly lower than our simulated temperatures. We have specified this below:
 
-
+On page 17:
+``Although the 3SPN.2 model reproduces melting temperatures relatively well, we observed a systematic 4 K under-prediction relative to experiment and so we apply a \rood{universal (+4) K corrective temperature shift} to our computational results. \roodr{We note that we would expect the model to slightly over-predict melting temperature due to the 3.5$\times$ higher concentration relative to experiment, however the systematic shift shows that relative sequence-dependent trends are well maintained. Furthermore,} We note that these empirical calibration factors to the 3SPN.2 predictions are applied only for the purposes of making an experimental comparison, but acknowledge that there are uncertainties introduced by assuming that the equilibrium dynamics at fixed temperature can be compared directly to relaxation kinetics following a 15$^\circ$C T-jump.''
 
 
 \textcolor{blue}{
 (2) I realise now that the criterion for dissociation is that both of the central pairs separate to 1.3nm, which is more reasonable than my previous understanding. However, although the authors say that the estimates of kd\^slow are robust to a range of choices for this cutoff, the yellow, red and green curves all have a noticeable shift between 1.3 and 2.0nm (unsurprisingly blue does not, since the GC pairs are in the core). So what exactly does robust mean? Why not just report the data for larger cutoffs?
 }
 
-\textbf{Author Reply:} XXX (Must draw some cutoff, our approach was to select physically motivated cutoff and show that results are insensitive to choice. Show that 1.3 nm satisfies these criteria -- results change by some small \% amount in switching cutoff to 2.0 nm so using either value is equally valid.)
+\textbf{Author Reply:} Our intention was to maintain a consistent cutoff between the fraying and dissociation analysis, however the reviewer points out that this is not a necessary constraint given that we are measuring fundamentally difference dynamical processes. When comparing the 1.3 nm cutoff to a 2.0 nm, we found an average of only 7\% deviation between slow rates, and we see similar deviation up to 2.5 nm. Although this change may be visually perceptible it does not change our interpretation of the data, and we consider the sequence-dependent rates ``robust'' against cutoff selection. Still, we agree with the reviewer that the choice of a larger cutoff reduces sequence-dependent bias, and we have we have elected to update the Figure 1 slow response with the higher 2.0 nm cutoff value. We have also updated the text as follows:
 
+On page 15:
 
-
-
+``First, we tracked the slow response corresponding to duplex dissociation in our simulations by compiling the distribution of times at which both of the central base pairs first separate to a distance of \roodr{2.0} nm starting from an initial fully hybridized duplex. This cutoff was selected as the distance beyond \rood{which} the strands are effectively non-interacting and defines the dissociated state. \roodr{We verified that our results were robust to choices of this cutoff over the range 1.3-2.5 nm. as measured by a <7\% average deviation in rates over that range.}''
 
 
 \textcolor{blue}{
@@ -323,10 +342,19 @@ F = -kT ln sum\_i  exp(-F\_i/kT)
 where i runs over all microstates in the macrostate? This is very different from averaging F\_i, as might be inferred from the text.
 }
 
-\textbf{Author Reply:} XXX (Modify SI to describe this procedure as weighted average.)
+\textbf{Author Reply:} We understand the confusion regarding our free energy calculation, and we have added the following text to page S10 of the Supporting Information for clarification:
 
+\rood{In applying the NN model to each macrostate, we made the simplifying assumption that the ensemble of microstates constituting each macrostate could be represented by a single pattern of Watson-Crick base pairing that are schematically illustrated in Fig.~2a. In reality, each macrostate is composed of an ensemble of microstates that may have slightly different base pairing patterns and explicitly averaging over all of these microstates may change the predictions of the NN model.} \roodr{To evaluate the extent to which incorporating microstate ensembles would change our free energy estimates, we calculated a NN microstate free energy by taking a simple average of the NN free energy associated with each configurations in a given microstate. This is a reasonable assumption given the structural similarity of configurations within a microstate. Macrostate free energies were then calculated by weighting each microstate free energy according the its corresponding probability in the MSM stationary distribution. This can be represented as follows, where i indexes configurations, j indexes microstates, and $p_j$ represents the microstate probability.}
 
+\begin{equation}
+    F^{micro} = \frac{1}{N} \sum_{i \in micro} F_i^{NN} 
+\end{equation}
 
+\begin{equation}  
+    F^{macro} = \sum_{j \in macro} F_j^{micro} p_j
+\end{equation}
+
+\roodr{Recalculating the NN predictions in this way leads to changes in the $\Delta F = F - F_H$ values reported in Fig.~3 (i.e., the free energy of each macrostate relative to the hybridized state) of $<$1 kJ/mol. As such, representing each macrostate by a single representative microstate and base pairing pattern is a highly accurate simplifying approximation for the purposes of this calculation.}
 
 
 %%%
