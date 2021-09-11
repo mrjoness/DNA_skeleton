@@ -59,7 +59,7 @@
 
 %more new commands and definitions
 %\newcommand*{\rood}[1]{\color{red}{#1}}
-\newcommand*{\rood}[1]{{\color{red}{#1}}}
+\newcommand*{\rood}[1]{{#1}}
 \newcommand*{\roodr}[1]{{\color{red}{#1}}}
 \newcommand*{\noteg}[1]{\textcolor{green}{[[#1]]}}		% notes 
 \newcommand*{\noter}[1]{{\color{red}{[[#1]]}}}
@@ -256,7 +256,7 @@ In light of these changes, we hope that our revised submission is suitable for p
 Most of my comments were properly addressed. The manuscript, as far as I understand, is suitable for a journal like JACS.
 }
 
-\textbf{Author Reply:} We are pleased that the reviewer is satisfied with our modifications and responses and that they are pleased to support publication in JACS. We would like to thank them again for their time, effort, and considered and useful expert comments.
+\textbf{Author Reply:} We are pleased that the reviewer is satisfied with our modifications and responses and that they are pleased to support publication in JACS. We would like to thank them again for their time, effort, and expert comments.
 
 
 
@@ -292,17 +292,19 @@ However, it is not appropriate to apply the Ouldridge correction to data measuri
 
 %Remove of correction. Report updated text here and in main text and SI using roodr code. Maybe something like ``(We note that although the melting temperature of the homodimer is not affected by the Ouldridge et al. finite size corrections [REF], this empirical correction does account for the higher DNA concentration employed in simulation (7 mM) relative to experiment (2 mM). Although we do not do so here, Owczarzy et al. present a prescription to apply concentration corrections to Tm using knowledge of the enthalpy and entropy of duplex formation and helix nucleation [REF; ``Predicting Sequence- Dependent Melting Stability of Short Duplex DNA Oligomers'' Biopoly 44: 217?239, 1997].''. In your response you can also elaborate on your point of using Eqn. 11 in Ouldridge would fix conc effects at same T but not at new Tm so would need new T ramp or knowledge of dH and dS. Close with saying in any case our empirical correction accounts for these effects plus other uncontrolled effects such as model accuracy etc.
 
-\textbf{Author Reply:} We appreciate the reviewer pointing out that the fluctuation correction should not be applied at an effective infinite dilution, and we have removed the fluctuation correction discussion and text from section 3.1. We have also updated the Figure 1 plot and caption in line with the uncorrected (original) data. As mentioned in the previous response letter, the uncorrected rates maintain high qualitative similarity to the corrected rates, and the slight deviation does not change our interpretation of the data.
+\textbf{Author Reply:} We appreciate these valuable comments and have made several corrections and modifications to the revised manuscript in light of these recommendations.
 
-We have also edited the following line on page 17. which erroneously suggested that the homodimer fluctuation correction would affect melting temperature predictions.
+(I) We thank the reviewer for pointing out that the Ouldridge finite-size fluctuation corrections do not affect the dissociation rates and are therefore not relevant for this comparison. We have eliminated our discussion of this correction at the top of p.~16 in Section 3.1 (``To correct for finite-size effects...'') and modified the plot and caption in Figure 1 to report the original uncorrected data. As mentioned in our previous response letter, the fluctuation correction led to only a slight change in the reported rates and so this modification does not change any of our analysis or interpretations of the data.
 
-`` The computational time scales and melting temperatures reported in the remainder of the paper are not \roodr{corrected by these calibration corrections} since we are only interested in the relative trends in the behaviors of the four sequences.''
+It is true that the homodimer finite-size fluctuation correction does not affect the melting temperature but only widens the transition, and this was indeed what we saw when we applied the correction. We have also edited the text on p.~17 that erroneously suggested that this correction would change the dissociation rate or melting temperature:
 
-We agree with the reviewer's suggestion to specify that melting temperatures are only valid under the corresponding experimental conditions. As such we have revised the text in several places to note we are using the melting temperature specific to the 7 mM concentration:
+``The computational time scales and melting temperatures reported in the remainder of the paper are not corrected by these calibration corrections \roodr{\st{or finite-size fluctuations}} since we are only interested in the relative trends in the behaviors of the four sequences.''
+
+(II) We appreciate reviewer's suggestion to be more explicit that melting temperatures are a function of concentration, and that our definition applies to a particular model at a particular concentration. As such we have revised the text in several places to note we are using the melting temperature specific to the 7 mM concentration employed in our simulations:
 
 On page 7:
 
-``each sequence was simulated at its \rood{respective melting temperature at 7mM concentration as dictated by the 3SPN.2 model}''
+``each sequence was simulated at its respective melting temperature \roodr{at 7mM concentration as} dictated by the 3SPN.2 model''
 
 On page 9:
 
@@ -312,22 +314,27 @@ On page 20:
 
 ``Since each system is simulated at the \roodr{same 7 mM concentration} and at its respective melting temperature''
 
+(III) We thank the reviewer for the suggestion to correct our simulation prediction of the melting temperature to the experimental concentration. The proposed strategy is to assume ideal behavior, reduce the computed $\phi$ ratio per Eqn.~7 in Ouldridge et al.\ \cite{Ouldridge2010ExtractingSimulations} by the 3.5$\times$ concentration difference, and then recompute $f_{hybridized}$. We believe that this procedure would work under the assumption that the equilibrium constant does not change with temperature, but in general this may not be a good assumption since $-R T_m K_{eq} = \Delta G^\circ = \Delta H^\circ - T_m \Delta S$. Owczarzy et al.\ \cite{Owczarzy1997predicting} engage this issue to develop a van't Hoff-like concentration correction to $T_m$ based on the enthalpies of duplex formation and helix nucleation. In the absence of knowledge of these standard enthalpies, we could instead calculate the melting temperature by performing multiple simulations at a range of temperatures, applying the proposed concentration correction to predict $f_{hybridized}$ at that temperature, then fitting a melting curve from which we could extract the concentration corrected $T_m$. This additional suite of required calculations would be exclusively in service of nailing down the concentration correction and would not change our approach since we intentionally selected the 7 mM 3SPN.2 melting temperature in order to maximize the number of spontaneous transitions between dissociated and hybridized states to provide a rich data set of these events over which to train our MSM. 
 
-The reviewer helpfully points out that equation (7) in Ouldridge et al. \cite{Ouldridge2010ExtractingSimulations} may be used to determine the effective dimer fraction at the experimental concentration. Furthermore, a new melting curve could be refit using this concentration correction in order to determine the effective melting temperature at the experimental concentration. Although this relation would not changed our approach -- given our explicit goal to ``maximize the number of spontaneous transitions between dissociated and hybridized states'' -- we agree the reader should be aware that the predicted melting temperatures would in fact be slightly lower than our simulated temperatures. We have specified this below:
+The approach we take to the concentration correction in the manuscript is an empirical one, wherein we draw a comparison of the computational predictions against experimental measurements. The observed calibration corrections therefore account for net effect of both the 3.5$\times$ higher concentration in simulation and the assumptions and approximations inherent in the 3SPN.2 model. As the reviewer observes, the (+4) K calibration correction encompassing both of these effects is overly optimistic since the concentration corrected $T_m$ will be depressed and controlling for this would require a larger positive correction for the error due to the 3SPN.2 model approximations. 
 
-On page 17:
-``Although the 3SPN.2 model reproduces melting temperatures relatively well, we observed a systematic 4 K under-prediction relative to experiment and so we apply a \rood{universal (+4) K corrective temperature shift} to our computational results. \roodr{We note that we would expect the model to slightly over-predict melting temperature due to the 3.5$\times$ higher concentration relative to experiment, however the systematic shift shows that relative sequence-dependent trends are well maintained. Furthermore,} We note that these empirical calibration factors to the 3SPN.2 predictions are applied only for the purposes of making an experimental comparison, but acknowledge that there are uncertainties introduced by assuming that the equilibrium dynamics at fixed temperature can be compared directly to relaxation kinetics following a 15$^\circ$C T-jump.''
+In light of the reviewer's suggestion and the discussion above, we have modified the text on p.~16 to alert the reader to these important issues:
+
+``Although the 3SPN.2 model reproduces melting temperatures relatively well, we observed a systematic 4 K under-prediction relative to experiment and so we apply a universal (+4) K corrective temperature shift to our computational results. \roodr{We note that our simulations are expected to slightly over-predict the melting temperature since they are conducted at 3.5$\times$ higher concentration relative to experiment, and the concentration-adjusted corrective shift accounting for the approximations inherent in the 3SPN.2 model would be slightly larger. Owczarzy et al.\ present an analytical prescription to apply concentration corrections to the melting temperature using knowledge of the enthalpy changes associated with duplex formation and helix nucleation \cite{Owczarzy1997predicting}. In the absence of these quantities, one could instead empirically estimate concentration corrected melting temperatures by conducting a suite of simulations over a range of temperatures and assume ideal molecular behavior to apply concentration corrections to the observed hybridized fractions \cite{Ouldridge2010ExtractingSimulations}. (As demonstrated by Ouldridge et al., finite-size corrections do not affect the melting temperature for homodimers \cite{Ouldridge2010ExtractingSimulations}.) Furthermore, we} note that these empirical calibration factors to the 3SPN.2 predictions are applied only for the purposes of making an experimental comparison, but acknowledge that there are uncertainties introduced by assuming that the equilibrium dynamics at fixed temperature can be compared directly to relaxation kinetics following a 15$^\circ$C T-jump.''
+
+
+
 
 
 \textcolor{blue}{
 (2) I realise now that the criterion for dissociation is that both of the central pairs separate to 1.3nm, which is more reasonable than my previous understanding. However, although the authors say that the estimates of kd\^slow are robust to a range of choices for this cutoff, the yellow, red and green curves all have a noticeable shift between 1.3 and 2.0nm (unsurprisingly blue does not, since the GC pairs are in the core). So what exactly does robust mean? Why not just report the data for larger cutoffs?
 }
 
-\textbf{Author Reply:} Our intention was to maintain a consistent cutoff between the fraying and dissociation analysis, however the reviewer points out that this is not a necessary constraint given that we are measuring fundamentally difference dynamical processes. When comparing the 1.3 nm cutoff to a 2.0 nm, we found an average of only 7\% deviation between slow rates, and we see similar deviation up to 2.5 nm. Although this change may be visually perceptible it does not change our interpretation of the data, and we consider the sequence-dependent rates ``robust'' against cutoff selection. Still, we agree with the reviewer that the choice of a larger cutoff reduces sequence-dependent bias, and we have we have elected to update the Figure 1 slow response with the higher 2.0 nm cutoff value. We have also updated the text as follows:
+\textbf{Author Reply:} Our original motivation for selecting a 1.3 nm cutoff was to maintain consistency between that for fraying and dissociation. This is, however, an unnecessary constraint since these are fundamentally different processes. As the reviewer recommends, we now report the data in Figure 1 using the larger 2.0 nm cutoff. We do indeed see relatively small changes in our results upon changing the cutoff from 1.3 nm to 2.0 nm, producing an average change in the calculated values of $k_d^\mathrm{slow}$ of only 7\%, demonstrating that our calculation is robust to the particular choice of cutoff within this range. This modification does not affect any of our subsequent analysis or interpretation.
 
-On page 15:
+We have updated the text on p.~15 as follows:
 
-``First, we tracked the slow response corresponding to duplex dissociation in our simulations by compiling the distribution of times at which both of the central base pairs first separate to a distance of \roodr{2.0} nm starting from an initial fully hybridized duplex. This cutoff was selected as the distance beyond \rood{which} the strands are effectively non-interacting and defines the dissociated state. \roodr{We verified that our results were robust to choices of this cutoff over the range 1.3-2.5 nm. as measured by a <7\% average deviation in rates over that range.}''
+``First, we tracked the slow response corresponding to duplex dissociation in our simulations by compiling the distribution of times at which both of the central base pairs first separate to a distance of \roodr{2.0} nm starting from an initial fully hybridized duplex. This cutoff was selected as the distance beyond \rood{which} the strands are effectively non-interacting and defines the dissociated state. We extracted our computational estimate of $k_d^\mathrm{slow}$ by fitting a decaying exponential to the fraction of hybridized sequences as a function of time $f_\mathrm{hybridized}(t) = \exp(-k_d^\mathrm{slow}t)$. \roodr{We verified that our cutoff was sufficiently large by observing that our calculated values for $k_d^\mathrm{slow}$ changed by an average of only 7\% by adopting a 1.3 nm cutoff.}''
 
 
 \textcolor{blue}{
@@ -342,19 +349,16 @@ F = -kT ln sum\_i  exp(-F\_i/kT)
 where i runs over all microstates in the macrostate? This is very different from averaging F\_i, as might be inferred from the text.
 }
 
-\textbf{Author Reply:} We understand the confusion regarding our free energy calculation, and we have added the following text to page S10 of the Supporting Information for clarification:
+\textbf{Author Reply:} Thank you for pointing out our lack of clarity on this point. We have modified the text on p.~S10 of the Supporting Information to more clearly convey the details of this calculation:
 
-\rood{In applying the NN model to each macrostate, we made the simplifying assumption that the ensemble of microstates constituting each macrostate could be represented by a single pattern of Watson-Crick base pairing that are schematically illustrated in Fig.~2a. In reality, each macrostate is composed of an ensemble of microstates that may have slightly different base pairing patterns and explicitly averaging over all of these microstates may change the predictions of the NN model.} \roodr{To evaluate the extent to which incorporating microstate ensembles would change our free energy estimates, we calculated a NN microstate free energy by taking a simple average of the NN free energy associated with each configurations in a given microstate. This is a reasonable assumption given the structural similarity of configurations within a microstate. Macrostate free energies were then calculated by weighting each microstate free energy according the its corresponding probability in the MSM stationary distribution. This can be represented as follows, where i indexes configurations, j indexes microstates, and $p_j$ represents the microstate probability.}
-
+\rood{In applying the NN model to each macrostate, we made the simplifying assumption that the ensemble of microstates constituting each macrostate could be represented by a single pattern of Watson-Crick base pairing that are schematically illustrated in Fig.~2a. In reality, each macrostate is composed of an ensemble of microstates that may have slightly different base pairing patterns and explicitly averaging over all of these microstates may change the predictions of the NN model.} \roodr{To evaluate the extent to which the microstate ensembles would change our free energy estimates, we calculated a NN microstate free energy by taking a simple average over the NN free energies predicted for each configuration within a given microstate -- a reasonable assumption given the structural similarity of configurations within a microstate -- then computing macrostate free energies via a weighted average according to the MSM equilibrium occupancy probabilities for each microstate. These operations can be represented as follows, where $i$ indexes over the $N_j$ configurations in microstate $j$, $j$ indexes over microstates, and $p_j$ represents the MSM equilibrium occupancy of microstate $j$,}
 \begin{equation}
-    F^{micro} = \frac{1}{N} \sum_{i \in micro} F_i^{NN} 
+    F^{micro} = \frac{1}{N_j} \sum_{i \in micro} F_i^{NN} 
 \end{equation}
-
 \begin{equation}  
-    F^{macro} = \sum_{j \in macro} F_j^{micro} p_j
+    F^{macro} = \sum_{j \in macro} p_j F_j^{micro}
 \end{equation}
-
-\roodr{Recalculating the NN predictions in this way leads to changes in the $\Delta F = F - F_H$ values reported in Fig.~3 (i.e., the free energy of each macrostate relative to the hybridized state) of $<$1 kJ/mol. As such, representing each macrostate by a single representative microstate and base pairing pattern is a highly accurate simplifying approximation for the purposes of this calculation.}
+Recalculating the NN predictions \roodr{in this way} leads to changes in the $\Delta F = F - F_H$ values reported in Fig.~3 (i.e., the free energy of each macrostate relative to the hybridized state) of $<$1 kJ/mol. As such, representing each macrostate by a single representative microstate and base pairing pattern is a highly accurate simplifying approximation for the purposes of this calculation.
 
 
 %%%

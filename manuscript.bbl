@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{130}
+\begin{mcitethebibliography}{131}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -1069,15 +1069,6 @@ Pinamonti,~G.; Paul,~F.; Rodriguez,~A.; Bussi,~G. {The Mechanism of RNA Base
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[Ouldridge \latin{et~al.}(2010)Ouldridge, Louis, and
-  Doye]{Ouldridge2010ExtractingSimulations}
-Ouldridge,~T.~E.; Louis,~A.~A.; Doye,~J.~P. {Extracting bulk properties of
-  self-assembling systems from small simulations}. \emph{J. Condens. Matter
-  Phys.} \textbf{2010}, \emph{22}\relax
-\mciteBstWouldAddEndPuncttrue
-\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
-\EndOfBibitem
 \bibitem[Marrink \latin{et~al.}(2007)Marrink, Risselada, Yefimov, Tieleman, and
   De~Vries]{Marrink2007TheSimulations}
 Marrink,~S.~J.; Risselada,~H.~J.; Yefimov,~S.; Tieleman,~D.~P.; De~Vries,~A.~H.
@@ -1100,6 +1091,25 @@ Fritz,~D.; Koschke,~K.; Harmandaris,~V.~A.; Van Der~Vegt,~N.~F.; Kremer,~K.
   Tieleman]{Marrink2013PerspectiveModel}
 Marrink,~S.~J.; Tieleman,~D.~P. {Perspective on the Martini Model}. \emph{Chem.
   Soc. Rev.} \textbf{2013}, \emph{42}, 6801--6822\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Owczarzy \latin{et~al.}(1997)Owczarzy, Vallone, Gallo, Paner, Lane,
+  and Benight]{Owczarzy1997predicting}
+Owczarzy,~R.; Vallone,~P.~M.; Gallo,~F.~J.; Paner,~T.~M.; Lane,~M.~J.;
+  Benight,~A.~S. Predicting sequence-dependent melting stability of short
+  duplex DNA oligomers. \emph{Biopolymers: Original Research on Biomolecules}
+  \textbf{1997}, \emph{44}, 217--239\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ouldridge \latin{et~al.}(2010)Ouldridge, Louis, and
+  Doye]{Ouldridge2010ExtractingSimulations}
+Ouldridge,~T.~E.; Louis,~A.~A.; Doye,~J.~P. {Extracting bulk properties of
+  self-assembling systems from small simulations}. \emph{J. Condens. Matter
+  Phys.} \textbf{2010}, \emph{22}\relax
 \mciteBstWouldAddEndPuncttrue
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax

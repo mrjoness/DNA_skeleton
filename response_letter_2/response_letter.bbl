@@ -8,7 +8,7 @@
 \providecommand*\mcitethebibliography{\thebibliography}
 \csname @ifundefined\endcsname{endmcitethebibliography}
   {\let\endmcitethebibliography\endthebibliography}{}
-\begin{mcitethebibliography}{0}
+\begin{mcitethebibliography}{2}
 \providecommand*\natexlab[1]{#1}
 \providecommand*\mciteSetBstSublistMode[1]{}
 \providecommand*\mciteSetBstMaxWidthForm[2]{}
@@ -26,4 +26,21 @@
   {\relax}
   {\relax}
 
+\bibitem[Ouldridge \latin{et~al.}(2010)Ouldridge, Louis, and
+  Doye]{Ouldridge2010ExtractingSimulations}
+Ouldridge,~T.~E.; Louis,~A.~A.; Doye,~J.~P. \emph{J. Condens. Matter Phys.}
+  \textbf{2010}, \emph{22}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Owczarzy \latin{et~al.}(1997)Owczarzy, Vallone, Gallo, Paner, Lane,
+  and Benight]{Owczarzy1997predicting}
+Owczarzy,~R.; Vallone,~P.~M.; Gallo,~F.~J.; Paner,~T.~M.; Lane,~M.~J.;
+  Benight,~A.~S. \emph{Biopolymers: Original Research on Biomolecules}
+  \textbf{1997}, \emph{44}, 217--239\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \end{mcitethebibliography}
