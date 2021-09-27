@@ -1,0 +1,295 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional Formal Letter
+% LaTeX Template
+% Version 1.0 (28/12/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Brian Moses (http://www.ms.uky.edu/~math/Resources/Templates/LaTeX/)
+% with extensive modifications by Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% may not be compatible with rest of template
+% \documentclass[journal=jpcbfk,manuscript=article]{achemso}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+%\documentclass[11pt,a4paper,draft]{letter} % Specify the font size (10pt, 11pt and 12pt) and paper size (letterpaper, a4paper, etc) 
+\documentclass[11pt,a4paper]{letter} % Specify the font size (10pt, 11pt and 12pt) and paper size (letterpaper, a4paper, etc) 
+\usepackage{letterbib}
+\usepackage{graphicx} % Required for including pictures
+\usepackage{microtype} % Improves typography
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc} % Required for accented characters
+\usepackage[sort&compress,numbers,super]{natbib}
+\usepackage{caption}
+\usepackage{newfloat}
+\usepackage{float}
+\usepackage{url}
+\usepackage{color}
+\usepackage{soul}
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{calligra}
+\usepackage{fp}
+\FPset\marginWidth{0.7}	% margin width (all sides) in inches
+\usepackage[margin=\marginWidth in]{geometry}
+\usepackage{marginfix}
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            urlcolor=blue,
+            citecolor=blue]{hyperref}
+\usepackage[font={small,sf}, singlelinecheck=false]{caption}
+\usepackage{capt-of}           
+
+% Create a new command for the horizontal rule in the document which allows thickness specification
+\makeatletter
+
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+
+%more new commands and definitions
+%\newcommand*{\rood}[1]{\color{red}{#1}}
+\newcommand*{\rood}[1]{{#1}}
+\newcommand*{\roodr}[1]{{\color{red}{#1}}}
+\newcommand*{\noteg}[1]{\textcolor{green}{[[#1]]}}		% notes 
+\newcommand*{\noter}[1]{{\color{red}{[[#1]]}}}
+
+\newcommand*{\blauw}[1]{\color{blue}{#1}}
+\newcommand*{\groen}[1]{\color{green}{#1}}
+\newcommand{\hlc}[2][yellow]{{\sethlcolor{#1}\hl{#2}}}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+
+% code for custom comments
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{mathtools}
+
+% markers (black, blue, brown, cyan, darkgray, gray, green, lightgray, lime, magenta, olive, orange, pink, purple, red, teal, violet, white, yellow, more: https://en.wikibooks.org/wiki/LaTeX/Colors)
+\newcommand{\marker}[3]{
+  \tikz[baseline=(X.base)]{
+    \node [fill=#1!40,rounded corners] (X) {#2:};
+  }
+  {\color{#1!80!black}#3}
+}
+\newcommand{\khb}[1]{\marker{teal}{KHB}{#1}}  % Kathy Breen
+\newcommand{\replyhead}{\textbf{Author Reply: }}
+
+\newfloat{figure}{h}{lot}
+\floatname{figure}{Figure}
+\newfloat{sfigure}{h}{lot}
+\floatname{sfigure}{Figure}
+\newfloat{lfigure}{h}{lot}
+\floatname{lfigure}{Figure}
+
+\definecolor{shadecolor}{named}{LightGray}
+
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+
+\renewcommand{\thesfigure}{S\arabic{sfigure}}
+\renewcommand{\thelfigure}{\Alph{lfigure}}
+
+%-----------------------------------------------------------------------------
+% HEADER/FOOTER INFO
+%-----------------------------------------------------------------------------
+%\pagestyle{fancy}
+\fancyhf{}
+%\cfoot{\textit{telephone} 217-333-1441 $\bullet$ \textit{fax} 217-333-2736 $\bullet$ \textit{email} matse@illinois.edu}
+\cfoot{\thepage}
+
+%----------------------------------------------------------------------------------------
+%	SENDER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\def\Who{Andrew L. Ferguson} % Your name
+\def\What{, PhD} % Your title
+\def\Where{Pritzker School of Molecular Engineering\\University of Chicago} % Your department/institution
+\def\department{Pritzker School of Molecular Engineering}
+\def\institution{University of Chicago}
+\def\Address{5640 South Ellis Avenue} % Your address
+\def\CityZip{Chicago, IL 60637} % Your city, zip code, country, etc
+\def\Email{e:~\url{andrewferguson@uchicago.edu}} % Your email address
+\def\TEL{p:~(773)~702-5950} % Your phone number
+\def\URL{w:~\url{www.ferglab.com}} % Your URL
+\def\titleone{Associate Professor\\ Vice Dean for Equity, Diversity, and Inclusion}
+
+%----------------------------------------------------------------------------------------
+%	HEADER AND FROM ADDRESS STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\FPmul\tmp{2}{\marginWidth}	% computing institution logo indent based on margin width
+\FPsub\logoIndent{7.55}{\tmp}
+
+\address{
+\includegraphics[width=3.5in]{UChicago_PME_logo.png} % Include the logo of your institution
+%\hspace{\logoIndent in} % Position of the institution logo, increase to move left, decrease to move right
+\hspace{2.8in} % Position of the institution logo, increase to move left, decrease to move right
+\vskip -0.82in~\\ % Position of the text in relation to the institution logo, increase to move down, decrease to move up
+\Large\hspace{0.75in} \hfill ~\\[0.05in] % First line of institution name, adjust hspace if your logo is wide
+\hspace{0.75in} \hfill \normalsize % Second line of institution name, adjust hspace if your logo is wide
+\makebox[0ex][r]{\bf \Who \What }\hspace{0.65in} % Print your name and title with a little whitespace to the right
+~\\[-0.11in] % Reduce the whitespace above the horizontal rule
+\hspace{0in}\vhrulefill{1pt} \\ % Horizontal rule, adjust hspace if your logo is wide and \vhrulefill for the thickness of the rule
+\hspace{\fill}\parbox[t]{4in}{ % Create a box for your details underneath the horizontal rule on the right
+\footnotesize % Use a smaller font size for the details
+%\Who \\  % Your name, all text after this will be italicized
+%\\
+\titleone
+%\titletwo\\
+%\titlethree\\
+%\titlefour\\
+\vskip 0.05in
+\department\\ % Your department
+\institution\\ % Your institution
+\Address\\ % Your address
+\CityZip
+\vskip 0.05in
+\TEL\\ % Your phone number
+\Email\\ % Your email address
+\URL\\ % Your URL
+}
+\hspace{-1.4in} % Horizontal position of this block, increase to move left, decrease to move right
+\vspace{-1in} % Move the letter content up for a more compact look
+}
+
+%----------------------------------------------------------------------------------------
+%	TO ADDRESS STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\FPmul\tmp{2}{\marginWidth}	% computing date indent based on margin width
+\FPsub\dateIndent{4.15}{\tmp}
+
+\def\opening#1{\thispagestyle{empty}
+{\centering\fromaddress \vspace{1.1in} \\ % Print the header and from address here, add whitespace to move date down
+%
+\hspace*{4.15 in}\today\hspace*{\fill}\par
+} % Print today's date, remove \today to not display it
+{\raggedright \toname \\ \toaddress \par} % Print the to name and address
+\vspace{0.05in} % White space after the to address
+\noindent #1 % Print the opening line
+% Uncomment the 4 lines below to print a footnote with custom text
+%\def\thefootnote{}
+%\def\footnoterule{\hrule}
+%\footnotetext{\hspace*{0.18\textwidth}{Telephone 217-333-1441 $\bullet$ Fax 217-333-2736 $\bullet$ email matse@illinois.edu\footnotesize \hspace{3cm} \thepage}}
+%\def\thefootnote{\arabic{footnote}}
+}
+
+%----------------------------------------------------------------------------------------
+%	SIGNATURE STRUCTURE
+%----------------------------------------------------------------------------------------
+
+\signature{\Who \What} % The signature is a combination of your name and title
+
+\long\def\closing#1{
+\vspace{0.1in} % Some whitespace after the letter content and before the signature
+\noindent % Stop paragraph indentation
+%\hspace*{\longindentation} % Move the signature right
+%\parbox{\indentedwidth}{\raggedright
+#1 % Print the signature text
+\vskip 0.0in
+\includegraphics[width=0.2\textwidth]{signature_720}
+%\vskip 0.65in % Whitespace between the signature text and your name
+\\
+\noindent
+\fromsig
+\vskip -0.05in
+\titleone\\
+\department\\
+\institution\\
+\vskip -0.1in
+\noindent cc: M.S.~Jones, B.~Ashwood, A.~Tokmakoff
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TO ADDRESS
+%----------------------------------------------------------------------------------------
+
+\begin{letter}
+{
+Prof.\ Hanadi Sleiman \\
+Associate Editor, \textit{The Journal of the American Chemical Society}
+}
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+\opening{Dear JACS Editorial Office}
+
+Thank you for your 20-Sep-2021 message regarding our article ``Determining sequence-dependent DNA oligonucleotide hybridization and dehybridization mechanisms using coarse-grained molecular simulation, Markov state models, and infrared spectroscopy'' assigned manuscript ID ja-2021-05219p.R2. We thank the editorial office for handling our submission and the anonymous reviewers for their careful reading and critical assessment of our work.
+
+We are delighted that our work has been accepted for publication in \textit{The Journal of the American Chemical Society}. As detailed below, we have made the remaining requested formatting changes required prior to production.
+
+\closing{Yours Sincerely}
+
+\end{letter}
+
+%----------------------------------------------------------------------------------------
+
+\clearpage
+\newpage
+
+\begin{shaded}
+\textbf{Formatting Changes}
+\end{shaded}
+
+\textcolor{blue}{
+We are pleased to inform you that we are prepared to accept your manuscript for publication in the Journal of the American Chemical Society. However, before we can do so, there are a few remaining formatting changes that are required before we can send your manuscript on to our production office.
+}
+
+\textcolor{blue}{
+Please make the following format changes:
+}
+
+\textcolor{blue}{
+- Ensure all parts of the figures are clearly labeled and correspond with the callout-outs in the figure caption. Currently, figure 1a and b are mentioned in the caption but are not labeled in figure 1.
+}
+
+\textbf{Author Reply:} Done.
+
+\textcolor{blue}{
+- Ensure all parts of the figures are clearly labeled and correspond with the callout-outs in the figure caption. Currently, figure 3a and b are mentioned in the caption but are not labeled in figure 3.
+}
+
+\textbf{Author Reply:} Done.
+
+\textcolor{blue}{
+- Please put Reference 76 in the following format: Author 1; Author 2; Author 3; etc. Title of Article. Submission Date. Name of Repository (section name, if provided). Article Number or URL. (accessed YYYY-MM-DD).
+}
+
+\textbf{Author Reply:} Done.
+
+\textcolor{blue}{
+- Please consider improving the resolution of the TOC for ease of viewing/reading.
+}
+
+\textbf{Author Reply:} Done.
+
+\textcolor{blue}{
+- Please consider improving the resolution of Figures S1 and S5 for ease of viewing/reading.
+}
+
+\textbf{Author Reply:} Done.
+
+
+%\clearpage
+%\newpage
+
+%\bibliographystyle{achemso}
+%\bibliography{../references_210514_abv}
+
+\end{document}

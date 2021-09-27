@@ -699,16 +699,17 @@ Snodin,~B.~E.; Schreck,~J.~S.; Romano,~F.; Louis,~A.~A.; Doye,~J.~P.
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
 {\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
-\bibitem[Doye \latin{et~al.}(2020)Doye, Fowler, Pre{\v{s}}ern, Bohlin,
-  Rovigatti, Romano, {\v{S}}ulc, Wong, Louis, Schreck, Engel, Matthies, Benson,
-  Poppleton, and Snodin]{Doye2020TheOrigami}
+\bibitem[Doye \latin{et~al.}()Doye, Fowler, Pre{\v{s}}ern, Bohlin, Rovigatti,
+  Romano, {\v{S}}ulc, Wong, Louis, Schreck, Engel, Matthies, Benson, Poppleton,
+  and Snodin]{Doye2020TheOrigami}
 Doye,~J.~P.; Fowler,~H.; Pre{\v{s}}ern,~D.; Bohlin,~J.; Rovigatti,~L.;
   Romano,~F.; {\v{S}}ulc,~P.; Wong,~C.~K.; Louis,~A.~A.; Schreck,~J.~S.
   \latin{et~al.}  {The oxDNA Coarse-Grained Model as a Tool to Simulate DNA
-  Origami}. \emph{arXiv} \textbf{2020}, https://arxiv.org/abs/2004.05052\relax
-\mciteBstWouldAddEndPuncttrue
+  Origami. Submitted: 10 Apr 2020}. \emph{arXiv (Soft Condensed Matter)}
+  https://arxiv.org/abs/2004.05052 (accessed 2021--05--20).\relax
+\mciteBstWouldAddEndPunctfalse
 \mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
-{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+{}{\mcitedefaultseppunct}\relax
 \EndOfBibitem
 \bibitem[C{\'{o}}rdoba \latin{et~al.}(2017)C{\'{o}}rdoba, Hinckley, Lequieu,
   and de~Pablo]{Cordoba2017AIons}
